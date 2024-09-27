@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <HediffGiverSetDef>
+        <defName>OCARINA_LongLegsHediffGiver</defName>
+        <hediffGivers>
+            <li Class="RainWorld.HediffGiver_LongLegs">
+                <hediff>OCARINA_LongLegsHediff</hediff>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
+
+</Defs>

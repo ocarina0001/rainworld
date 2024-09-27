@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_KarmaFlower</defName>
+        <label>karma flower</label>
+        <description>Karma Flowers, also known as Wheel Flowers, are rare, yellow flowers which can be found growing sporadically and rarely throughout the universe. They can be eaten to cheat death.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Nutrition>0.5</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/KarmaFlower</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>7</growDays>
+            <harvestYield>1</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_KarmaFlower</harvestedThingDef>
+            <visualSizeRange>0.6~1.1</visualSizeRange>
+            <topWindExposure>0.1</topWindExposure>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <allowAutoCut>false</allowAutoCut>
+        </plant>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_RainMushroom</defName>
+        <label>mushroom</label>
+        <description>Mushrooms are small, edible fungi, usually found growing out of the ground in darkly lit areas. They sport a glowing cap with a slightly darker stalk below it.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Nutrition>0.5</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/RainMushroom</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <fertilityMin>0.3</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>3</growDays>
+            <maxMeshCount>4</maxMeshCount>
+            <harvestYield>4</harvestYield>
+            <cavePlant>true</cavePlant>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_RainMushroom</harvestedThingDef>
+            <visualSizeRange>0.3~1.0</visualSizeRange>
+            <topWindExposure>0</topWindExposure>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <allowAutoCut>false</allowAutoCut>
+        </plant>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,107 @@
+8.6 - 5/27/2024
+- Updated patch for A Dog Said... Animal Prosthetics 2
+
+8.5 - 5/21/2024
+- Implemented patch for A Dog Said... Animal Prosthetics 2 (1.5 only)
+
+8.4 - 5/18/2024
+- Lantern mice now spawn properly
+
+8.3 - 5/17/2024
+- Lantern mice no longer give an RenderTree error
+
+8.2 - 5/17/2024
+- Mushrooms can now actually be grown
+- Equally, blue fruit now properly display light requirement level of 0%
+
+8.1 - 5/16/2024
+- Decreased red lizard wildness from 1.00 to 0.99, so they can be tamed
+
+8.0 - 5/16/2024
+- Reworked all slugcat textures
+- Added lantern mice
+- Added red lizards
+- Mushrooms are now growable
+- Baby slugcats are now referred to as "slugpups"
+- Pink lizard speed increased from 3 c/s to 4 c/s
+- Mushrooms nutrition value is reduced from 0.5 to 0.05 to account for them being growable
+- Added mod icon
+- Updated workshop infographics
+
+7.0 - 3/29/2024
+- Updated for 1.5, fixing the following issues:
+-> Hunter slugcats walking west faced east
+-> Longleg event not working
+-> Longleg hediff not applying manhunter
+-> Karma flower's protection not activating on death
+
+6.6 - 2/26/2024
+- Removed debug messages
+
+6.5 - 2/23/2024
+- Properly implemented ADogSaid patch
+
+6.4 - 1/26/2024
+- Added administer Karma Flower treatment to most living things
+
+6.3 - 1/26/2024
+- Fixed Karma Flowers incident being broken
+
+6.2 - 1/12/2024
+- Increased all slugcats' market value
+- Increased all slugcats' combat power
+
+6.1 - 1/11/2024
+- Fixed mushroom biotech genes having no texture
+
+6.0 - 1/10/2024
+- Added bubble fruit
+- Added popcorn plant
+- Added karma flower
+- Added mushroom
+- Fixed Daddy and Brother Long Legs having no parts vulnerable to frostbite
+
+5.0 - 1/10/2024
+- Added Daddy Long Legs*
+- Added Brother Long Legs*
+- Added Pink Lizards
+- Double chance for Green Lizards to have SpineSpikes cosmetic feature
+- Updated workshop page with new infographics, new display images, and a ko-fi link
+* Only from rare events
+
+4.0 - 1/9/2024
+- Added Slugcat Hunter
+- Added Slugcat Monk
+- Added custom spear projectile to replace slugcat survivor's pilum projectile
+- Modified slugcat survivor's spear projectile's accuracy ranges
+- Slugcat survivor market value increased from 35 to 100
+- Slugcat survivor base hunger rate increased from 0.15 to 0.20
+
+3.0 - 1/8/2024
+- Added blue fruit
+- Added yet another unique color to the Green Lizard TailTuft design
+- Updated workshop page description with info cards
+
+2.3 - 1/8/2024
+- Slugcat survivor melee is now scratch instead of blunt
+
+2.2 - 1/8/2024
+- Slugcat survivor has slightly increased health
+- Slugcat survivor can now properly defend itself
+
+2.1 - 1/7/2024
+- Added unique color to Green Lizard TailTuft design
+- Added ADogSaid support to Slugcat Survivor and Green Lizards
+- Slightly increased spawn chances for Green Lizards and Slugcat Survivor
+
+2.0 - 1/7/2024
+- Added green lizards
+- Slugcats are now predators
+- Slugcats UI icon scale is now 1 instead of 2
+- Updated workshop page description
+
+1.1 - 1/6/2024
+- Slugcats now spawn naturally in tropical rainforests, tropical swamps, and temperate swamps. Previously only obtained via trader ships or quests.
+
+1.0 - Release
+- Uploaded to Steam Workshop

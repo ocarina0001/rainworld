@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- 
+        <color> is for the head color
+        <colorTwo> is for the body color
+    -->
+
+    <PawnKindDef ParentName="AnimalKindBase" Name="OCARINA_GreenLizardBase" Abstract="True">
+        <alternateGraphics>
+            <li>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                BUMP HAWK
+                
+            -->
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/BumpHawk/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                LONG HEAD SCALES
+                
+            -->
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongHeadScales/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                LONG SHOULDER SCALES
+                
+            -->
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/LongShoulderScales/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                SHORT BODY SCALES
+                
+            -->
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/ShortBodyScales/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                SPINE SPIKES
+                
+            -->
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <weight>1.00</weight>
+                <texPath>Things/Pawn/Animal/GreenLizard/SpineSpikes/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                TAIL FIN
+                
+            -->
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailFin/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <!-- 
+
+                TAIL TUFT
+                
+            -->
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(170, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(87, 255, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(0, 255, 50)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(15, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(0, 255, 130)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(200, 255, 75)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(120, 180, 0)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(0, 180, 100)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(70, 255, 170)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(90, 255, 80)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>                <!-- Unique Green 1 -->
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(138, 194, 140)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+            <li>                <!-- Unique Green 2 -->
+                <texPath>Things/Pawn/Animal/GreenLizard/TailTuft/GreenLizard</texPath>
+                <color>(31, 47, 26)</color>
+                <colorTwo>(30, 15, 35)</colorTwo>
+            </li>
+        </alternateGraphics>
+        <alternateGraphicChance>1.0</alternateGraphicChance>
+    </PawnKindDef>
+
+</Defs>

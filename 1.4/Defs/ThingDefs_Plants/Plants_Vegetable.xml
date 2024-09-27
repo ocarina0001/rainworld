@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_SeedCob</defName>
+        <label>popcorn plant</label>
+        <description>The Popcorn Plant, otherwise referred to as the Seed Cob, is a plant-like organism reminiscent of a stalk of corn that consists of a tall, red corn-like ear attached to a black stem. These tall stalks of corn are very difficult to crack open, increasing the amount of manpower needed to harvest these stalks.</description>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Nutrition>0.4</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/PopcornPlant</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <fertilityMin>0.50</fertilityMin>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_RawSeedCob</harvestedThingDef>
+            <harvestYield>26</harvestYield>
+            <harvestWork>80</harvestWork>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <topWindExposure>0.35</topWindExposure>
+            <growDays>10</growDays>
+            <immatureGraphicPath>Things/Plant/PopcornPlant_Immature</immatureGraphicPath>
+            <visualSizeRange>0.3~1.4</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+        </plant>
+    </ThingDef>
+
+</Defs>

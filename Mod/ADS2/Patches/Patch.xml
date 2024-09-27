@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[@Name="ADS_Cat3" or @Name="ADS_Cat2" or @Name="ADS_Cat1"]/recipeUsers</xpath>
+        <value>
+            <li>OCARINA_GreenLizard</li>
+            <li>OCARINA_PinkLizard</li>
+            <li>OCARINA_RedLizard</li>
+            <li>OCARINA_LanternMouse</li>
+            <li>OCARINA_SlugcatSurvivor</li>
+            <li>OCARINA_SlugcatMonk</li>
+            <li>OCARINA_SlugcatHunter</li>
+        </value>
+    </Operation>
+
+</Patch>

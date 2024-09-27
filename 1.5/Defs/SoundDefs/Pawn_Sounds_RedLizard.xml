@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <SoundDef>
+        <defName>OCARINA_Pawn_RedLizard_Call</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawns/RedLizard/LizardVoiceRedCall</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>80</min>
+                    <max>80</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.9082353</min>
+                    <max>1.114706</max>
+                </pitchRange>
+                <distRange>
+                    <min>0</min>
+                    <max>50</max>
+                </distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>OCARINA_Pawn_RedLizard_Death</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawns/RedLizard/LizardVoiceRedDeath</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>80</min>
+                    <max>80</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.9082353</min>
+                    <max>1.114706</max>
+                </pitchRange>
+                <distRange>
+                    <min>0</min>
+                    <max>50</max>
+                </distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>OCARINA_Pawn_RedLizard_Wounded</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawns/RedLizard/LizardVoiceRedCall</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>80</min>
+                    <max>80</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.0</min>
+                    <max>1.2</max>
+                </pitchRange>
+                <distRange>
+                    <min>0</min>
+                    <max>50</max>
+                </distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>OCARINA_Pawn_RedLizard_Angry</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawns/RedLizard/LizardVoiceRedCall</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>80</min>
+                    <max>80</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>0.8</min>
+                    <max>0.9</max>
+                </pitchRange>
+                <distRange>
+                    <min>0</min>
+                    <max>50</max>
+                </distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

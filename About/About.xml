@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>ocarina.rainworld</packageId>
+    <name>RainWorld</name>
+    <author>ocarina</author>
+    <supportedVersions>
+        <li>1.4</li>
+        <li>1.5</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <description>Adds things from RainWorld (RW) into RimWorld (RW)</description>
+    <loadBefore>
+        <li>sambucher.adogsaidanimalprosthetics2</li>
+    </loadBefore>
+</ModMetaData>

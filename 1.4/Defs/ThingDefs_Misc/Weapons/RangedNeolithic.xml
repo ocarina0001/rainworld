@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>OCARINA_SpearThrown</defName>
+        <label>spear</label>
+        <graphicData>
+            <texPath>Things/Projectile/SpearThrown</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>RangedStab</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <stoppingPower>2.5</stoppingPower>
+            <armorPenetrationBase>0.10</armorPenetrationBase>
+            <speed>30</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>

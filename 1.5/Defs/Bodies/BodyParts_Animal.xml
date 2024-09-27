@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <BodyPartDef>
+        <defName>OCARINA_LongLegCore</defName>
+        <label>core</label>
+        <hitPoints>10</hitPoints>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>EatingSource</li>
+            <li>HearingSource</li>
+            <li>BloodPumpingSource</li>
+            <li>BloodFiltrationSource</li>
+            <li>MetabolismSource</li>
+            <li>BreathingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>OCARINA_LongLegTentacle</defName>
+        <label>tentacle</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>true</skinCovered>
+        <frostbiteVulnerability>0.5</frostbiteVulnerability>
+        <tags>
+            <li>MovingLimbCore</li>
+            <li>ManipulationLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+</Defs>

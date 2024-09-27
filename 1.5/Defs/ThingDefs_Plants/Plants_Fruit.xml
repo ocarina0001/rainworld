@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_BlueFruit</defName>
+        <label>blue fruit plant</label>
+        <thingClass>RainWorld.Plant_Ceiling</thingClass>
+        <description>A hanging blue fruit. Small, blue, and tasty, these blue fruit or as some call them, "dangle fruit" grow from ceilings, they are incredibly hardy, only faltering in unstable temperatures. Due to their hardy nature and unique growing circumstances, they don't require light to grow and as such don't spend time resting.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/BlueFruit</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <growDays>6</growDays>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <maxMeshCount>4</maxMeshCount>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_RawBlueFruit</harvestedThingDef>
+            <harvestYield>4</harvestYield>
+            <sowMinSkill>3</sowMinSkill>
+            <cavePlant>true</cavePlant>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <immatureGraphicPath>Things/Plant/BlueFruit</immatureGraphicPath>
+            <visualSizeRange>1.00~1.05</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+        </plant>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_BubbleFruit</defName>
+        <label>bubble fruit plant</label>
+        <thingClass>RainWorld.Plant_WaterAffiliation</thingClass>
+        <description>Bubble Fruit are small fruits with a blue center surrounded by a dark outer shell, usually found growing out of the ground around bodies of water. Being near water is the key to cultivating these fruits, halving their normal growing time. Rainfall will in turn half that growing time, optimally bringing down it's growth time from 15 days to 7 days if near water to just 3 days while it's raining.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/BubbleFruit</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <growDays>15</growDays>
+            <maxMeshCount>9</maxMeshCount>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_RawBubbleFruit</harvestedThingDef>
+            <harvestYield>9</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.24</topWindExposure>
+            <immatureGraphicPath>Things/Plant/BubbleFruit</immatureGraphicPath>
+            <visualSizeRange>0.80~1.20</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+        </plant>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Survivor -->
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+        <defName>OCARINA_SlugcatSurvivor</defName>
+        <label>slugcat</label>
+        <description>The slugcat resembles a hybrid of a slug and a cat. It's a small, nimble mammal known for its adorable appearance and remarkable agility. Despite its size, the slugcat is a resilient survivor, with its elongated body and limbs, it moves gracefully, capable of climbing walls, leaping across gaps, and squeezing through tight spaces. Its keen senses help it detect both predators and prey, making it a skilled hunter in its environment. This slugcat seems keen on surviving.</description>
+        <statBases>
+            <MoveSpeed>6.4</MoveSpeed>
+            <MarketValue>150</MarketValue>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+        </statBases>
+        <uiIconScale>1</uiIconScale>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.9</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.9</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.9</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <baseBodySize>0.51</baseBodySize>
+            <baseHealthScale>0.55</baseHealthScale>
+            <baseHungerRate>0.20</baseHungerRate>
+            <maxPreyBodySize>0.30</maxPreyBodySize>
+            <predator>true</predator>
+            <foodType>OmnivoreAnimal</foodType>
+            <leatherDef>Leather_Light</leatherDef>
+            <wildness>0</wildness>
+            <petness>1</petness>
+            <trainability>Advanced</trainability>
+            <nuzzleMtbHours>12</nuzzleMtbHours>
+            <nameOnTameChance>1</nameOnTameChance>
+            <gestationPeriodDays>6</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.8, 1)</li>
+                    <li>(2.4, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.11</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2222</minAge>
+                    <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Death</soundDeath>
+                    <soundCall>Pawn_Rodent_Call</soundCall>
+                    <soundAngry>Pawn_Rodent_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <headPosPerRotation>
+                <li>(0.0, 0, 0.17)</li>
+                <li>(0.2, 0, 0)</li>
+                <li>(0.0, 0, -0.15)</li>
+                <li>(-0.2, 0, 0)</li>
+            </headPosPerRotation>
+            <wildBiomes>
+                <TemperateSwamp>0.10</TemperateSwamp>
+                <TropicalSwamp>0.20</TropicalSwamp>
+                <TropicalRainforest>0.30</TropicalRainforest>
+            </wildBiomes>
+        </race>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1.00</accuracyTouch>
+                <accuracyShort>0.95</accuracyShort>
+                <accuracyMedium>0.90</accuracyMedium>
+                <accuracyLong>0.65</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>OCARINA_SpearThrown</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <range>20</range>
+                <label>spear</label>
+                <muzzleFlashScale>0</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>OCARINA_SlugcatSurvivor</defName>
+        <label>slugcat</label>
+        <race>OCARINA_SlugcatSurvivor</race>
+        <combatPower>80</combatPower>
+        <ecoSystemWeight>0.4</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <drawSize>0.5</drawSize>
+                    <color>(255,255,255)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <drawSize>0.75</drawSize>
+                    <color>(255,255,255)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <drawSize>0.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <drawSize>1</drawSize>
+                    <color>(255,255,255)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- Monk -->
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+        <defName>OCARINA_SlugcatMonk</defName>
+        <label>slugcat</label>
+        <description>The slugcat resembles a hybrid of a slug and a cat. It's a small, nimble mammal known for its adorable appearance and remarkable agility. Despite its size, the slugcat is a resilient survivor, with its elongated body and limbs, it moves gracefully, capable of climbing walls, leaping across gaps, and squeezing through tight spaces. Its keen senses help it detect both predators and prey, making it a skilled hunter in its environment. This slugcat seems to be rather calm and collected, almost monk like.</description>
+        <statBases>
+            <MoveSpeed>6.8</MoveSpeed>
+            <MarketValue>100</MarketValue>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+        </statBases>
+        <uiIconScale>1</uiIconScale>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.9</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.9</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.9</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <baseBodySize>0.51</baseBodySize>
+            <baseHealthScale>0.50</baseHealthScale>
+            <baseHungerRate>0.10</baseHungerRate>
+            <maxPreyBodySize>0.30</maxPreyBodySize>
+            <predator>true</predator>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <foodType>OmnivoreAnimal</foodType>
+            <leatherDef>Leather_Light</leatherDef>
+            <wildness>0</wildness>
+            <petness>1</petness>
+            <trainability>Advanced</trainability>
+            <nuzzleMtbHours>6</nuzzleMtbHours>
+            <nameOnTameChance>1</nameOnTameChance>
+            <gestationPeriodDays>6</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.8, 1)</li>
+                    <li>(2.4, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.11</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2222</minAge>
+                    <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Death</soundDeath>
+                    <soundCall>Pawn_Rodent_Call</soundCall>
+                    <soundAngry>Pawn_Rodent_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <headPosPerRotation>
+                <li>(0.0, 0, 0.17)</li>
+                <li>(0.2, 0, 0)</li>
+                <li>(0.0, 0, -0.15)</li>
+                <li>(-0.2, 0, 0)</li>
+            </headPosPerRotation>
+            <wildBiomes>
+                <TemperateSwamp>0.08</TemperateSwamp>
+                <TropicalSwamp>0.18</TropicalSwamp>
+                <TropicalRainforest>0.28</TropicalRainforest>
+            </wildBiomes>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>OCARINA_SlugcatMonk</defName>
+        <label>slugcat</label>
+        <race>OCARINA_SlugcatMonk</race>
+        <combatPower>35</combatPower>
+        <ecoSystemWeight>0.4</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <drawSize>0.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <drawSize>0.75</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <drawSize>0.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!-- Hunter -->
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+        <defName>OCARINA_SlugcatHunter</defName>
+        <label>slugcat</label>
+        <description>The slugcat resembles a hybrid of a slug and a cat. It's a small, nimble mammal known for its adorable appearance and remarkable agility. Despite its size, the slugcat is a resilient survivor, with its elongated body and limbs, it moves gracefully, capable of climbing walls, leaping across gaps, and squeezing through tight spaces. Its keen senses help it detect both predators and prey, making it a skilled hunter in its environment. This slugcat is fierce and covered in scars, obviously a hunter.</description>
+        <statBases>
+            <MoveSpeed>7.0</MoveSpeed>
+            <MarketValue>300</MarketValue>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+        </statBases>
+        <uiIconScale>1</uiIconScale>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.8</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.8</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.8</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.8</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <baseBodySize>0.51</baseBodySize>
+            <baseHealthScale>0.60</baseHealthScale>
+            <baseHungerRate>0.35</baseHungerRate>
+            <maxPreyBodySize>0.50</maxPreyBodySize>
+            <predator>true</predator>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <leatherDef>Leather_Light</leatherDef>
+            <wildness>0.1</wildness>
+            <petness>1</petness>
+            <trainability>Advanced</trainability>
+            <nuzzleMtbHours>48</nuzzleMtbHours>
+            <nameOnTameChance>1</nameOnTameChance>
+            <gestationPeriodDays>6</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.8, 1)</li>
+                    <li>(2.4, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.11</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2222</minAge>
+                    <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Death</soundDeath>
+                    <soundCall>Pawn_Rodent_Call</soundCall>
+                    <soundAngry>Pawn_Rodent_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <headPosPerRotation>
+                <li>(0.0, 0, 0.17)</li>
+                <li>(0.2, 0, 0)</li>
+                <li>(0.0, 0, -0.15)</li>
+                <li>(-0.2, 0, 0)</li>
+            </headPosPerRotation>
+            <wildBiomes>
+                <TemperateSwamp>0.05</TemperateSwamp>
+                <TropicalSwamp>0.15</TropicalSwamp>
+                <TropicalRainforest>0.25</TropicalRainforest>
+            </wildBiomes>
+        </race>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1.00</accuracyTouch>
+                <accuracyShort>1.00</accuracyShort>
+                <accuracyMedium>1.00</accuracyMedium>
+                <accuracyLong>0.90</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>OCARINA_SpearThrown</defaultProjectile>
+                <warmupTime>0.80</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <range>30</range>
+                <label>spear</label>
+                <muzzleFlashScale>0</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>OCARINA_SlugcatHunter</defName>
+        <label>slugcat</label>
+        <race>OCARINA_SlugcatHunter</race>
+        <combatPower>125</combatPower>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <drawSize>0.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <drawSize>0.75</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <drawSize>0.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

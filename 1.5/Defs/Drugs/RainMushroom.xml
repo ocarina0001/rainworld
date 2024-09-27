@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="DrugBase">
+        <defName>OCARINA_RainMushroom</defName>
+        <label>mushrooms</label>
+        <description>Mushrooms are small, edible fungi, usually found growing out of the ground in darkly lit areas. They sport a glowing cap with a slightly darker stalk below it. Eating a head of one of these mushrooms will enhance your speed and manipulation for a short time, before crashing.</description>
+        <descriptionHyperlinks>
+            <HediffDef>OCARINA_RainMushroomHediff</HediffDef>
+            <HediffDef>OCARINA_RainMushroomTolerance</HediffDef>
+            <HediffDef>OCARINA_RainMushroomAddiction</HediffDef>
+        </descriptionHyperlinks>
+        <tradeability>Sellable</tradeability>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <tickerType>Rare</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Drug/RainMushroom/RainMushroom</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>12</MarketValue>
+            <Mass>0.1</Mass>
+            <DeteriorationRate>10</DeteriorationRate>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <baseIngestTicks>80</baseIngestTicks>
+            <chairSearchRadius>4</chairSearchRadius>
+            <preferability>DesperateOnly</preferability>
+            <foodType>VegetableOrFruit</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.2</joy>
+            <nurseable>true</nurseable>
+            <drugCategory>Hard</drugCategory>
+            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>OCARINA_RainMushroomHediff</hediffDef>
+                    <severity>1.0</severity>
+                    <toleranceChemical>OCARINA_RainMushroomChemical</toleranceChemical>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>AlcoholTolerance</hediffDef>
+                    <severity>0.006</severity>
+                    <divideByBodySize>true</divideByBodySize>
+                    <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+            <li Class="CompProperties_Drug">
+                <chemical>OCARINA_RainMushroomChemical</chemical>
+                <addictiveness>0.010</addictiveness>
+                <minToleranceToAddict>0.50</minToleranceToAddict>
+                <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+                <needLevelOffset>0.9</needLevelOffset>
+                <listOrder>10</listOrder>
+            </li>
+        </comps>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <ChemicalDef>
+        <defName>OCARINA_RainMushroomChemical</defName>
+        <label>mushroom</label>
+        <addictionHediff>OCARINA_RainMushroomAddiction</addictionHediff>
+        <toleranceHediff>OCARINA_RainMushroomTolerance</toleranceHediff>
+        <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+        <geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+        <geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+    </ChemicalDef>
+
+    <HediffDef ParentName="DrugToleranceBase">
+        <defName>OCARINA_RainMushroomTolerance</defName>
+        <label>mushroom tolerance</label>
+        <description>A built-up tolerance to mushrooms. The more severe this tolerance is, the more mushrooms it takes to get the same effect.</description>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.020</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_DrugEffectFactor">
+                <chemical>OCARINA_RainMushroomChemical</chemical>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddictionBase">
+        <defName>OCARINA_RainMushroomAddiction</defName>
+        <label>mushroom addiction</label>
+        <description>A chemical addiction to mushrooms. Long-term presence of alcohol has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of mushrooms, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <causesNeed>OCARINA_Chemical_RainMushroom</causesNeed>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.0333</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <NeedDef ParentName="DrugAddictionNeedBase">
+        <defName>OCARINA_Chemical_RainMushroom</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>mushroom</label>
+        <description>Because of a mushroom addiction, this person needs to regularly consume mushrooms to avoid withdrawal symptoms.</description>
+        <listPriority>35</listPriority>
+    </NeedDef>
+
+    <HediffDef>
+        <defName>OCARINA_RainMushroomHediff</defName>
+        <label>mushroom high</label>
+        <description>The mushroom is taking effect.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1.0,1.0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-3.00</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>crash</label>
+                <minSeverity>0.29</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>high</label>
+                <minSeverity>0.3</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>OCARINA_RainMushroomThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>OCARINA_RainMushroomHediff</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>mushroom crash</label>
+                <description>Oh my lord, I feel horrible... World won't stop spinning...</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>mushroom high</label>
+                <description>Wow, everything's so... Wow, man, it's like... I'm more perceptive...</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
