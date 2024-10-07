@@ -1,8 +1,19 @@
-- Scav pawns (use HAR)
-- Scav faction
-- Monks will drop karma flowers on death (1% chance)
-- Slugcats using weapons
+Scavenger Major Update:
+- Scavenger Pawns (using HAR)
+- Scavenger faction (consisting of Scav Pawns)
 - Blue lizards
-- Try fixing UI icon
-- Change long leg hostility to use whatever anomaly added
-- DLL and BLL Anomaly research entities + twisted meat
+- Monks planting a karma flower on death (1% chance)
+
+Pack Minor Update:
+- Slugcats can become pack animals
+- All lizard types can become pack animals
+
+Anomaly Minor Update:
+- Add support for anomaly, making use of the new hostility XML node
+- Allow DLL and BLL to be captured as research entities
+- Change meat type to twisted meat
+
+Undetermined Minor Update:
+- Slugcats can use a variety of weapons
+- Fixing lizard UI icon (this can possibly be adding a custom UI icon to the animals)
+- Use hediff sprites to reflect hediffs on the sprite

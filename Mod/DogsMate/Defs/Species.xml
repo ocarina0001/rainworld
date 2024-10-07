@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <Revolus.DogsMate.AnimalGroupDef>
+        <defName>OCARINA_Slugcat</defName>
+        <label>slugcat</label>
+        <description>The slugcat is part slug part cat. Wow!</description>
+        <pawnKinds>
+            <li>OCARINA_SlugcatSurvivor</li>
+            <li>OCARINA_SlugcatMonk</li>
+            <li>OCARINA_SlugcatHunter</li>
+        </pawnKinds>
+    </Revolus.DogsMate.AnimalGroupDef>
+
+    <Revolus.DogsMate.AnimalGroupDef>
+        <defName>OCARINA_Lizard</defName>
+        <label>lizard</label>
+        <description>Some evil stinky lizards. Natural predator of scug.</description>
+        <pawnKinds>
+            <li>OCARINA_GreenLizard</li>
+            <li>OCARINA_PinkLizard</li>
+            <li>OCARINA_RedLizard</li>
+        </pawnKinds>
+    </Revolus.DogsMate.AnimalGroupDef>
+
+</Defs>
