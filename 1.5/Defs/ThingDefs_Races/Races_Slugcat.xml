@@ -148,7 +148,7 @@
                     <color>(255,255,255)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -161,7 +161,7 @@
                     <color>(255,255,255)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -173,7 +173,7 @@
                     <color>(255,255,255)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -311,7 +311,7 @@
                     <drawSize>0.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -323,7 +323,7 @@
                     <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -334,7 +334,7 @@
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -487,7 +487,7 @@
                     <drawSize>0.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -499,7 +499,7 @@
                     <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -510,7 +510,7 @@
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Slugcat/Dessicated_Slugcat</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
