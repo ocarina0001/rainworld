@@ -4,10 +4,6 @@ Scavenger Major Update:
 - Blue lizards
 - Monks planting a karma flower on death (1% chance)
 
-Pack Minor Update:
-- Slugcats can become pack animals
-- All lizard types can become pack animals
-
 Anomaly Minor Update:
 - Add support for anomaly, making use of the new hostility XML node
 - Allow DLL and BLL to be captured as research entities
@@ -15,5 +11,5 @@ Anomaly Minor Update:
 
 Undetermined Minor Update:
 - Slugcats can use a variety of weapons
-- Fixing lizard UI icon (this can possibly be adding a custom UI icon to the animals)
+- Fixing lizard UI icon
 - Use hediff sprites to reflect hediffs on the sprite

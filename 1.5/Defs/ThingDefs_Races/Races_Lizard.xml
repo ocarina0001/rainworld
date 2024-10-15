@@ -43,6 +43,7 @@
         <race>
             <body>OCARINA_LargeLizardlike</body>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <maxPreyBodySize>2.0</maxPreyBodySize>
             <baseBodySize>1.85</baseBodySize>
@@ -101,7 +102,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/GreenLizard/GreenLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>1</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -113,7 +114,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/GreenLizard/GreenLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>2</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -129,7 +130,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/GreenLizard/GreenLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>3</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -181,6 +182,7 @@
         <race>
             <body>OCARINA_LargeLizardlike</body>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <maxPreyBodySize>2.0</maxPreyBodySize>
             <baseBodySize>1.65</baseBodySize>
@@ -239,7 +241,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/PinkLizard/PinkLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>1</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -251,7 +253,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/PinkLizard/PinkLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>2</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -267,7 +269,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/PinkLizard/PinkLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>2.8</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -318,6 +320,7 @@
         <race>
             <body>OCARINA_LargeLizardlike</body>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <maxPreyBodySize>4.0</maxPreyBodySize>
             <baseBodySize>2.1</baseBodySize>
@@ -376,7 +379,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/RedLizard/RedLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>1.2</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -388,7 +391,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/RedLizard/RedLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>2.4</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>
@@ -404,7 +407,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/RedLizard/RedLizard</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/Lizard/Dessicated_Lizard</texPath>
                     <drawSize>3.2</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </dessicatedBodyGraphicData>

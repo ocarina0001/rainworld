@@ -147,7 +147,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/LanternMouse/Dessicated_LanternMouse</texPath>
                     <drawSize>1.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -158,7 +158,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/LanternMouse/Dessicated_LanternMouse</texPath>
                     <drawSize>1.1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -169,7 +169,7 @@
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+                    <texPath>Things/Pawn/Animal/Skeletons/LanternMouse/Dessicated_LanternMouse</texPath>
                     <drawSize>1.25</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
