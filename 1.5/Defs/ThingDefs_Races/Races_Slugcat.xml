@@ -59,6 +59,7 @@
             <baseHealthScale>0.55</baseHealthScale>
             <baseHungerRate>0.20</baseHungerRate>
             <maxPreyBodySize>0.30</maxPreyBodySize>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <foodType>OmnivoreAnimal</foodType>
             <leatherDef>Leather_Light</leatherDef>
@@ -238,6 +239,7 @@
             <baseHealthScale>0.50</baseHealthScale>
             <baseHungerRate>0.10</baseHungerRate>
             <maxPreyBodySize>0.30</maxPreyBodySize>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <canBePredatorPrey>false</canBePredatorPrey>
             <foodType>OmnivoreAnimal</foodType>
@@ -399,6 +401,7 @@
             <baseHealthScale>0.60</baseHealthScale>
             <baseHungerRate>0.35</baseHungerRate>
             <maxPreyBodySize>0.50</maxPreyBodySize>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
             <leatherDef>Leather_Light</leatherDef>

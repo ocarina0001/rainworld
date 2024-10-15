@@ -43,6 +43,7 @@
         <race>
             <body>OCARINA_LargeLizardlike</body>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <maxPreyBodySize>2.0</maxPreyBodySize>
             <baseBodySize>1.85</baseBodySize>
@@ -181,6 +182,7 @@
         <race>
             <body>OCARINA_LargeLizardlike</body>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <maxPreyBodySize>2.0</maxPreyBodySize>
             <baseBodySize>1.65</baseBodySize>
@@ -318,6 +320,7 @@
         <race>
             <body>OCARINA_LargeLizardlike</body>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <predator>true</predator>
             <maxPreyBodySize>4.0</maxPreyBodySize>
             <baseBodySize>2.1</baseBodySize>
