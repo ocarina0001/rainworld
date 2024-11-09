@@ -41,7 +41,7 @@
                     <toleranceChemical>OCARINA_RainMushroomChemical</toleranceChemical>
                 </li>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>AlcoholTolerance</hediffDef>
+                    <hediffDef>OCARINA_RainMushroomTolerance</hediffDef>
                     <severity>0.006</severity>
                     <divideByBodySize>true</divideByBodySize>
                     <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
