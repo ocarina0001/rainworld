@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>OCARINA_EggGreenLizardUnfertilized</defName>
+        <label>green lizard egg (unfert.)</label>
+        <description>An unfertilized green lizard egg. It can be eaten raw, but it's much, much better cooked.</description>
+        <graphicData>
+            <drawSize>0.9</drawSize>
+            <color>(228,205,135)</color>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>20.0</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>OCARINA_EggRedLizardUnfertilized</defName>
+        <label>red lizard egg (unfert.)</label>
+        <description>An unfertilized red lizard egg. It can be eaten raw, but it's much, much better cooked.</description>
+        <graphicData>
+            <drawSize>0.9</drawSize>
+            <color>(248,185,135)</color>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>20.0</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>OCARINA_EggPinkLizardUnfertilized</defName>
+        <label>pink lizard egg (unfert.)</label>
+        <description>An unfertilized pink lizard egg. It can be eaten raw, but it's much, much better cooked.</description>
+        <graphicData>
+            <drawSize>0.9</drawSize>
+            <color>(248,205,135)</color>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>20.0</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>OCARINA_EggGreenLizardFertilized</defName>
+        <label>green lizard egg (fert.)</label>
+        <description>A fertilized green lizard egg. If all goes well, it should hatch into a green lizard. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <drawSize>1</drawSize>
+            <color>(235,255,235)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>25.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>OCARINA_GreenLizard</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>OCARINA_EggPinkLizardFertilized</defName>
+        <label>pink lizard egg (fert.)</label>
+        <description>A fertilized pink lizard egg. If all goes well, it should hatch into a pink lizard. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <drawSize>1</drawSize>
+            <color>(255,245,245)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>25.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>OCARINA_PinkLizard</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="EggFertBase">
+        <defName>OCARINA_EggRedLizardFertilized</defName>
+        <label>red lizard egg (fert.)</label>
+        <description>A fertilized red lizard egg. If all goes well, it should hatch into a red lizard. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <drawSize>1</drawSize>
+            <color>(255,235,235)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>30.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>OCARINA_RedLizard</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

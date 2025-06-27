@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="AnimalKindBase" Name="OCARINA_LanternMouseBase" Abstract="True">
+        <alternateGraphics>
+            <!-- Blues -->
+            <li>
+                <color>(204, 255, 255)</color>
+            </li>
+            <li>
+                <color>(205, 242, 254)</color>
+            </li>
+            <li>
+                <color>(204, 235, 255)</color>
+            </li>
+            <li>
+                <color>(204, 221, 255)</color>
+            </li>
+            <li>
+                <color>(204, 210, 254)</color>
+            </li>
+            <!-- Oranges -->
+            <li>
+                <color>(254, 235, 204)</color>
+            </li>
+            <li>
+                <color>(255, 228, 204)</color>
+            </li>
+            <li>
+                <color>(254, 220, 205)</color>
+            </li>
+            <li>
+                <color>(255, 213, 205)</color>
+            </li>
+            <li>
+                <color>(255, 204, 204)</color>
+            </li>
+            <!-- Rainbow -->
+            <li>
+                <color>(255, 204, 204)</color>
+            </li>
+            <li>
+                <color>(245, 254, 205)</color>
+            </li>
+            <li>
+                <color>(205, 255, 226)</color>
+            </li>
+            <li>
+                <color>(204, 224, 254)</color>
+            </li>
+            <li>
+                <color>(244, 204, 255)</color>
+            </li>
+        </alternateGraphics>
+        <alternateGraphicChance>1.0</alternateGraphicChance>
+    </PawnKindDef>
+
+</Defs>
