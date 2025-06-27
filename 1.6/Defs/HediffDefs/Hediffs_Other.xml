@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <HediffDef>
+        <defName>OCARINA_LongLegsHediff</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>berserk</label>
+        <description>Berserk!</description>
+        <defaultLabelColor>(1,0,0)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <comps>
+            <li Class="RainWorld.HediffCompProperties_CauseMentalState">
+                <animalMentalState>Berserk</animalMentalState>
+                <animalMentalStateAlias>Berserk</animalMentalStateAlias>
+                <mtbDaysToCauseMentalState>0.00000001</mtbDaysToCauseMentalState>
+                <humanMentalState>Berserk</humanMentalState>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

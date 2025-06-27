@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="DrugBase">
+        <defName>OCARINA_KarmaFlower</defName>
+        <label>karma flower</label>
+        <description>Karma Flowers, also known as Wheel Flowers, are rare, yellow flowers which can be found growing sporadically and rarely throughout the universe. They can be eaten to cheat death.</description>
+        <descriptionHyperlinks>
+            <HediffDef>OCARINA_KarmaFlowerHediff</HediffDef>
+        </descriptionHyperlinks>
+        <tradeability>Sellable</tradeability>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <tickerType>Rare</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Drug/KarmaFlower/KarmaFlower</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>0.1</Mass>
+            <DeteriorationRate>10</DeteriorationRate>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <baseIngestTicks>80</baseIngestTicks>
+            <chairSearchRadius>4</chairSearchRadius>
+            <preferability>DesperateOnly</preferability>
+            <tasteThought></tasteThought>
+            <foodType>VegetableOrFruit</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>1.0</joy>
+            <nurseable>true</nurseable>
+            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>OCARINA_KarmaFlowerHediff</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>1</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <allowedArchonexusCount>20</allowedArchonexusCount>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>OCARINA_KarmaFlowerHediff</defName>
+        <label>karma protection</label>
+        <description>The karma flower protects this pawn.</description>
+        <hediffClass>RainWorld.Hediff_KarmaFlower</hediffClass>
+        <defaultLabelColor>(210,200,130)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li/>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>OCARINA_KarmaFlowerThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>OCARINA_KarmaFlowerHediff</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>karma protection</label>
+                <description>I'll be okay, the karma flower will protect me, no matter what.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <RecipeDef>
+        <defName>OCARINA_AdministerKarmaFlower</defName>
+        <label>administer karma flower</label>
+        <description>Administer a karma flower.</description>
+        <workerClass>Recipe_AdministerIngestible</workerClass>
+        <jobString>Administering karma flower.</jobString>
+        <targetsBodyPart>false</targetsBodyPart>
+        <anesthetize>false</anesthetize>
+        <workAmount>360</workAmount>
+        <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+        <surgeryOutcomeEffect IsNull="True"/>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>OCARINA_KarmaFlower</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>OCARINA_KarmaFlower</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

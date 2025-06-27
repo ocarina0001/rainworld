@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>OCARINA_RawBlueFruit</defName>
+        <label>blue fruit</label>
+        <description>Blue fruit. Nice to eat and surprisingly filling, even when raw.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/BlueFruit/BlueFruit</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.4</MarketValue>
+            <Mass>0.060</Mass>
+            <Nutrition>0.15</Nutrition>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought />
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>OCARINA_RawBubbleFruit</defName>
+        <label>bubble fruit</label>
+        <description>Bubble fruit. Nice to eat, even when raw.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/BubbleFruit/BubbleFruit</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.07</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought />
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>OCARINA_RawSeedCob</defName>
+        <label>cob seeds</label>
+        <description>Raw cob seeds.</description>
+        <soundInteract>Grain_Drop</soundInteract>
+        <soundDrop>Grain_Drop</soundDrop>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/SeedCob/SeedCob</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

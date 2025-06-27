@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>OCARINA_LanternMouse</defName>
+        <label>lantern mouse</label>
+        <description>Lantern Mice are rodent-like creatures with large eyes. Their backs sport four big dots, two on each side.</description>
+        <statBases>
+            <MoveSpeed>8.0</MoveSpeed>
+            <MarketValue>45</MarketValue>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <Wildness>0.1</Wildness>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>1.6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>1.6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPaws</body>
+            <renderTree>OCARINA_LanternMouse</renderTree>
+            <baseBodySize>0.25</baseBodySize>
+            <baseHungerRate>0.05</baseHungerRate>
+            <baseHealthScale>0.25</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <leatherDef>Leather_Light</leatherDef>
+            <trainability>None</trainability>
+            <nuzzleMtbHours>16</nuzzleMtbHours>
+            <petness>0.90</petness>
+            <mateMtbHours>4</mateMtbHours>
+            <gestationPeriodDays>4</gestationPeriodDays>
+            <soundEating>Rodent_Eat</soundEating>
+            <wildBiomes>
+                <TemperateSwamp>0.06</TemperateSwamp>
+                <TropicalSwamp>0.12</TropicalSwamp>
+                <TropicalRainforest>0.25</TropicalRainforest>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2.2, 1)</li>
+                    <li>(2.8, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>8</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2222</minAge>
+                    <soundWounded>OCARINA_Pawn_LanternMouse_Wounded</soundWounded>
+                    <soundDeath>OCARINA_Pawn_LanternMouse_Death</soundDeath>
+                    <soundCall>OCARINA_Pawn_LanternMouse_Call</soundCall>
+                    <soundAngry>OCARINA_Pawn_LanternMouse_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <headPosPerRotation>
+                <li>(0.0, 0, 0.2)</li>
+                <li>(0.33, 0, 0.03)</li>
+                <li>(0.0, 0, -0.28)</li>
+                <li>(-0.33, 0, 0.03)</li>
+            </headPosPerRotation>
+        </race>
+        <comps>
+            <li Class="RainWorld.CompProperties_GraphicOverlay">
+                <graphicData>
+                    <texPath>Things/Pawn/Animal/LanternMouse/LanternMouseGlow</texPath>
+                    <shaderType>TransparentPostLight</shaderType>
+                    <drawSize>(10,10)</drawSize>
+                    <drawOffset>(0,-1,0)</drawOffset>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+                <drawOnlyAtNight>true</drawOnlyAtNight>
+            </li>
+            <li Class="RainWorld.CompProperties_TextureSwapConditional">
+                <drawBetweenHour>
+                    <hourStart>8</hourStart>
+                    <hourEnd>21</hourEnd>
+                </drawBetweenHour>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>AnimalRare</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="OCARINA_LanternMouseBase">
+        <defName>OCARINA_LanternMouse</defName>
+        <label>lantern mouse</label>
+        <race>OCARINA_LanternMouse</race>
+        <combatPower>10</combatPower>
+        <ecoSystemWeight>0.10</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/LanternMouse/LanternMouse</texPath>
+                    <drawSize>1.0</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Skeletons/LanternMouse/Dessicated_LanternMouse</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/LanternMouse/LanternMouse</texPath>
+                    <drawSize>1.1</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Skeletons/LanternMouse/Dessicated_LanternMouse</texPath>
+                    <drawSize>1.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/LanternMouse/LanternMouse</texPath>
+                    <drawSize>1.25</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Skeletons/LanternMouse/Dessicated_LanternMouse</texPath>
+                    <drawSize>1.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>
