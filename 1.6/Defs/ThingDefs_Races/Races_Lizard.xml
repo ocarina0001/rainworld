@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="OCARINA_RainworldLizardBase">
+        <race>
+            <canCrossBreedWith>
+                <li>OCARINA_GreenLizard</li>
+                <li>OCARINA_RedLizard</li>
+                <li>OCARINA_PinkLizard</li>
+            </canCrossBreedWith>
+        </race>
+    </ThingDef>
+
+    <ThingDef ParentName="OCARINA_RainworldLizardBase">
         <defName>OCARINA_GreenLizard</defName>
         <label>green lizard</label>
         <description>Green lizards are a subspecies of the greater lizard tree. In comparison to other lizards, they're larger and slower which lends to their overall high durability. Green lizards are typically very aggressive, yet prove to be easy to domesticate, rarely fighting against a taming attempt.</description>
@@ -141,7 +151,7 @@
 
 
     <!-- Pink Lizard -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="OCARINA_RainworldLizardBase">
         <defName>OCARINA_PinkLizard</defName>
         <label>pink lizard</label>
         <description>Pink lizards are a subspecies of the greater lizard tree. In comparison to other lizards, they are fairly quick and have a strong bite. Pink lizards are typically aggressive, and this shows in their domesitcation, sometimes fighting back if a taming attempt goes wrong.</description>
@@ -280,7 +290,7 @@
     </PawnKindDef>
 
     <!-- Red Lizard -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="OCARINA_RainworldLizardBase">
         <defName>OCARINA_RedLizard</defName>
         <label>red lizard</label>
         <description>Red lizards are a subspecies of the greater lizard tree. In comparison to other lizards, they are the largest, most aggressive, and deadliest species of all lizards. Be warned, if a taming attempt goes wrong, the red lizard will almost always attack.</description>

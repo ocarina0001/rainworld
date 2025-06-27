@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+    <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="OCARINA_RainworldSlugcatBase">
+        <race>
+            <canCrossBreedWith>
+                <li>OCARINA_SlugcatSurvivor</li>
+                <li>OCARINA_SlugcatMonk</li>
+                <li>OCARINA_SlugcatHunter</li>
+            </canCrossBreedWith>
+        </race>
+    </ThingDef>
+
     <!-- Survivor -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="OCARINA_RainworldSlugcatBase">
         <defName>OCARINA_SlugcatSurvivor</defName>
         <label>slugcat</label>
         <description>The slugcat resembles a hybrid of a slug and a cat. It's a small, nimble mammal known for its adorable appearance and remarkable agility. Despite its size, the slugcat is a resilient survivor, with its elongated body and limbs, it moves gracefully, capable of climbing walls, leaping across gaps, and squeezing through tight spaces. Its keen senses help it detect both predators and prey, making it a skilled hunter in its environment. This slugcat seems keen on surviving.</description>
@@ -182,7 +192,7 @@
     </PawnKindDef>
 
     <!-- Monk -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="OCARINA_RainworldSlugcatBase">
         <defName>OCARINA_SlugcatMonk</defName>
         <label>slugcat</label>
         <description>The slugcat resembles a hybrid of a slug and a cat. It's a small, nimble mammal known for its adorable appearance and remarkable agility. Despite its size, the slugcat is a resilient survivor, with its elongated body and limbs, it moves gracefully, capable of climbing walls, leaping across gaps, and squeezing through tight spaces. Its keen senses help it detect both predators and prey, making it a skilled hunter in its environment. This slugcat seems to be rather calm and collected, almost monk like.</description>
@@ -344,7 +354,7 @@
     </PawnKindDef>
 
     <!-- Hunter -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="OCARINA_RainworldSlugcatBase">
         <defName>OCARINA_SlugcatHunter</defName>
         <label>slugcat</label>
         <description>The slugcat resembles a hybrid of a slug and a cat. It's a small, nimble mammal known for its adorable appearance and remarkable agility. Despite its size, the slugcat is a resilient survivor, with its elongated body and limbs, it moves gracefully, capable of climbing walls, leaping across gaps, and squeezing through tight spaces. Its keen senses help it detect both predators and prey, making it a skilled hunter in its environment. This slugcat is fierce and covered in scars, obviously a hunter.</description>
