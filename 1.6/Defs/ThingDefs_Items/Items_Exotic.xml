@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>OCARINA_ColoredPearls</defName>
+        <label>colored pearl</label>
+        <thingClass>ThingWithComps</thingClass>
+        <description>A tiny colored pearl, acting as a storage medium for data and information that can potentially help with research tasks. The technology behind this invention is no longer known, but certain xenotypes take a liking to them.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/ColoredPearls</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>500</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.01</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <!-- <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags> -->
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Use {0_label}</useLabel>
+                <showUseGizmo>true</showUseGizmo>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>RainWorld.CompUseEffect_GainResearchPoints</compClass>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+</Defs>

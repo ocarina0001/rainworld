@@ -9,6 +9,13 @@
                 <li>OCARINA_SlugcatHunter</li>
             </canCrossBreedWith>
         </race>
+        <comps>
+            <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+                <makeNonFleeingToo>true</makeNonFleeingToo>
+            </li>
+            <li Class="VEF.AnimalBehaviours.CompProperties_NoTamingDecay" />
+            <li Class="RainWorld.CompProperties_EquipWeapon" />
+        </comps>
     </ThingDef>
 
     <!-- Survivor -->
@@ -121,22 +128,6 @@
                 <TropicalRainforest>0.30</TropicalRainforest>
             </wildBiomes>
         </race>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <accuracyTouch>1.00</accuracyTouch>
-                <accuracyShort>0.95</accuracyShort>
-                <accuracyMedium>0.90</accuracyMedium>
-                <accuracyLong>0.65</accuracyLong>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>OCARINA_SpearThrown</defaultProjectile>
-                <warmupTime>1</warmupTime>
-                <burstShotCount>1</burstShotCount>
-                <range>20</range>
-                <label>spear</label>
-                <muzzleFlashScale>0</muzzleFlashScale>
-            </li>
-        </verbs>
         <tradeTags>
             <li>AnimalUncommon</li>
             <li>AnimalPet</li>
@@ -463,22 +454,6 @@
                 <TropicalRainforest>0.25</TropicalRainforest>
             </wildBiomes>
         </race>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <accuracyTouch>1.00</accuracyTouch>
-                <accuracyShort>1.00</accuracyShort>
-                <accuracyMedium>1.00</accuracyMedium>
-                <accuracyLong>0.90</accuracyLong>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>OCARINA_SpearThrown</defaultProjectile>
-                <warmupTime>0.80</warmupTime>
-                <burstShotCount>1</burstShotCount>
-                <range>30</range>
-                <label>spear</label>
-                <muzzleFlashScale>0</muzzleFlashScale>
-            </li>
-        </verbs>
         <tradeTags>
             <li>AnimalUncommon</li>
             <li>AnimalPet</li>

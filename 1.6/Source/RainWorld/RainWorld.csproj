@@ -58,8 +58,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompEquipWeapon.cs" />
+    <Compile Include="CompUseEffect_GainResearchPoints.cs" />
     <Compile Include="DefModExtension_ColorsList.cs" />
+    <Compile Include="JobDriver_AnimalWeaponDrop.cs" />
+    <Compile Include="JobDriver_AnimalWeaponEquip.cs" />
+    <Compile Include="JobDriver_AnimalWeaponShoot.cs" />
+    <Compile Include="Patch_AnimalWeaponGizmos.cs" />
+    <Compile Include="Patch_DrawWeapon.cs" />
     <Compile Include="Patch_Pawn_GeneTracker_CheckForOverrides.cs" />
+    <Compile Include="Patch_Pawn_MeleeVerbs_TryMeleeAttack.cs" />
     <Compile Include="PawnRenderNode_Eyes.cs" />
     <Compile Include="PawnRenderNode_Hair.cs" />
     <Compile Include="PawnRenderNode_LanternMouse.cs" />

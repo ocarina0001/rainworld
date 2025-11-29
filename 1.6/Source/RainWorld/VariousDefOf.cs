@@ -19,5 +19,9 @@ namespace RainWorld
         public static HediffDef OCARINA_KarmaFlowerHediff;
         public static ThingDef OCARINA_KarmaFlower;
         public static ThingDef OCARINA_Plant_KarmaFlower;
+        public static JobDef OCARINA_RainWorldEquipWeapon;
+        public static JobDef OCARINA_RainWorldDropWeapon;
+        public static JobDef OCARINA_RainWorldShootWeapon;
+
     }
 }

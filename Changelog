@@ -3,16 +3,19 @@
 - Added overseers
 - Added neuron flies
 - Added spears (multi-use) & explosive spears (single-use)
-- Slugcats can now use any weapon
-- Removed Slugcat's unique ability to throw spears (use the new spear weapon instead)
 - Added slugcat xenotype (Biotech only)
 - Added blue lizards
+- Added RJW and RNW support
 
 11.0 - 11/??/2025
 - Added scavenger xenotype & scavenger faction (Biotech only)
-- Added pearls
+- Added pearls and colored pearls
+- Slugcats can now use any weapon
+- Slugcats are now draftable
+- Slugcats no longer experience animal training decay
+- Removed Slugcat's unique ability to throw spears
 - Properly added 1.6 patch for A Dog Said... Animal Prosthetics 2 (it was there previously but was never being loaded, oops!)
-- Overall file size reduced about 2.2MB, Languages folder moved to Common root folder (for easier translations)
+- Overall file size reduced about 2.2MB, Languages folder moved to Common root folder (for easier translation support)
 
 10.1 - 6/27/2025
 - All scugs can crossbreed

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <JobDef>
+        <defName>OCARINA_RainWorldEquipWeapon</defName>
+        <driverClass>RainWorld.JobDriver_AnimalWeaponEquip</driverClass>
+        <reportString>equipping TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+    <JobDef>
+        <defName>OCARINA_RainWorldDropWeapon</defName>
+        <driverClass>RainWorld.JobDriver_AnimalWeaponDrop</driverClass>
+        <reportString>dropping weapon.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+    <JobDef>
+        <defName>OCARINA_RainWorldShootWeapon</defName>
+        <driverClass>RainWorld.JobDriver_AnimalWeaponShoot</driverClass>
+        <reportString>firing weapon.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+</Defs>

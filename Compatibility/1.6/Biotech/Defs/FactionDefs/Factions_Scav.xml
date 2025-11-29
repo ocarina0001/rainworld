@@ -15,23 +15,48 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
         </disallowedMemes>
+        <factionIconPath>World/WorldObjects/Expanding/ScavengerFactionIcon_Civil</factionIconPath>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>30</configurationListOrderPriority>
+        <raidLootMaker>OCARINA_ScavengerTribeRaidLootMaker</raidLootMaker>
+        <xenotypeSet>
+            <xenotypeChances>
+                <OCARINA_Scavenger MayRequire="Ludeon.RimWorld.Biotech">999</OCARINA_Scavenger>
+            </xenotypeChances>
+        </xenotypeSet>
+        <caravanTraderKinds>
+            <li>OCARINA_Caravan_Scavenger_BulkGoods</li>
+            <li>OCARINA_Caravan_Scavenger_WarMerchant</li>
+            <li>OCARINA_Caravan_Scavenger_Slaver</li>
+            <li>OCARINA_Caravan_Scavenger_ShamanMerchant</li>
+        </caravanTraderKinds>
     </FactionDef>
 
     <FactionDef ParentName="TribeRoughBase">
         <defName>OCARINA_ScavengerTribeRough</defName>
         <label>fierce scavengers</label>
         <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
-        <factionIconPath>World/WorldObjects/Expanding/VillageRough</factionIconPath>
+        <factionIconPath>World/WorldObjects/Expanding/ScavengerFactionIcon_Rough</factionIconPath>
         <colorSpectrum>
             <li>(0.01, 0.40, 0.10)</li>
             <li>(0.5, 0.90, 0.45)</li>
         </colorSpectrum>
+        <raidLootMaker>OCARINA_ScavengerTribeRaidLootMaker</raidLootMaker>
+        <xenotypeSet>
+            <xenotypeChances>
+                <OCARINA_Scavenger MayRequire="Ludeon.RimWorld.Biotech">999</OCARINA_Scavenger>
+            </xenotypeChances>
+        </xenotypeSet>
+        <caravanTraderKinds>
+            <li>OCARINA_Caravan_Scavenger_BulkGoods</li>
+            <li>OCARINA_Caravan_Scavenger_WarMerchant</li>
+            <li>OCARINA_Caravan_Scavenger_Slaver</li>
+            <li>OCARINA_Caravan_Scavenger_ShamanMerchant</li>
+        </caravanTraderKinds>
     </FactionDef>
 
     <ThingSetMakerDef>
-        <defName>OCARINA_TribeRaidLootMaker</defName>
+        <defName>OCARINA_ScavengerTribeRaidLootMaker</defName>
         <root Class="ThingSetMaker_MarketValue">
             <fixedParams>
                 <filter>
