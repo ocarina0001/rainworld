@@ -16,3 +16,11 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-ma
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.5\Source\RainWorld\obj\Debug\RainWorld.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.5\Source\RainWorld\obj\Debug\RainWorld.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.5\Source\RainWorld\obj\Debug\RainWorld.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Source\RainWorld\bin\Debug\RainWorld.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Source\RainWorld\bin\Debug\RainWorld.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Source\RainWorld\obj\Debug\RainWorld.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Source\RainWorld\obj\Debug\RainWorld.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Source\RainWorld\obj\Debug\RainWorld.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Source\RainWorld\obj\Debug\RainWorld.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Assemblies\RainWorld.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\ocarina-rainworld-main\1.6\Assemblies\RainWorld.pdb

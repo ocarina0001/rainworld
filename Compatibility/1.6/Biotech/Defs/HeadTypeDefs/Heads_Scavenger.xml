@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <HeadTypeDef Name="OCARINA_ScavengerHeadBase" Abstract="True">
+        <randomChosen>false</randomChosen>
+        <requiredGenes>
+            <li>OCARINA_ScavengerGene</li>
+        </requiredGenes>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
+        <defName>OCARINA_Scavenger_Snouted_Male</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Snouted_Male</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
+        <defName>OCARINA_Scavenger_Snouted_Female</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Snouted_Male</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
+        <defName>OCARINA_Scavenger_Ante_Male</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Ante_Male</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
+        <defName>OCARINA_Scavenger_Ante_Female</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Ante_Male</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
+        <defName>OCARINA_Scavenger_Dreamer_Male</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Dreamer_Male</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
+        <defName>OCARINA_Scavenger_Dreamer_Female</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Dreamer_Male</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
+
+</Defs>

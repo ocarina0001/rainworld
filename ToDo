@@ -1,11 +1,14 @@
-Scavenger Major Update:
-- Scavenger Pawns (using HAR or Big and Small)
-- Scavenger faction (consisting of Scav Pawns)
-- Pearls (rare material, light like gold/silver, very pretty, scavs get 10x relations when gifting pearls to them)
+- Iterators (using Biotech's xenotypes, small chance to appear in transport pod crashes, must be supplied with neuron flies OR connected to a can) Iterators are incredibly intelligent, have a higher natural learning speed, but are very fragile and wimpy, most pain is enough to knock them out.
+- Neuron flies spawn very rarely (like 0.0001%) in all biomes. They must either be downed or tamed in order to perform an operation to render them usable. Killing them destroys their potential. Once converted into a stable neuron, it can be used via gizmo on iterators to remove their disabled hediff and bring them back. They are very weak and have almost no HP, making it difficult to obtain one safely outside of taming. Outside of iterators, they can be used by normal pawns as a skilltrainer of a random variety.
+- Cans are late-game structures (10x10) that require a lot of advanced resources to create, including a persona core (?). Very power hungry and generates a lot of heat, increases chances of rain and thunderstorms. Cans can be psycically connected to an Iterator, curing them of the disabled hediff. Downside to Cans unlike nueron flies is that if a Can is destroyed it will sever all connections to its Iterator and disable them again. When a can is temporarily disabled, it will also temporarily disable its iterator.
 - Blue lizards
-- Monks planting a karma flower on death (1% chance)
-- Make DLL and BLL use the new hostility XML node rather than berserk
-- Fix lantern mice using wrong textures
+- Monks plant a karma flower on death (1% chance)
+- Overseers (rare spawns that happen anywhere, can dodge projectiles and attacks 99% chance, capable of teleporting. Drops Overseer Eye, can be sold for the same value as a pearl and can be implanted into pawns, providing them increased research speed and dodge chances. If tamed, they can be trained to use an ability to increase research speed on all colony pawns)
+- add rjw support
+
+Scavenger Major Update:
+- Pearls (rare material, light like gold/silver, very pretty, scavs get 10x relations when gifting pearls to them)
+scavenger faction icon
 
 Undetermined Minor Update:
 - Slugcats can use a variety of weapons

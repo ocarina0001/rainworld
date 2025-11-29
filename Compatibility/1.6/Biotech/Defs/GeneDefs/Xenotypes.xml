@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <XenotypeDef Name="OCARINA_ScavengerXenotypeBase" Abstract="True">
+        <displayPriority>999</displayPriority>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="OCARINA_ScavengerXenotypeBase">
+        <defName>OCARINA_Scavenger</defName>
+        <label>scavenger</label>
+        <description>Scavengers are tribal creatures that are typically seen in groups. They are social creatures that use gestures and body language to communicate with one another.</description>
+        <descriptionShort>Scavengers are tribal creatures that are typically seen in groups. They are social creatures that use gestures and body language to communicate with one another.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/OCARINA_ScavengerIcon</iconPath>
+        <genes>
+            <li>OCARINA_ScavengerGene</li>
+            <li>OCARINA_NoHeadbone</li>
+            <li>OCARINA_NoSecondaryHeadbone</li>
+            <li>OCARINA_SnoutedHeadbone</li>
+            <li>OCARINA_SnoutedSecondaryHeadbone</li>
+            <li>OCARINA_SnoutedEyes</li>
+            <li>OCARINA_DreamerHeadbone</li>
+            <li>OCARINA_DreamerSecondaryHeadbone</li>
+            <li>OCARINA_DreamerEyes</li>
+            <li>OCARINA_AnteHeadbone</li>
+            <li>OCARINA_AnteSecondaryHeadbone</li>
+            <li>OCARINA_AnteEyes</li>
+            <li>OCARINA_DearHeadbone</li>
+            <li>OCARINA_DearSecondaryHeadbone</li>
+            <li>OCARINA_DearEyes</li>
+            <li>OCARINA_HyperdreamerHeadbone</li>
+            <li>OCARINA_HyperdreamerSecondaryHeadbone</li>
+            <li>OCARINA_HyperdreamerEyes</li>
+            <li>OCARINA_SpiderHeadbone</li>
+            <li>OCARINA_SpiderSecondaryHeadbone</li>
+            <li>OCARINA_SpiderEyes</li>
+            <li>OCARINA_SquidHeadbone</li>
+            <li>OCARINA_SquidSecondaryHeadbone</li>
+            <li>OCARINA_SquidEyes</li>
+            <li>Hair_BaldOnly</li>
+        </genes>
+    </XenotypeDef>
+
+</Defs>

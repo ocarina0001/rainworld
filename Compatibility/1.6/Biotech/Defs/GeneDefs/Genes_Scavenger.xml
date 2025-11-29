@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <GeneDef Name="OCARINA_ScavengerGeneBase" Abstract="True">
+        <biostatCpx>0</biostatCpx>
+        <displayCategory>OCARINA_MiscellaneousScavenger</displayCategory>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <canGenerateInGeneSet>true</canGenerateInGeneSet>
+        <iconColor>(0.75,0.75,0.75)</iconColor>
+        <exclusionTags>
+            <li>Skin</li>
+            <li>SkinColorOverride</li>
+            <li>Fur</li>
+            <li>BeardStyle</li>
+            <li>Bodies</li>
+            <li>Body</li>
+        </exclusionTags>
+        <hairTagFilter>
+            <whitelist>false</whitelist>
+            <tags>
+                <li>Shaved</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <skinIsHairColor>true</skinIsHairColor>
+        <tattoosVisible>false</tattoosVisible>
+    </GeneDef>
+
+    <GeneDef Name="OCARINA_GeneBase" Abstract="True">
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>110</displayOrderInCategory>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <randomChosen>true</randomChosen>
+        <selectionWeight>1</selectionWeight>
+    </GeneDef>
+
+    <GeneDef Name="OCARINA_ScavengerHeadboneBase" ParentName="OCARINA_GeneBase" Abstract="True">
+        <exclusionTags>
+            <li>Headbone</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Name="OCARINA_ScavengerSecondaryHeadboneBase" ParentName="OCARINA_GeneBase" Abstract="True">
+        <exclusionTags>
+            <li>SecondaryHeadbone</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Name="OCARINA_ScavengerEyesBase" ParentName="OCARINA_GeneBase" Abstract="True">
+        <exclusionTags>
+            <li>Eyes</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerGeneBase">
+        <defName>OCARINA_ScavengerGene</defName>
+        <label>scavenger form</label>
+        <description>Carriers of this gene take grow prickly fur all over their body. This sequence is particularly muddy, holding all possible head types, fur colors, and eye colors for the carrier, the dominant of each being chosen randomly at birth. Matching horns and eyes however, have been isolated as their own unique genes.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <forcedHeadTypes>
+            <li>OCARINA_Scavenger_Snouted_Male</li>
+            <li>OCARINA_Scavenger_Snouted_Female</li>
+            <li>OCARINA_Scavenger_Ante_Male</li>
+            <li>OCARINA_Scavenger_Ante_Female</li>
+            <li>OCARINA_Scavenger_Dreamer_Male</li>
+            <li>OCARINA_Scavenger_Dreamer_Female</li>
+        </forcedHeadTypes>
+        <fur>OCARINA_ScavengerFur</fur>
+        <renderNodeProperties>
+            <li>
+                <debugLabel>Fur</debugLabel>
+                <nodeClass>PawnRenderNode_Fur</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+                <baseLayer>5</baseLayer>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <colorType>Hair</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(50, 38, 48)</li>
+                    <li>(47, 36, 44)</li>
+                    <li>(132, 72, 26)</li>
+                    <li>(48, 15, 22)</li>
+                    <li>(157, 61, 33)</li>
+                    <li>(30, 19, 31)</li>
+                    <li>(81, 62, 68)</li>
+                    <li>(70, 60, 71)</li>
+                    <li>(65, 40, 25)</li>
+                    <li>(96, 44, 25)</li>
+                    <li>(181, 154, 156)</li>
+                    <li>(55, 47, 53)</li>
+                    <li>(251, 199, 147)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_NoHeadbone</defName>
+        <label>no horns</label>
+        <description>Carriers of this gene have no horns, unfortunate.</description>
+        <iconPath>UI/Icons/Genes/NoHorns</iconPath>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_NoSecondaryHeadbone</defName>
+        <label>no secondary horns</label>
+        <description>Carriers of this gene have no secondary horns.</description>
+        <iconPath>UI/Icons/Genes/NoSecondaryHorns</iconPath>
+    </GeneDef>
+
+    <!-- SNOUTED -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_SnoutedHeadbone</defName>
+        <label>snouted horns</label>
+        <description>Carriers of this gene have "snouted" horns.</description>
+        <iconPath>UI/Icons/Genes/SnoutedHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Snouted_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <ComfyTemperatureMin>-4</ComfyTemperatureMin>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_SnoutedSecondaryHeadbone</defName>
+        <label>snouted secondary horns</label>
+        <description>Carriers of this gene have secondary "snouted" horns.</description>
+        <iconPath>UI/Icons/Genes/SnoutedSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Snouted_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <ComfyTemperatureMin>-4</ComfyTemperatureMin>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_SnoutedEyes</defName>
+        <label>snouted eyes</label>
+        <description>Carriers of this gene have "snouted" eyes.</description>
+        <iconPath>UI/Icons/Genes/SnoutedEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Snouted_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <ComfyTemperatureMin>-4</ComfyTemperatureMin>
+        </statOffsets>
+    </GeneDef>
+
+    <!-- ANTE -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_AnteHeadbone</defName>
+        <label>ante horns</label>
+        <description>Carriers of this gene have "ante" horns.</description>
+        <iconPath>UI/Icons/Genes/AnteHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Ante_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <MeleeCooldownFactor>0.85</MeleeCooldownFactor>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_AnteSecondaryHeadbone</defName>
+        <label>ante secondary horns</label>
+        <description>Carriers of this gene have secondary "ante" horns.</description>
+        <iconPath>UI/Icons/Genes/AnteSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Ante_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <MeleeCooldownFactor>0.85</MeleeCooldownFactor>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_AnteEyes</defName>
+        <label>ante eyes</label>
+        <description>Carriers of this gene have "ante" eyes.</description>
+        <iconPath>UI/Icons/Genes/AnteEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Ante_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <MeleeCooldownFactor>0.85</MeleeCooldownFactor>
+        </statOffsets>
+    </GeneDef>
+
+    <!-- DREAMER -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_DreamerHeadbone</defName>
+        <label>dreamer horns</label>
+        <description>Carriers of this gene have "dreamer" horns.</description>
+        <iconPath>UI/Icons/Genes/DreamerHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Dreamer_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <PsychicSensitivity>0.2</PsychicSensitivity>
+            <MeditationFocusGain>0.15</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_DreamerSecondaryHeadbone</defName>
+        <label>dreamer secondary horns</label>
+        <description>Carriers of this gene have secondary "dreamer" horns.</description>
+        <iconPath>UI/Icons/Genes/DreamerSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Dreamer_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <PsychicSensitivity>0.2</PsychicSensitivity>
+            <MeditationFocusGain>0.15</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_DreamerEyes</defName>
+        <label>dreamer eyes</label>
+        <description>Carriers of this gene have "dreamer" eyes.</description>
+        <iconPath>UI/Icons/Genes/DreamerEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Dreamer_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <PsychicSensitivity>0.2</PsychicSensitivity>
+            <MeditationFocusGain>0.15</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+        </statOffsets>
+    </GeneDef>
+
+    <!-- DEAR -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_DearHeadbone</defName>
+        <label>dear horns</label>
+        <description>Carriers of this gene have "dear" horns.</description>
+        <iconPath>UI/Icons/Genes/DearHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Dear_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <MoveSpeed>0.15</MoveSpeed>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_DearSecondaryHeadbone</defName>
+        <label>dear secondary horns</label>
+        <description>Carriers of this gene have secondary "dear" horns.</description>
+        <iconPath>UI/Icons/Genes/DearSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Dear_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <MoveSpeed>0.15</MoveSpeed>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_DearEyes</defName>
+        <label>dear eyes</label>
+        <description>Carriers of this gene have "dear" eyes.</description>
+        <iconPath>UI/Icons/Genes/DearEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Dear_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <MoveSpeed>0.15</MoveSpeed>
+        </statOffsets>
+    </GeneDef>
+
+    <!-- HYPERDREAMER -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_HyperdreamerHeadbone</defName>
+        <label>hyperdreamer horns</label>
+        <description>Carriers of this gene have "hyperdreamer" horns.</description>
+        <iconPath>UI/Icons/Genes/HyperdreamerHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Hyperdreamer_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_HyperdreamerSecondaryHeadbone</defName>
+        <label>hyperdreamer secondary horns</label>
+        <description>Carriers of this gene have secondary "hyperdreamer" horns.</description>
+        <iconPath>UI/Icons/Genes/HyperdreamerSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Hyperdreamer_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_HyperdreamerEyes</defName>
+        <label>hyperdreamer eyes</label>
+        <description>Carriers of this gene have "hyperdreamer" eyes.</description>
+        <iconPath>UI/Icons/Genes/HyperdreamerEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Hyperdreamer_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </statOffsets>
+    </GeneDef>
+
+    <!-- SPIDER -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_SpiderHeadbone</defName>
+        <label>spider horns</label>
+        <description>Carriers of this gene have "spider" horns.</description>
+        <iconPath>UI/Icons/Genes/SpiderHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Spider_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_SpiderSecondaryHeadbone</defName>
+        <label>spider secondary horns</label>
+        <description>Carriers of this gene have secondary "spider" horns.</description>
+        <iconPath>UI/Icons/Genes/SpiderSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Spider_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_SpiderEyes</defName>
+        <label>spider eyes</label>
+        <description>Carriers of this gene have "spider" eyes.</description>
+        <iconPath>UI/Icons/Genes/SpiderEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Spider_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+        </statOffsets>
+    </GeneDef>
+
+    <!-- SQUID -->
+    <GeneDef ParentName="OCARINA_ScavengerHeadboneBase">
+        <defName>OCARINA_SquidHeadbone</defName>
+        <label>squid horns</label>
+        <description>Carriers of this gene have "squid" horns.</description>
+        <iconPath>UI/Icons/Genes/SquidHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Squid_PrimaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerSecondaryHeadboneBase">
+        <defName>OCARINA_SquidSecondaryHeadbone</defName>
+        <label>squid secondary horns</label>
+        <description>Carriers of this gene have secondary "squid" horns.</description>
+        <iconPath>UI/Icons/Genes/SquidSecondaryHorns</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Headbones/Scavenger_Squid_SecondaryHorns</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <statOffsets>
+            <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_ScavengerEyesBase">
+        <defName>OCARINA_SquidEyes</defName>
+        <label>squid eyes</label>
+        <description>Carriers of this gene have "squid" eyes.</description>
+        <iconPath>UI/Icons/Genes/SquidEyes</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>RainWorld.PawnRenderNode_Eyes</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/Scavenger_Squid_Eyes</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <shaderTypeDef>Cutout</shaderTypeDef>
+                <colorType>Custom</colorType>
+                <drawData>
+                    <defaultData>
+                        <layer>60</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>-999</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_ColorsList">
+                <colorStrings>
+                    <li>(242, 91, 1)</li>
+                    <li>(15, 130, 159)</li>
+                    <li>(231, 204, 4)</li>
+                    <li>(40, 0, 255)</li>
+                    <li>(221, 121, 91)</li>
+                    <li>(245, 248, 163)</li>
+                    <li>(242, 190, 69)</li>
+                    <li>(58, 106, 140)</li>
+                    <li>(252, 213, 1)</li>
+                    <li>(204, 113, 7)</li>
+                    <li>(101, 75, 59)</li>
+                    <li>(11, 72, 175)</li>
+                    <li>(71, 46, 4)</li>
+                </colorStrings>
+            </li>
+        </modExtensions>
+        <statOffsets>
+            <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+    </GeneDef>
+
+</Defs>

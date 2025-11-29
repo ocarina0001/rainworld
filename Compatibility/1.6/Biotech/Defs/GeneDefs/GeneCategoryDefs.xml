@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <GeneCategoryDef>
+        <defName>OCARINA_MiscellaneousScavenger</defName>
+        <label>miscellaneous - scavenger</label>
+        <displayPriorityInXenotype>270.01</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+
+</Defs>

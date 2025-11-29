@@ -1,3 +1,33 @@
+??.?? - ??/??/????
+- Added iterator xenotype, iterator faction & mini-cans (Biotech only)
+- Added overseers
+- Added neuron flies
+- Added spears (multi-use) & explosive spears (single-use)
+- Slugcats can now use any weapon
+- Removed Slugcat's unique ability to throw spears (use the new spear weapon instead)
+- Added slugcat xenotype (Biotech only)
+- Added blue lizards
+
+11.0 - 11/??/2025
+- Added scavenger xenotype & scavenger faction (Biotech only)
+- Added pearls
+- Properly added 1.6 patch for A Dog Said... Animal Prosthetics 2 (it was there previously but was never being loaded, oops!)
+- Overall file size reduced about 2.2MB, Languages folder moved to Common root folder (for easier translations)
+
+10.1 - 6/27/2025
+- All scugs can crossbreed
+- All lizards can crossbreed
+
+10.0 - 6/26/2025
+- Updated to 1.6
+- UI icons for lizards have been fixed (thanks to 1.6)
+- Lantern mice now display the correct textures during the correct time of day
+- Lantern mice have new sounds
+- Increased Hunter wildness from 0.1 to 0.15
+- Increased Survivor wildness from 0 to 0.05
+- Modified all lizard egg colors
+- Added unfertilized versions of lizard eggs
+
 9.1 - 11/6/2024
 - The mushrooms now give the proper tolerance hediff instead of alochol (thanks Florence!)
 

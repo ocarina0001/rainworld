@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <FactionDef ParentName="TribeBase">
+        <defName>OCARINA_ScavengerTribeCivil</defName>
+        <label>civil scavengers</label>
+        <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+        <colorSpectrum>
+            <li>(0.80, 0.70, 0.30)</li>
+            <li>(0.90, 0.60, 0.05)</li>
+        </colorSpectrum>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        </disallowedMemes>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>30</configurationListOrderPriority>
+    </FactionDef>
+
+    <FactionDef ParentName="TribeRoughBase">
+        <defName>OCARINA_ScavengerTribeRough</defName>
+        <label>fierce scavengers</label>
+        <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
+        <factionIconPath>World/WorldObjects/Expanding/VillageRough</factionIconPath>
+        <colorSpectrum>
+            <li>(0.01, 0.40, 0.10)</li>
+            <li>(0.5, 0.90, 0.45)</li>
+        </colorSpectrum>
+    </FactionDef>
+
+    <ThingSetMakerDef>
+        <defName>OCARINA_TribeRaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>OCARINA_Pearls</li>
+                        <li>Jade</li>
+                        <li>Gold</li>
+                        <li>MedicineHerbal</li>
+                        <li>Pemmican</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+</Defs>
