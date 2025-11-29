@@ -22,11 +22,11 @@
         <thingCategories>
             <li>ItemsMisc</li>
         </thingCategories>
-        <tradeability>Sellable</tradeability>
+        <tradeability>All</tradeability>
         <techLevel>Ultra</techLevel>
-        <!-- <tradeTags>
+        <tradeTags>
             <li>ExoticMisc</li>
-        </tradeTags> -->
+        </tradeTags>
         <comps>
             <li Class="CompProperties_Usable">
                 <useJob>UseItem</useJob>
