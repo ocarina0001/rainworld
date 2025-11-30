@@ -36,6 +36,11 @@
             <li>OCARINA_SquidHeadbone</li>
             <li>OCARINA_SquidSecondaryHeadbone</li>
             <li>OCARINA_SquidEyes</li>
+            <li>MoveSpeed_Quick</li>
+            <li>ToxResist_Partial</li>
+            <li>Pain_Reduced</li>
+            <li>StrongStomach</li>
+            <li>RobustDigestion</li>
             <li>Hair_BaldOnly</li>
         </genes>
     </XenotypeDef>
