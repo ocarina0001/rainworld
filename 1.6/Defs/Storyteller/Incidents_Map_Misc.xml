@@ -9,7 +9,7 @@
             <li>Map_PlayerHome</li>
         </targetTags>
         <workerClass>RainWorld.IncidentWorker_LongLegsEvent</workerClass>
-        <baseChance>0.1</baseChance>
+        <baseChance>0.05</baseChance>
         <minRefireDays>30</minRefireDays>
     </IncidentDef>
 
@@ -21,7 +21,7 @@
             <li>Map_PlayerHome</li>
         </targetTags>
         <workerClass>RainWorld.IncidentWorker_KarmaFlower</workerClass>
-        <baseChance>0.3</baseChance>
+        <baseChance>0.1</baseChance>
         <letterLabel>Karma flower sprout</letterLabel>
         <letterText>A single karma flower has sprouted nearby. Karma flowers can allow those who consume it to cheat death one time.\n\nBe quick to protect it if you intend to use it, animals may eat it before it's fully grown. Once harvested, the flower may quickly deteriorate if not stored correctly, as well as only having 24 hours before it withers away.</letterText>
         <letterDef>PositiveEvent</letterDef>
