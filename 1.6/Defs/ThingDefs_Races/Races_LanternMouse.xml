@@ -71,6 +71,7 @@
                 <TemperateSwamp>0.06</TemperateSwamp>
                 <TropicalSwamp>0.12</TropicalSwamp>
                 <TropicalRainforest>0.25</TropicalRainforest>
+                <Glowforest MayRequire="Ludeon.RimWorld.Odyssey">0.2</Glowforest>
             </wildBiomes>
             <litterSizeCurve>
                 <points>
