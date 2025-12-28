@@ -17,6 +17,19 @@
 - Added spears (multi-use) & explosive spears (single-use)
 - Reduced chance of karma flower event happening
 
+11.2 - 12/28/2025
+- Scavenger genes updated:
+    - Removed "tox resistance"
+    - Added "cold weakness"
+    - Added "slow study"
+    - Added "awful mining"
+    - Added "poor intellectual"
+    - Added "poor cooking"
+The reasoning behind these changes is to zero out the metabolic efficiency on scavengers, but also to reinforce the scavenger's role as a pawn that fits perfectly into early-game tribal / medieval struggles
+
+11.1 - 12/6/2025
+- Scavenger genes are now inheritable, this *may* only apply to newly scavs.
+
 11.0 - 11/29/2025
 - Added scavenger xenotype & scavenger faction (Biotech only)
 - Added pearls and colored pearls

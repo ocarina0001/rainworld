@@ -3,6 +3,7 @@
 
     <XenotypeDef Name="OCARINA_ScavengerXenotypeBase" Abstract="True">
         <displayPriority>999</displayPriority>
+        <inheritable>true</inheritable>
     </XenotypeDef>
 
     <XenotypeDef ParentName="OCARINA_ScavengerXenotypeBase">
@@ -11,6 +12,7 @@
         <description>Scavengers are tribal creatures that are typically seen in groups. They are social creatures that use gestures and body language to communicate with one another.</description>
         <descriptionShort>Scavengers are tribal creatures that are typically seen in groups. They are social creatures that use gestures and body language to communicate with one another.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/OCARINA_ScavengerIcon</iconPath>
+        <inheritable>true</inheritable>
         <genes>
             <li>OCARINA_ScavengerGene</li>
             <li>OCARINA_NoHeadbone</li>
@@ -37,11 +39,15 @@
             <li>OCARINA_SquidSecondaryHeadbone</li>
             <li>OCARINA_SquidEyes</li>
             <li>MoveSpeed_Quick</li>
-            <li>ToxResist_Partial</li>
             <li>Pain_Reduced</li>
             <li>StrongStomach</li>
             <li>RobustDigestion</li>
             <li>Hair_BaldOnly</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>AptitudeTerrible_Mining</li>
+            <li>AptitudePoor_Cooking</li>
+            <li>AptitudePoor_Intellectual</li>
+            <li>Learning_Slow</li>
         </genes>
     </XenotypeDef>
 
