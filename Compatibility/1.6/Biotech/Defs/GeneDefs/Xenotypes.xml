@@ -39,11 +39,15 @@
             <li>OCARINA_SquidSecondaryHeadbone</li>
             <li>OCARINA_SquidEyes</li>
             <li>MoveSpeed_Quick</li>
-            <li>ToxResist_Partial</li>
             <li>Pain_Reduced</li>
             <li>StrongStomach</li>
             <li>RobustDigestion</li>
             <li>Hair_BaldOnly</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>AptitudeTerrible_Mining</li>
+            <li>AptitudePoor_Cooking</li>
+            <li>AptitudePoor_Intellectual</li>
+            <li>Learning_Slow</li>
         </genes>
     </XenotypeDef>
 
