@@ -99,23 +99,16 @@ namespace RainWorld
             if (pawn.genes?.Xenotype != null)
             {
                 string xenotypeName = pawn.genes.Xenotype.defName;
-                if (xenotypeName != null && (xenotypeName.Contains("Scavenger") || xenotypeName.Contains("OCARINA_Scavenger")))
+                if (xenotypeName != null && xenotypeName.Contains("OCARINA_Scavenger"))
                     return true;
             }
             if (pawn.genes?.GenesListForReading != null)
             {
                 foreach (var gene in pawn.genes.GenesListForReading)
                 {
-                    if (gene?.def?.defName?.Contains("OCARINA_Scavenger") == true)
+                    if (gene?.def?.defName?.Contains("OCARINA_ScavengerGene") == true)
                         return true;
                 }
-            }
-            if (pawn.Faction != null)
-            {
-                string factionName = pawn.Faction.def?.defName;
-                if (factionName != null && 
-                    (factionName.Contains("Scavenger") || factionName.Contains("OCARINA")))
-                    return true;
             }
             return false;
         }
