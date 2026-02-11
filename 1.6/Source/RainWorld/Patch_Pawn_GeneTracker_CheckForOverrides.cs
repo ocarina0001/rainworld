@@ -13,6 +13,7 @@ namespace RainWorld
         {
             try
             {
+                if (!IsScavengerRelated(__instance?.pawn)) return true;
                 List<Gene> genes = new List<Gene>(__instance.GenesListForReading);
                 if (genes == null || genes.Count == 0)
                 {
@@ -90,6 +91,33 @@ namespace RainWorld
                 Log.Error("RAINWORLD: exception in CheckForOverrides prefix: " + e);
                 return true;
             }
+        }
+        
+        private static bool IsScavengerRelated(Pawn pawn)
+        {
+            if (pawn == null) return false;
+            if (pawn.genes?.Xenotype != null)
+            {
+                string xenotypeName = pawn.genes.Xenotype.defName;
+                if (xenotypeName != null && (xenotypeName.Contains("Scavenger") || xenotypeName.Contains("OCARINA_Scavenger")))
+                    return true;
+            }
+            if (pawn.genes?.GenesListForReading != null)
+            {
+                foreach (var gene in pawn.genes.GenesListForReading)
+                {
+                    if (gene?.def?.defName?.Contains("OCARINA_Scavenger") == true)
+                        return true;
+                }
+            }
+            if (pawn.Faction != null)
+            {
+                string factionName = pawn.Faction.def?.defName;
+                if (factionName != null && 
+                    (factionName.Contains("Scavenger") || factionName.Contains("OCARINA")))
+                    return true;
+            }
+            return false;
         }
     }
 }
