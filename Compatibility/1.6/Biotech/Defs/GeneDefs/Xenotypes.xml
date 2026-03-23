@@ -43,7 +43,7 @@
             <li>StrongStomach</li>
             <li>RobustDigestion</li>
             <li>Hair_BaldOnly</li>
-            <li>MinTemp_SmallIncrease</li>
+            <li>MaxTemp_SmallDecrease</li>
             <li>AptitudeTerrible_Mining</li>
             <li>AptitudePoor_Cooking</li>
             <li>AptitudePoor_Intellectual</li>
