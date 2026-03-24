@@ -8,13 +8,15 @@
 - Added RJW and RNW support
 
 12.0 - 3/XX/2026
-- Added artificer
-- Added rivulet
+- Added artificer (full explosion immunity, explosive jumping, mauling, concussion blast, explosive crafting)
+- Added rivulet (slide, rain summon)
 - Added color variants to all slugcats, prominently Survivor
 - Added slugcat sounds
 - Added scavenger leather
+- Added unique slugcat leathers to all slugcats
+- Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
 - Changed scavenger's cold weakness to a heat weakness
-- Slightly improved shading on all slugcat textures
+- Slightly improved shading and coloring on all slugcat textures
 
 11.3 - 2/10/2026
 - Fixed bug relating to yttakin furs
