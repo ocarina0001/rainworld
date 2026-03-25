@@ -80,7 +80,7 @@
             <packAnimal>true</packAnimal>
             <predator>true</predator>
             <foodType>OmnivoreAnimal</foodType>
-            <leatherDef>Leather_Light</leatherDef>
+            <leatherDef>OCARINA_Leather_Slugcat</leatherDef>
             <petness>1</petness>
             <trainability>Advanced</trainability>
             <nuzzleMtbHours>12</nuzzleMtbHours>
@@ -132,6 +132,11 @@
             <li>AnimalUncommon</li>
             <li>AnimalPet</li>
         </tradeTags>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_LeatherColor">
+                <color>(255,255,255)</color>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
@@ -292,7 +297,7 @@
             <predator>true</predator>
             <canBePredatorPrey>false</canBePredatorPrey>
             <foodType>OmnivoreAnimal</foodType>
-            <leatherDef>Leather_Light</leatherDef>
+            <leatherDef>OCARINA_Leather_Slugcat</leatherDef>
             <petness>1</petness>
             <trainability>Advanced</trainability>
             <nuzzleMtbHours>6</nuzzleMtbHours>
@@ -344,6 +349,11 @@
             <li>AnimalUncommon</li>
             <li>AnimalPet</li>
         </tradeTags>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_LeatherColor">
+                <color>(255,255,115)</color>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
@@ -464,7 +474,7 @@
             <packAnimal>true</packAnimal>
             <predator>true</predator>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <leatherDef>Leather_Light</leatherDef>
+            <leatherDef>OCARINA_Leather_Slugcat</leatherDef>
             <petness>1</petness>
             <trainability>Advanced</trainability>
             <nuzzleMtbHours>48</nuzzleMtbHours>
@@ -516,6 +526,11 @@
             <li>AnimalUncommon</li>
             <li>AnimalPet</li>
         </tradeTags>
+        <modExtensions>
+            <li Class="RainWorld.DefModExtension_LeatherColor">
+                <color>(255,115,115)</color>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">

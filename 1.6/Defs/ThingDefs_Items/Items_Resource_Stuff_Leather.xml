@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- SLUGCAT LEATHERS -->
+    <ThingDef ParentName="LeatherBase">
+        <defName>OCARINA_Leather_Slugcat</defName>
+        <label>slugcat leather</label>
+        <description>Lightweight, thin leather. Harvested from some various slugcat. Not as protective as thicker leathers, but thicker than what you'd find on squirrels. The color of this leather can vary based on the type of slugcat it was harvested from.</description>
+        <graphicData>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.2</MarketValue>
+            <StuffPower_Armor_Sharp>0.56</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.20</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>13</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(255,255,255)</color>
+            <commonality>0.005</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+            </statFactors>
+        </stuffProps>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>OCARINA_Leather_Lizard</defName>
+        <label>lizardskin</label>
+        <description>The dark, tanned, and lifeless skin of a cold-blooded lizard. Lizardskin is reasonably tough, but does not insulate well at all.</description>
+        <statBases>
+            <MarketValue>2.4</MarketValue>
+            <StuffPower_Armor_Sharp>0.83</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>13</StuffPower_Insulation_Heat>
+        </statBases>
+        <graphicData>
+            <color>(30,30,30)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(30,30,30)</color>
+            <commonality>0.005</commonality>
+            <statFactors>
+                <MaxHitPoints>1.35</MaxHitPoints>
+                <Beauty>1.3</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+</Defs>
