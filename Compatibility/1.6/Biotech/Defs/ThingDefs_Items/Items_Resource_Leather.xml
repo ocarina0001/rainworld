@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>OCARINA_Leather_Scavenger</defName>
+        <label>scavenger leather</label>
+        <description>Tanned, dried, scraped scavenger skin. Scavengers find this material horrifying, while baseliners and other xenotypes regard it as just another leather. Comparatively to human leather, it's a bit tougher and is more capable of insulating from the cold, thanks to the fur.</description>
+        <graphicData>
+            <color>(50, 38, 48)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5.2</MarketValue>
+            <StuffPower_Armor_Sharp>0.69</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(50, 38, 48)</color>
+            <commonality>0.001</commonality>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>
