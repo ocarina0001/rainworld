@@ -20,12 +20,12 @@ namespace RainWorld
             private static void Postfix(ref IEnumerable<Gizmo> __result, Pawn __instance)
             {
                 if (__result == null) return;
-                var list = __result.ToList();
                 if (__instance.Faction != null && __instance.Faction == Faction.OfPlayer && __instance.RaceProps.Animal)
                 {
                     var c = __instance.TryGetComp<CompEquipWeapon>();
                     if (c != null)
                     {
+                        var list = __result.ToList();
                         if (c.cachedWeapon != null)
                         {
                             Texture2D tex = c.cachedWeapon.def.graphicData == null ? ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame") : ContentFinder<Texture2D>.Get(c.cachedWeapon.def.graphicData.texPath);
@@ -69,9 +69,9 @@ namespace RainWorld
                             };
                             list.Add(cmd);
                         }
+                        __result = list;
                     }
                 }
-                __result = list;
             }
         }
     }
