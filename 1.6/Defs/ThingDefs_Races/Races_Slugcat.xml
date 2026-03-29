@@ -700,7 +700,6 @@
                 <TropicalRainforest>0.04</TropicalRainforest>
             </wildBiomes>
             <specialTrainables>
-                <li MayRequire="Ludeon.Rimworld.Odyssey">ThrumboRoar</li>
                 <li>OCARINA_ArtificerExplosiveJump</li>
             </specialTrainables>
         </race>
@@ -727,6 +726,9 @@
         <race>OCARINA_SlugcatArtificer</race>
         <combatPower>80</combatPower>
         <ecoSystemWeight>1.7</ecoSystemWeight>
+        <abilities>
+            <li>OCARINA_ArtificerExplosiveJump</li>
+        </abilities>
         <alternateGraphicChance>0.5</alternateGraphicChance>
         <alternateGraphics>
             <li>

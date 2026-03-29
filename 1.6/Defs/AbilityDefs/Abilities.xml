@@ -28,7 +28,7 @@
         <jobDef>CastJump</jobDef>
         <comps>
             <li Class="RainWorld.CompProperties_AbilityExplosiveJump">
-                <radiusPerDistance>0.6</radiusPerDistance>
+                <radiusPerDistance>0.2</radiusPerDistance>
             </li>
         </comps>
     </AbilityDef>

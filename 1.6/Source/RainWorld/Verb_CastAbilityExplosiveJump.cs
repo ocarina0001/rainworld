@@ -20,15 +20,16 @@ namespace RainWorld
 
         protected override bool TryCastShot()
         {
+            Map map = CasterPawn.Map;
             IntVec3 startPos = CasterPawn.Position;
             LocalTargetInfo target = currentTarget;
             bool jumpStarted = base.TryCastShot();
-            if (jumpStarted)
+            if (jumpStarted && map != null)
             {
                 float distance = startPos.DistanceTo(target.Cell);
                 float radius = distance * ExplosionRadiusPerDistance;
                 radius = Mathf.Max(0.5f, radius);
-                GenExplosion.DoExplosion(startPos, CasterPawn.Map, radius, DamageDefOf.Bomb, CasterPawn);
+                GenExplosion.DoExplosion(startPos, map, radius, DamageDefOf.Bomb, CasterPawn);
             }
             return jumpStarted;
         }
@@ -45,6 +46,6 @@ namespace RainWorld
 
     public class CompAbility_ExplosiveJump : CompAbilityEffect
     {
-        public CompProperties_AbilityExplosiveJump Props => (CompProperties_AbilityExplosiveJump)props;
+        public new CompProperties_AbilityExplosiveJump Props => (CompProperties_AbilityExplosiveJump)props;
     }
 }
