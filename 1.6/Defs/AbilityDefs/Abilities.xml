@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>OCARINA_ArtificerExplosiveJump</defName>
+        <label>explosive jump</label>
+        <description>The artificer leaps to a distant location, leaving an explosion at its starting point. The blast radius grows with the jump distance.</description>
+        <iconPath>UI/Abilities/ExplosiveJump</iconPath>
+        <cooldownTicksRange>60</cooldownTicksRange>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityExplosiveJump</verbClass>
+            <label>jump</label>
+            <violent>false</violent>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.5</warmupTime>
+            <range>19.9</range>
+            <requireLineOfSight>true</requireLineOfSight>
+            <soundCast>Longjump_Jump</soundCast>
+            <soundLanding>Longjump_Land</soundLanding>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <jobDef>CastJump</jobDef>
+        <comps>
+            <li Class="RainWorld.CompProperties_AbilityExplosiveJump">
+                <radiusPerDistance>0.6</radiusPerDistance>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

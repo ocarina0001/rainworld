@@ -32,8 +32,8 @@ namespace RainWorld
 
                             var cmd = new Command_Action
                             {
-                                defaultLabel = "drop",
-                                defaultDesc = "drop weapon.",
+                                defaultLabel = "Drop",
+                                defaultDesc = "Drop the currently held weapon.",
                                 icon = tex,
                                 hotKey = KeyBindingDefOf.Misc12,
                                 action = () =>
@@ -48,8 +48,8 @@ namespace RainWorld
                         {
                             var cmd = new Command_Target
                             {
-                                defaultLabel = "equip",
-                                defaultDesc = "equip weapon.",
+                                defaultLabel = "Equip",
+                                defaultDesc = "Equip a weapon.",
                                 icon = ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame"),
                                 hotKey = KeyBindingDefOf.Misc12,
                                 targetingParams = new TargetingParameters
