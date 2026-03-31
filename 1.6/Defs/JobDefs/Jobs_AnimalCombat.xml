@@ -19,5 +19,10 @@
         <reportString>firing weapon.</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
+    <JobDef>
+        <defName>OCARINA_ArtificerMaul</defName>
+        <driverClass>RainWorld.JobDriver_Maul</driverClass>
+        <reportString>mauling TargetA.</reportString>
+    </JobDef>
 
 </Defs>

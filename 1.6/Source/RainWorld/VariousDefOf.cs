@@ -22,6 +22,8 @@ namespace RainWorld
         public static JobDef OCARINA_RainWorldEquipWeapon;
         public static JobDef OCARINA_RainWorldDropWeapon;
         public static JobDef OCARINA_RainWorldShootWeapon;
+        public static ThingDef OCARINA_Leather_Slugcat;
+        public static JobDef OCARINA_ArtificerMaul;
 
     }
 }

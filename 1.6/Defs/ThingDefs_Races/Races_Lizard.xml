@@ -62,7 +62,7 @@
             <baseHealthScale>2.5</baseHealthScale>
             <baseHungerRate>0.25</baseHungerRate>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <leatherDef>Leather_Lizard</leatherDef>
+            <leatherDef>OCARINA_Leather_Lizard</leatherDef>
             <trainability>Advanced</trainability>
             <lifeExpectancy>80</lifeExpectancy>
             <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
@@ -202,7 +202,7 @@
             <baseHealthScale>2</baseHealthScale>
             <baseHungerRate>0.28</baseHungerRate>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <leatherDef>Leather_Lizard</leatherDef>
+            <leatherDef>OCARINA_Leather_Lizard</leatherDef>
             <trainability>Advanced</trainability>
             <lifeExpectancy>80</lifeExpectancy>
             <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
@@ -341,7 +341,7 @@
             <baseHealthScale>2.5</baseHealthScale>
             <baseHungerRate>0.55</baseHungerRate>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <leatherDef>Leather_Lizard</leatherDef>
+            <leatherDef>OCARINA_Leather_Lizard</leatherDef>
             <trainability>Advanced</trainability>
             <lifeExpectancy>80</lifeExpectancy>
             <manhunterOnDamageChance>0.99</manhunterOnDamageChance>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>OCARINA_ArtificerExplosiveJump</defName>
+        <label>explosive jump</label>
+        <description>The artificer leaps to a distant location, leaving an explosion at its starting point. The blast radius grows with the jump distance.</description>
+        <iconPath>UI/Abilities/ArtificerExplosiveJump</iconPath>
+        <cooldownTicksRange>2500</cooldownTicksRange>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityExplosiveJump</verbClass>
+            <label>jump</label>
+            <violent>false</violent>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.2</warmupTime>
+            <range>19.9</range>
+            <requireLineOfSight>true</requireLineOfSight>
+            <soundCast>Longjump_Jump</soundCast>
+            <soundLanding>Longjump_Land</soundLanding>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <jobDef>CastJump</jobDef>
+        <comps>
+            <li Class="RainWorld.CompProperties_AbilityExplosiveJump">
+                <radiusPerDistance>0.2</radiusPerDistance>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>OCARINA_ArtificerConcussionBlast</defName>
+        <label>concussion blast</label>
+        <description>The artificer releases a powerful shockwave that stuns nearby enemies and can knock weapons from their hands. The blast deals minimal damage.</description>
+        <iconPath>UI/Abilities/ArtificerConcussionBlast</iconPath>
+        <cooldownTicksRange>2500</cooldownTicksRange>
+        <hostile>true</hostile>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <targetRequired>false</targetRequired>
+        <statBases>
+            <Ability_EffectRadius>14.9</Ability_EffectRadius>
+        </statBases>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityConcussionBlast</verbClass>
+            <label>concussion blast</label>
+            <violent>true</violent>
+            <warmupTime>0.0</warmupTime>
+            <range>14.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetEntities>false</canTargetEntities>
+                <canTargetSubhumans>false</canTargetSubhumans>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>OCARINA_ArtificerMaul</defName>
+        <label>maul</label>
+        <description>The artificer unleashes a flurry of 3-12 melee attacks on a single target. Each strike always hits. If the target moves out of the maul range after the maul has started, the maul will be cancelled early.</description>
+        <iconPath>UI/Abilities/ArtificerMaul</iconPath>
+        <cooldownTicksRange>2500</cooldownTicksRange>
+        <hostile>true</hostile>
+        <targetRequired>true</targetRequired>
+        <stunTargetWhileCasting>false</stunTargetWhileCasting>
+        <jobDef>OCARINA_ArtificerMaul</jobDef>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityMaul</verbClass>
+            <label>maul</label>
+            <violent>true</violent>
+            <warmupTime>0.1</warmupTime>
+            <range>999.9</range>            <!-- kinda like map wide -->
+            <requireLineOfSight>false</requireLineOfSight>            <!-- you don't need los to attack things normally so-->
+            <targetParams>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>true</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+</Defs>

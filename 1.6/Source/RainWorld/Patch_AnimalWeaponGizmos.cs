@@ -20,21 +20,21 @@ namespace RainWorld
             private static void Postfix(ref IEnumerable<Gizmo> __result, Pawn __instance)
             {
                 if (__result == null) return;
-                var list = __result.ToList();
                 if (__instance.Faction != null && __instance.Faction == Faction.OfPlayer && __instance.RaceProps.Animal)
                 {
                     var c = __instance.TryGetComp<CompEquipWeapon>();
                     if (c != null)
                     {
+                        var list = __result.ToList();
                         if (c.cachedWeapon != null)
                         {
-                            Texture2D tex = c.cachedWeapon.def.graphicData == null ? ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame") : ContentFinder<Texture2D>.Get(c.cachedWeapon.def.graphicData.texPath);
+                            //Texture2D tex = c.cachedWeapon.def.graphicData == null ? ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame") : ContentFinder<Texture2D>.Get(c.cachedWeapon.def.graphicData.texPath);
 
                             var cmd = new Command_Action
                             {
-                                defaultLabel = "drop",
-                                defaultDesc = "drop weapon.",
-                                icon = tex,
+                                defaultLabel = "Drop",
+                                defaultDesc = "Drop the currently held weapon.",
+                                icon = ContentFinder<Texture2D>.Get("UI/Buttons/Drop"),
                                 hotKey = KeyBindingDefOf.Misc12,
                                 action = () =>
                                 {
@@ -48,8 +48,8 @@ namespace RainWorld
                         {
                             var cmd = new Command_Target
                             {
-                                defaultLabel = "equip",
-                                defaultDesc = "equip weapon.",
+                                defaultLabel = "Equip",
+                                defaultDesc = "Equip a weapon.",
                                 icon = ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame"),
                                 hotKey = KeyBindingDefOf.Misc12,
                                 targetingParams = new TargetingParameters
@@ -69,9 +69,9 @@ namespace RainWorld
                             };
                             list.Add(cmd);
                         }
+                        __result = list;
                     }
                 }
-                __result = list;
             }
         }
     }

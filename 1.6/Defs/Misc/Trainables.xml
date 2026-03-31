@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <TrainableDef>
+        <defName>OCARINA_ArtificerMaul</defName>
+        <label>maul</label>
+        <description>Command the artificer to maul a target. This makes the artificer execute 3-12 melee attacks in quick succession.</description>
+        <listPriority>0</listPriority>
+        <difficulty>200</difficulty>
+        <steps>2</steps>
+        <specialTrainable>true</specialTrainable>
+        <enablesAbility>OCARINA_ArtificerMaul</enablesAbility>
+    </TrainableDef>
+
+    <TrainableDef>
+        <defName>OCARINA_ArtificerExplosiveJump</defName>
+        <label>explosive jump</label>
+        <description>Command the artificer to jump a sizeable distance. This makes the artificer release an explosion to propel itself to a different location on the map, leaving behind an explosion in size correlating to the distance traveled.</description>
+        <listPriority>0</listPriority>
+        <difficulty>150</difficulty>
+        <steps>2</steps>
+        <specialTrainable>true</specialTrainable>
+        <enablesAbility>OCARINA_ArtificerExplosiveJump</enablesAbility>
+    </TrainableDef>
+
+    <TrainableDef>
+        <defName>OCARINA_ArtificerConcussionBlast</defName>
+        <label>concussion blast</label>
+        <description>Command the artificer to release a concussive blast. This concussive blast is effectively a small and weak explosion, but effected pawns can end up stunned or potentially drop their weapons.</description>
+        <listPriority>0</listPriority>
+        <difficulty>250</difficulty>
+        <steps>2</steps>
+        <specialTrainable>true</specialTrainable>
+        <enablesAbility>OCARINA_ArtificerConcussionBlast</enablesAbility>
+    </TrainableDef>
+
+    <TrainableDef>
+        <defName>OCARINA_ArtificerExplosiveCraft</defName>
+        <label>craft explosives</label>
+        <description>Command the artificer to create some explosives. These explosive grenades are the same type scavengers may sometimes be seen with, used to fuel scavenger grenade belts.</description>
+        <listPriority>0</listPriority>
+        <difficulty>200</difficulty>
+        <steps>2</steps>
+        <specialTrainable>true</specialTrainable>
+        <enablesAbility>OCARINA_ArtificerExplosiveCraft</enablesAbility>
+    </TrainableDef>
+
+    <TrainableDef>
+        <defName>OCARINA_RivuletSummonRain</defName>
+        <label>summon rain</label>
+        <description>Command the rivulet to summon rain. This, as you may expect, changes the weather to rainy.</description>
+        <listPriority>0</listPriority>
+        <difficulty>150</difficulty>
+        <steps>1</steps>
+        <specialTrainable>true</specialTrainable>
+        <enablesAbility>OCARINA_RivuletSummonRain</enablesAbility>
+    </TrainableDef>
+
+</Defs>
