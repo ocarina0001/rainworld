@@ -7,15 +7,24 @@
 - Added blue lizards
 - Added RJW and RNW support
 
+13.0 - 3/XX/2026
+/ Added batflies
+/ Added batnip
+/ Added cherrybombs
+/ Added slugcat survivor xenotype
+/ Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
+
 12.0 - 3/XX/2026
 / Added artificer (full explosion immunity, explosive jumping, mauling, concussion blast, explosive crafting)
 / Added rivulet (slide, rain summon)
 - Added color variants to all slugcats, prominently Survivor
 - Added slugcat sounds
 - Added scavenger leather, slugcat leather, and lizard leather
-/ Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
-- Changed scavenger's cold weakness to a heat weakness
+- Added grenade
+- Significant performance improvement to Patch_AnimalWeaponGizmo (thank you Muffy)
 - Slightly improved shading and coloring on all slugcat textures
+- Changed scavenger's cold weakness to a heat weakness
+- Changed animal equipment gizmo text and icons
 
 11.3 - 2/10/2026
 - Fixed bug relating to yttakin furs

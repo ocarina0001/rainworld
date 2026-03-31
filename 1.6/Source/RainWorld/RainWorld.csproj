@@ -65,6 +65,7 @@
     <Compile Include="JobDriver_AnimalWeaponDrop.cs" />
     <Compile Include="JobDriver_AnimalWeaponEquip.cs" />
     <Compile Include="JobDriver_AnimalWeaponShoot.cs" />
+    <Compile Include="JobDriver_Maul.cs" />
     <Compile Include="Patch_AnimalWeaponGizmos.cs" />
     <Compile Include="Patch_DrawWeapon.cs" />
     <Compile Include="Patch_ButcherProducts.cs" />
@@ -86,7 +87,9 @@
     <Compile Include="CompTextureSwapConditional.cs" />
     <Compile Include="RainWorld.cs" />
     <Compile Include="VariousDefOf.cs" />
+    <Compile Include="Verb_CastAbilityConcussionBlast.cs" />
     <Compile Include="Verb_CastAbilityExplosiveJump.cs" />
+    <Compile Include="Verb_CastAbilityMaul.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseMakeableGrenade">
+        <defName>OCARINA_Weapon_ScavengerGrenade</defName>
+        <label>scavenger grenades</label>
+        <description>Near-black spiked grenades created by the scavengers. They can be thrown a surprising distance, exploding almost immediately on contact.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ScavengerGrenade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <weaponTags>
+            <li>OCARINA_Scavenger</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <costList>
+            <OCARINA_Pearls>5</OCARINA_Pearls>
+            <Steel>10</Steel>
+        </costList>
+        <smeltable>true</smeltable>
+        <verbs>
+            <li>
+                <label>throw scavenger grenade</label>
+                <verbClass>Verb_ShootOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <onlyManualCast>True</onlyManualCast>
+                <range>19.9</range>
+                <forcedMissRadius>0.9</forcedMissRadius>
+                <warmupTime>1.0</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>OCARINA_Proj_ScavengerGrenade</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.99</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>OCARINA_Proj_ScavengerGrenade</defName>
+        <label>scavenger grenade</label>
+        <graphicData>
+            <texPath>Things/Projectile/ScavengerGrenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>1.99</explosionRadius>
+            <damageDef>Bomb</damageDef>
+            <explosionDelay>5</explosionDelay>
+            <damageAmountBase>80</damageAmountBase>
+        </projectile>
+    </ThingDef>
+
+</Defs>

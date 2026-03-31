@@ -28,13 +28,13 @@ namespace RainWorld
                         var list = __result.ToList();
                         if (c.cachedWeapon != null)
                         {
-                            Texture2D tex = c.cachedWeapon.def.graphicData == null ? ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame") : ContentFinder<Texture2D>.Get(c.cachedWeapon.def.graphicData.texPath);
+                            //Texture2D tex = c.cachedWeapon.def.graphicData == null ? ContentFinder<Texture2D>.Get("UI/Icons/Animal/Tame") : ContentFinder<Texture2D>.Get(c.cachedWeapon.def.graphicData.texPath);
 
                             var cmd = new Command_Action
                             {
                                 defaultLabel = "Drop",
                                 defaultDesc = "Drop the currently held weapon.",
-                                icon = tex,
+                                icon = ContentFinder<Texture2D>.Get("UI/Buttons/Drop"),
                                 hotKey = KeyBindingDefOf.Misc12,
                                 action = () =>
                                 {

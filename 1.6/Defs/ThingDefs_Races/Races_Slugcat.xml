@@ -589,7 +589,6 @@
         </lifeStages>
     </PawnKindDef>
 
-
     <!-- Artificer -->
     <ThingDef ParentName="OCARINA_RainworldSlugcatBase">
         <defName>OCARINA_SlugcatArtificer</defName>
@@ -600,7 +599,7 @@
             <MarketValue>450</MarketValue>
             <ComfyTemperatureMin>-50</ComfyTemperatureMin>
             <ComfyTemperatureMax>50</ComfyTemperatureMax>
-            <Wildness>0.35</Wildness>
+            <Wildness>0.45</Wildness>
         </statBases>
         <uiIconScale>1</uiIconScale>
         <tools>
@@ -701,6 +700,8 @@
             </wildBiomes>
             <specialTrainables>
                 <li>OCARINA_ArtificerExplosiveJump</li>
+                <li>OCARINA_ArtificerConcussionBlast</li>
+                <li>OCARINA_ArtificerMaul</li>
             </specialTrainables>
         </race>
         <tradeTags>
@@ -728,6 +729,8 @@
         <ecoSystemWeight>1.7</ecoSystemWeight>
         <abilities>
             <li>OCARINA_ArtificerExplosiveJump</li>
+            <li>OCARINA_ArtificerConcussionBlast</li>
+            <li>OCARINA_ArtificerMaul</li>
         </abilities>
         <alternateGraphicChance>0.5</alternateGraphicChance>
         <alternateGraphics>

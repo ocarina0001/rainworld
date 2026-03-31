@@ -5,10 +5,12 @@
 - Monks plant a karma flower on death (1% chance)
 - Overseers (rare spawns that happen anywhere, can dodge projectiles and attacks 99% chance, capable of teleporting. Drops Overseer Eye, can be sold for the same value as a pearl and can be implanted into pawns, providing them increased research speed and dodge chances. If tamed, they can be trained to use an ability to increase research speed on all colony pawns)
 - add rjw support
-
-Scavenger Major Update:
-- Pearls (rare material, light like gold/silver, very pretty, scavs get 10x relations when gifting pearls to them)
-scavenger faction icon
-
-Undetermined Minor Update:
 - Animal gear support
+
+
+batnip to grenade chain
+- grow batnip plants to produce harvested batnip (batnip plants should make batflies spawn on the map)
+- harvested batnip can be used directly as food, rolled into a non-addictive blunt for a small high, or combined with chemfuel to create harvested cherrybomb
+- cherrybomb plants can be grown traditionally, but at the cost of requiring a level 16+ farmer
+- harvested cherrybombs cannot be eaten, but they can be combined with leather to create a grenade-belt cherrybomb pouch that is fueled by harvested cherrybombs that damages (weakly) and stuns pawns in the radius OR combined with pearls to create scavenger grenades
+- scavenger grenades cannot be used by themselves, but a belt must be created to store them. these grenades have a smaller radius and do more damage than vanilla grenades
