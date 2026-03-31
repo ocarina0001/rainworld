@@ -14,9 +14,10 @@
         <soundInteract>Interact_Grenade</soundInteract>
         <techLevel>Industrial</techLevel>
         <statBases>
-            <Mass>1</Mass>
+            <Mass>0.08</Mass>
             <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
             <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>10</MaxHitPoints>
         </statBases>
         <weaponTags>
             <li>OCARINA_Scavenger</li>
@@ -28,6 +29,7 @@
             <OCARINA_Pearls>5</OCARINA_Pearls>
             <Steel>10</Steel>
         </costList>
+        <stackLimit>30</stackLimit>
         <smeltable>true</smeltable>
         <verbs>
             <li>

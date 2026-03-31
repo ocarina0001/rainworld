@@ -30,6 +30,9 @@
             <li Class="RainWorld.CompProperties_AbilityExplosiveJump">
                 <radiusPerDistance>0.2</radiusPerDistance>
             </li>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>OCARINA_ArtificerExplosiveJump</trainableDef>
+            </li>
         </comps>
     </AbilityDef>
 
@@ -63,6 +66,11 @@
                 <canTargetBuildings>false</canTargetBuildings>
             </targetParams>
         </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>OCARINA_ArtificerConcussionBlast</trainableDef>
+            </li>
+        </comps>
     </AbilityDef>
 
     <AbilityDef>
@@ -91,6 +99,105 @@
                 <canTargetMechs>true</canTargetMechs>
             </targetParams>
         </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>OCARINA_ArtificerMaul</trainableDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>OCARINA_ArtificerExplosiveCraft</defName>
+        <label>explosive craft</label>
+        <description>The artificer crafts 1-9 loose scavenger grenades at its feet.</description>
+        <iconPath>UI/Abilities/ArtificerExplosiveCraft</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <hostile>false</hostile>
+        <targetRequired>false</targetRequired>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityExplosiveCraft</verbClass>
+            <violent>false</violent>
+            <warmupTime>1.0</warmupTime>
+            <range>0</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="RainWorld.CompProperties_ExplosiveCraft">
+                <spawnableItems>
+                    <li>OCARINA_Weapon_ScavengerGrenade</li>
+                </spawnableItems>
+            </li>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>OCARINA_ArtificerExplosiveCraft</trainableDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>OCARINA_RivuletSummonRain</defName>
+        <label>explosive craft</label>
+        <description>The artificer crafts 1-9 loose scavenger grenades at its feet.</description>
+        <iconPath>UI/Abilities/ArtificerExplosiveCraft</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <hostile>false</hostile>
+        <targetRequired>false</targetRequired>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityExplosiveCraft</verbClass>
+            <violent>false</violent>
+            <warmupTime>1.0</warmupTime>
+            <range>0</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="RainWorld.CompProperties_ExplosiveCraft">
+                <spawnableItems>
+                    <li>OCARINA_Weapon_ScavengerGrenade</li>
+                </spawnableItems>
+            </li>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>OCARINA_RivuletSummonRain</trainableDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+
+    <AbilityDef>
+        <defName>OCARINA_RivuletSlide</defName>
+        <label>explosive craft</label>
+        <description>The artificer crafts 1-9 loose scavenger grenades at its feet.</description>
+        <iconPath>UI/Abilities/ArtificerExplosiveCraft</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <hostile>false</hostile>
+        <targetRequired>false</targetRequired>
+        <verbProperties>
+            <verbClass>RainWorld.Verb_CastAbilityExplosiveCraft</verbClass>
+            <violent>false</violent>
+            <warmupTime>1.0</warmupTime>
+            <range>0</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="RainWorld.CompProperties_ExplosiveCraft">
+                <spawnableItems>
+                    <li>OCARINA_Weapon_ScavengerGrenade</li>
+                </spawnableItems>
+            </li>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>OCARINA_RivuletSlide</trainableDef>
+            </li>
+        </comps>
     </AbilityDef>
 
 </Defs>

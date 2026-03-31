@@ -8,13 +8,13 @@ namespace RainWorld
     {
         public override bool TryStartCastOn(LocalTargetInfo castTarg, LocalTargetInfo destTarg, bool surpriseAttack = false, bool canHitNonTargetPawns = true, bool preventFriendlyFire = false, bool nonInterruptingSelfCast = false)
         {
-            base.TryStartCastOn(castTarg);
             Pawn caster = CasterPawn;
             Pawn target = castTarg.Pawn;
             if (caster == null || target == null || target == caster)
                 return false;
             Job job = JobMaker.MakeJob(VariousDefOf.OCARINA_ArtificerMaul, target);
             caster.jobs.StartJob(job, JobCondition.InterruptForced);
+            base.TryStartCastOn(castTarg, destTarg);
             return true;
         }
     }

@@ -6,12 +6,14 @@
 - Added slugcat xenotype (Biotech only)
 - Added blue lizards
 - Added RJW and RNW support
+- Added outskirts biome
 
 13.0 - 3/XX/2026
 / Added batflies
 / Added batnip
 / Added cherrybombs
 / Added slugcat survivor xenotype
+/ Added slugcat apparel support
 / Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
 
 12.0 - 3/XX/2026
@@ -25,6 +27,7 @@
 - Slightly improved shading and coloring on all slugcat textures
 - Changed scavenger's cold weakness to a heat weakness
 - Changed animal equipment gizmo text and icons
+- Changed all slugcat stats to be normalized around Survivor
 
 11.3 - 2/10/2026
 - Fixed bug relating to yttakin furs

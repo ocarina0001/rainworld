@@ -48,12 +48,23 @@
     <TrainableDef>
         <defName>OCARINA_RivuletSummonRain</defName>
         <label>summon rain</label>
-        <description>Command the rivulet to summon rain. This, as you may expect, changes the weather to rainy.</description>
+        <description>Command the rivulet to summon rain. This, as you may expect, changes the weather to rain.</description>
         <listPriority>0</listPriority>
         <difficulty>150</difficulty>
         <steps>1</steps>
         <specialTrainable>true</specialTrainable>
         <enablesAbility>OCARINA_RivuletSummonRain</enablesAbility>
+    </TrainableDef>
+
+    <TrainableDef>
+        <defName>OCARINA_RivuletSlide</defName>
+        <label>slide</label>
+        <description>Command the rivulet to slide. This propels the rivulet a very long distance very fast.</description>
+        <listPriority>0</listPriority>
+        <difficulty>100</difficulty>
+        <steps>1</steps>
+        <specialTrainable>true</specialTrainable>
+        <enablesAbility>OCARINA_RivuletSlide</enablesAbility>
     </TrainableDef>
 
 </Defs>
