@@ -14,8 +14,7 @@ namespace RainWorld
                 return false;
             Job job = JobMaker.MakeJob(VariousDefOf.OCARINA_ArtificerMaul, target);
             caster.jobs.StartJob(job, JobCondition.InterruptForced);
-            base.TryStartCastOn(castTarg, destTarg);
-            return true;
+            return base.TryStartCastOn(castTarg, destTarg);
         }
     }
 }

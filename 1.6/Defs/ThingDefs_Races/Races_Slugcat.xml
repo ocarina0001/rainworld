@@ -902,6 +902,9 @@
                 <li>OCARINA_RivuletSummonRain</li>
                 <li>OCARINA_RivuletSlide</li>
             </specialTrainables>
+            <hediffGiverSets>
+                <li>OCARINA_RivuletHediffGiver</li>
+            </hediffGiverSets>
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>

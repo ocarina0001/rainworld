@@ -9,5 +9,13 @@
             </li>
         </hediffGivers>
     </HediffGiverSetDef>
+    <HediffGiverSetDef>
+        <defName>OCARINA_RivuletHediffGiver</defName>
+        <hediffGivers>
+            <li Class="RainWorld.HediffGiver_WholeBody">
+                <hediff>OCARINA_RivuletWaterStriding</hediff>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
 
 </Defs>

@@ -171,29 +171,30 @@
 
     <AbilityDef>
         <defName>OCARINA_RivuletSlide</defName>
-        <label>explosive craft</label>
-        <description>The artificer crafts 1-9 loose scavenger grenades at its feet.</description>
-        <iconPath>UI/Abilities/ArtificerExplosiveCraft</iconPath>
-        <cooldownTicksRange>60000</cooldownTicksRange>
+        <label>slide</label>
+        <description>The rivulet slides swiftly across the ground to a target location.</description>
+        <iconPath>UI/Abilities/RivuletSlide</iconPath>
+        <cooldownTicksRange>60</cooldownTicksRange>
         <hostile>false</hostile>
-        <targetRequired>false</targetRequired>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <verbProperties>
-            <verbClass>RainWorld.Verb_CastAbilityExplosiveCraft</verbClass>
+            <verbClass>RainWorld.Verb_CastAbilityRivuletSlide</verbClass>
+            <label>slide</label>
             <violent>false</violent>
-            <warmupTime>1.0</warmupTime>
-            <range>0</range>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.0</warmupTime>
+            <range>99.9</range>
+            <requireLineOfSight>true</requireLineOfSight>
+            <soundCast>Longjump_Jump</soundCast>
+            <soundLanding>Longjump_Land</soundLanding>
             <targetParams>
-                <canTargetSelf>true</canTargetSelf>
-                <canTargetLocations>false</canTargetLocations>
+                <canTargetLocations>true</canTargetLocations>
                 <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
             </targetParams>
         </verbProperties>
+        <jobDef>CastJump</jobDef>
         <comps>
-            <li Class="RainWorld.CompProperties_ExplosiveCraft">
-                <spawnableItems>
-                    <li>OCARINA_Weapon_ScavengerGrenade</li>
-                </spawnableItems>
-            </li>
             <li Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_RivuletSlide</trainableDef>
             </li>

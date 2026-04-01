@@ -19,4 +19,18 @@
         </comps>
     </HediffDef>
 
+    <HediffDef>
+        <defName>OCARINA_RivuletWaterStriding</defName>
+        <label>water striding</label>
+        <description>The rivulet moves through water with no movement penalties.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Waterstriding" />
+        </comps>
+    </HediffDef>
+
 </Defs>

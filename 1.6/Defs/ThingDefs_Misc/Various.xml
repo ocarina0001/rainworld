@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="PawnFlyerBase">
+        <defName>RivuletSlideFlyer</defName>
+        <label>slide flyer</label>
+        <pawnFlyer>
+            <workerClass>RainWorld.PawnFlyerWorker_StraightLine</workerClass>
+            <heightFactor>0</heightFactor>
+            <progressCurve>
+                <points>
+                    <li>(0, 0)</li>
+                    <li>(0.1, 0.25)</li>
+                    <li>(1, 1)</li>
+                </points>
+            </progressCurve>
+        </pawnFlyer>
+    </ThingDef>
+
+</Defs>
