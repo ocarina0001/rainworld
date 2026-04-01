@@ -78,18 +78,17 @@
         <label>maul</label>
         <description>The artificer unleashes a flurry of 3-12 melee attacks on a single target. Each strike always hits. If the target moves out of the maul range after the maul has started, the maul will be cancelled early.</description>
         <iconPath>UI/Abilities/ArtificerMaul</iconPath>
-        <cooldownTicksRange>2500</cooldownTicksRange>
+        <!-- <cooldownTicksRange>2500</cooldownTicksRange> for some reason with my shitty job code it needs to be hardcoded -->
         <hostile>true</hostile>
         <targetRequired>true</targetRequired>
         <stunTargetWhileCasting>false</stunTargetWhileCasting>
-        <jobDef>OCARINA_ArtificerMaul</jobDef>
         <verbProperties>
             <verbClass>RainWorld.Verb_CastAbilityMaul</verbClass>
             <label>maul</label>
             <violent>true</violent>
             <warmupTime>0.1</warmupTime>
-            <range>999.9</range>            <!-- kinda like map wide -->
-            <requireLineOfSight>false</requireLineOfSight>            <!-- you don't need los to attack things normally so-->
+            <range>99.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
             <targetParams>
                 <canTargetSelf>false</canTargetSelf>
                 <canTargetPawns>true</canTargetPawns>
@@ -138,15 +137,15 @@
     </AbilityDef>
 
     <AbilityDef>
-        <defName>OCARINA_RivuletSummonRain</defName>
-        <label>explosive craft</label>
-        <description>The artificer crafts 1-9 loose scavenger grenades at its feet.</description>
-        <iconPath>UI/Abilities/ArtificerExplosiveCraft</iconPath>
-        <cooldownTicksRange>60000</cooldownTicksRange>
+        <defName>OCARINA_RivuletRainSummon</defName>
+        <label>rain summon</label>
+        <description>Calls forth rain, changing the local weather.</description>
+        <iconPath>UI/Abilities/RivuletRainSummon</iconPath>
+        <cooldownTicksRange>300000</cooldownTicksRange>
         <hostile>false</hostile>
         <targetRequired>false</targetRequired>
         <verbProperties>
-            <verbClass>RainWorld.Verb_CastAbilityExplosiveCraft</verbClass>
+            <verbClass>RainWorld.Verb_CastAbilityRainSummon</verbClass>
             <violent>false</violent>
             <warmupTime>1.0</warmupTime>
             <range>0</range>
@@ -157,24 +156,18 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="RainWorld.CompProperties_ExplosiveCraft">
-                <spawnableItems>
-                    <li>OCARINA_Weapon_ScavengerGrenade</li>
-                </spawnableItems>
-            </li>
             <li Class="CompProperties_AbilityRequiresTrainable">
-                <trainableDef>OCARINA_RivuletSummonRain</trainableDef>
+                <trainableDef>OCARINA_RivuletRainSummon</trainableDef>
             </li>
         </comps>
     </AbilityDef>
-
 
     <AbilityDef>
         <defName>OCARINA_RivuletSlide</defName>
         <label>slide</label>
         <description>The rivulet slides swiftly across the ground to a target location.</description>
         <iconPath>UI/Abilities/RivuletSlide</iconPath>
-        <cooldownTicksRange>60</cooldownTicksRange>
+        <cooldownTicksRange>300</cooldownTicksRange>
         <hostile>false</hostile>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <verbProperties>

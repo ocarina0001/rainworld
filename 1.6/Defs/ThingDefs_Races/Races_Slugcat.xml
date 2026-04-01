@@ -899,7 +899,7 @@
                 <TropicalRainforest>0.10</TropicalRainforest>
             </wildBiomes>
             <specialTrainables>
-                <li>OCARINA_RivuletSummonRain</li>
+                <li>OCARINA_RivuletRainSummon</li>
                 <li>OCARINA_RivuletSlide</li>
             </specialTrainables>
             <hediffGiverSets>
@@ -924,7 +924,7 @@
         <combatPower>40</combatPower>
         <ecoSystemWeight>0.4</ecoSystemWeight>
         <abilities>
-            <li>OCARINA_RivuletSummonRain</li>
+            <li>OCARINA_RivuletRainSummon</li>
             <li>OCARINA_RivuletSlide</li>
         </abilities>
         <alternateGraphicChance>0.5</alternateGraphicChance>

@@ -94,6 +94,7 @@
     <Compile Include="Verb_CastAbilityExplosiveCraft.cs" />
     <Compile Include="Verb_CastAbilityExplosiveJump.cs" />
     <Compile Include="Verb_CastAbilityMaul.cs" />
+    <Compile Include="Verb_CastAbilityRainSummon.cs" />
     <Compile Include="Verb_CastAbilityRivuletSlide.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

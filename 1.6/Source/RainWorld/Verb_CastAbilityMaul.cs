@@ -6,15 +6,16 @@ namespace RainWorld
 {
     public class Verb_CastAbilityMaul : Verb_CastAbility
     {
-        public override bool TryStartCastOn(LocalTargetInfo castTarg, LocalTargetInfo destTarg, bool surpriseAttack = false, bool canHitNonTargetPawns = true, bool preventFriendlyFire = false, bool nonInterruptingSelfCast = false)
+        protected override bool TryCastShot()
         {
             Pawn caster = CasterPawn;
-            Pawn target = castTarg.Pawn;
+            Pawn target = currentTarget.Pawn;
             if (caster == null || target == null || target == caster)
                 return false;
             Job job = JobMaker.MakeJob(VariousDefOf.OCARINA_ArtificerMaul, target);
             caster.jobs.StartJob(job, JobCondition.InterruptForced);
-            return base.TryStartCastOn(castTarg, destTarg);
+            ability.StartCooldown(2500);
+            return true;
         }
     }
 }
