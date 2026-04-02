@@ -21,15 +21,16 @@
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>OCARINA_RawSeedCob</harvestedThingDef>
-            <harvestYield>26</harvestYield>
-            <harvestWork>80</harvestWork>
+            <harvestYield>27</harvestYield>
+            <harvestWork>100</harvestWork>
+            <sowWork>50</sowWork>
             <sowTags>
                 <li>Ground</li>
             </sowTags>
             <topWindExposure>0.35</topWindExposure>
-            <growDays>10</growDays>
+            <growDays>12</growDays>
             <immatureGraphicPath>Things/Plant/PopcornPlant_Immature</immatureGraphicPath>
-            <visualSizeRange>0.3~1.4</visualSizeRange>
+            <visualSizeRange>0.6~1.4</visualSizeRange>
             <wildOrder>2</wildOrder>
             <purpose>Food</purpose>
             <humanFoodPlant>true</humanFoodPlant>

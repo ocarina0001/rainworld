@@ -6,17 +6,37 @@
 - Added slugcat xenotype (Biotech only)
 - Added blue lizards
 - Added RJW and RNW support
-- Added outskirts biome
+- Added scavenger backstories
+- Added iterator backstories
+- Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
 
-13.0 - 3/XX/2026
-/ Added batflies
-/ Added batnip
-/ Added cherrybombs
+13.0 - 4/XX/XXXX
+/ Added outskirts biome
+- Added batflies and batfly hives
+/ Added batnip, harvested batnip, and batnip blunt 
+/ Added cherrybomb plant, cherrybombs, cherrybomb pouch
+/ Added spears
+/ Added new way to craft grenades
 / Added slugcat survivor xenotype
 / Added slugcat apparel support
-/ Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
+- Added a slight glow to karma flowers
+- Changed mushroom market value from 12 to 3
+- Changed karma flowers to no longer require light to grow
+- Changed blue fruit's fertility sensitivity from 100% to 0%
+- Changed blue fruit's minimum fertility from 70% to 0%
+- Changed popcorn plant's harvest work from 80 to 100
+- Changed popcorn plant's sow work from 10 to 50
+- Changed popcorn plant's harvest yield from 26 to 27
+- Changed popcorn plant's grow days from 10 to 12
+- Removed long legs event temporarily (I eventually intend to revisit it and rot generally in a future update)
+- Fixed blue fruit growing without ceilings
 
-12.0 - 3/XX/2026
+12.1 - 4/1/2026
+- Decreased Rivulet's slide range from 99.9 to 39.9
+- Increased Rivulet's slide speed from 12 to 20
+- Fixed issue where Rivulet's slide ability caused major lag (these things are related)
+
+12.0 - 3/31/2026
 - Added artificer (full explosion immunity, explosive jumping, mauling, concussion blast, explosive crafting)
 - Added rivulet (slide, rain summon)
 - Added color variants to all slugcats, prominently Survivor
@@ -28,6 +48,7 @@
 - Changed scavenger's cold weakness to a heat weakness
 - Changed animal equipment gizmo text and icons
 - Changed all slugcat stats to be normalized around Survivor
+- Updated Steam description
 
 11.3 - 2/10/2026
 - Fixed bug relating to yttakin furs

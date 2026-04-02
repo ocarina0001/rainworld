@@ -18,7 +18,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>12</MarketValue>
+            <MarketValue>3</MarketValue>
             <Mass>0.1</Mass>
             <DeteriorationRate>10</DeteriorationRate>
             <Nutrition>0.05</Nutrition>

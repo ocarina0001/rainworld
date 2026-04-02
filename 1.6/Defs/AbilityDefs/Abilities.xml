@@ -176,7 +176,7 @@
             <violent>false</violent>
             <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
             <warmupTime>0.0</warmupTime>
-            <range>99.9</range>
+            <range>39.9</range>
             <requireLineOfSight>true</requireLineOfSight>
             <soundCast>Longjump_Jump</soundCast>
             <soundLanding>Longjump_Land</soundLanding>

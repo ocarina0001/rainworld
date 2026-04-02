@@ -10,6 +10,7 @@ namespace RainWorld
 
         protected override bool TryCastShot()
         {
+            base.TryCastShot();
             Pawn caster = CasterPawn;
             if (caster != null && currentTarget.IsValid)
             {
@@ -22,7 +23,7 @@ namespace RainWorld
                     caster.Rotation = Rot4.FromAngleFlat(angle);
                 }
             }
-            return base.TryCastShot();
+            return true;
         }
     }
 }

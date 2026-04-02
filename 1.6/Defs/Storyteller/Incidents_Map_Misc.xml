@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <IncidentDef>
+    <!-- <IncidentDef>
         <defName>OCARINA_LongLegsEvent</defName>
         <label>long leg passes</label>
         <category>Misc</category>
@@ -11,7 +11,7 @@
         <workerClass>RainWorld.IncidentWorker_LongLegsEvent</workerClass>
         <baseChance>0.1</baseChance>
         <minRefireDays>30</minRefireDays>
-    </IncidentDef>
+    </IncidentDef> -->
 
     <IncidentDef>
         <defName>OCARINA_KarmaFlowerEvent</defName>

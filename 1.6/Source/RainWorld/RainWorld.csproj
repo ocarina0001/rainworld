@@ -83,6 +83,7 @@
     <Compile Include="Hediff_KarmaFlower.cs" />
     <Compile Include="IncidentWorker_KarmaFlower.cs" />
     <Compile Include="IncidentWorker_LongLegsEvent.cs" />
+    <Compile Include="Plant_Batfly.cs" />
     <Compile Include="Plant_Ceiling.cs" />
     <Compile Include="Plant_WaterAffiliation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -28,4 +28,17 @@
         </tags>
     </BodyPartDef>
 
+    <BodyPartDef>
+        <defName>OCARINA_BatflyWing</defName>
+        <label>batfly wing</label>
+        <hitPoints>20</hitPoints>
+        <frostbiteVulnerability>0.1</frostbiteVulnerability>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>MovingLimbCore</li>
+            <li>ManipulationLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
 </Defs>

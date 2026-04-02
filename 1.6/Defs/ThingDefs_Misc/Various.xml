@@ -7,6 +7,7 @@
         <pawnFlyer>
             <workerClass>RainWorld.PawnFlyerWorker_StraightLine</workerClass>
             <heightFactor>0</heightFactor>
+            <flightSpeed>20</flightSpeed>
             <progressCurve>
                 <points>
                     <li>(0, 0)</li>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿using Verse;
 using RimWorld;
 using UnityEngine;
 
@@ -15,7 +10,7 @@ namespace RainWorld
         {
             get
             {
-				return true;
+                return this.Map?.roofGrid?.Roofed(this.Position) ?? false;
             }
         }
 
@@ -23,7 +18,7 @@ namespace RainWorld
         {
             get
             {
-				return false;
+                return false;
             }
         }
 
@@ -31,11 +26,19 @@ namespace RainWorld
         {
             get
             {
-                if (Blighted)
-                    return 0f;
-                //Log.Error($"RAINWORLD: {GrowthRateFactor_Temperature + 1f}");
-                return GrowthRateFactor_Temperature; 
+                if (Blighted) return 0f;
+                if (!(this.Map?.roofGrid?.Roofed(this.Position) ?? false)) return 0f;
+                return GrowthRateFactor_Temperature;
             }
+        }
+
+        public override string GetInspectString()
+        {
+            string baseString = base.GetInspectString();
+            bool isRoofed = this.Map?.roofGrid?.Roofed(this.Position) ?? false;
+            if (!isRoofed)
+                baseString += "\n" + "RequiresRoofToGrow".Translate();
+            return baseString;
         }
     }
 }

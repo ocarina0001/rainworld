@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TemperateSwamp" or defName="TropicalSwamp" or defName="TropicalRainforest"]/wildPlants</xpath>
+        <value>
+            <OCARINA_Plant_BatflyGrass>0.001</OCARINA_Plant_BatflyGrass>
+        </value>
+    </Operation>
+
+</Patch>

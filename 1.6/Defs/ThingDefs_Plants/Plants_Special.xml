@@ -23,12 +23,20 @@
             <harvestYield>1</harvestYield>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>OCARINA_KarmaFlower</harvestedThingDef>
-            <visualSizeRange>0.6~1.1</visualSizeRange>
+            <visualSizeRange>0.8~1.1</visualSizeRange>
             <topWindExposure>0.1</topWindExposure>
             <wildOrder>2</wildOrder>
             <purpose>Food</purpose>
             <allowAutoCut>false</allowAutoCut>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
         </plant>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2.9</glowRadius>
+                <glowColor>(233,233,144,0)</glowColor>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="CavePlantBase">

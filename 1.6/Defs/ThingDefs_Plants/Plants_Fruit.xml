@@ -5,7 +5,7 @@
         <defName>OCARINA_Plant_BlueFruit</defName>
         <label>blue fruit plant</label>
         <thingClass>RainWorld.Plant_Ceiling</thingClass>
-        <description>A hanging blue fruit. Small, blue, and tasty, these blue fruit or as some call them, "dangle fruit" grow from ceilings, they are incredibly hardy, only faltering in unstable temperatures. Due to their hardy nature and unique growing circumstances, they don't require light to grow and as such don't spend time resting.</description>
+        <description>A hanging blue fruit. Small and tasty, these blue fruit grow from ceilings. They are incredibly hardy, only faltering in unstable temperatures; due to this and their unique growing circumstances, they don't require light to grow and as such don't spend time resting.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
             <Nutrition>0.2</Nutrition>
@@ -38,6 +38,9 @@
             <wildOrder>2</wildOrder>
             <purpose>Food</purpose>
             <humanFoodPlant>true</humanFoodPlant>
+            <fertilityMin>0</fertilityMin>
+            <fertilitySensitivity>0</fertilitySensitivity>
+            <completelyIgnoreFertility>true</completelyIgnoreFertility>
         </plant>
     </ThingDef>
 
