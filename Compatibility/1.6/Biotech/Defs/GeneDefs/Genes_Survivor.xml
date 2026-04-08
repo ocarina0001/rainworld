@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <GeneDef Name="OCARINA_SurvivorGeneBase" Abstract="True">
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <canGenerateInGeneSet>true</canGenerateInGeneSet>
+        <displayOrderInCategory>400</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SurvivorGeneBase">
+        <defName>OCARINA_SurvivorGene</defName>
+        <label>survivor form</label>
+        <description>Carriers of this gene </description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorGeneIcon</iconPath>
+        <forcedHeadTypes>
+            <li>OCARINA_Survivor_Male</li>
+            <li>OCARINA_Survivor_Female</li>
+        </forcedHeadTypes>
+        <fur>OCARINA_SurvivorFur</fur>
+        <skinColorOverride>(240,240,240)</skinColorOverride>
+        <randomBrightnessFactor>0.20</randomBrightnessFactor>
+        <renderNodeProperties>
+            <li>
+                <debugLabel>Fur</debugLabel>
+                <nodeClass>RainWorld.PawnRenderNode_FurUseSkinColor</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+                <baseLayer>5</baseLayer>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <colorType>Skin</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
+        <iconColor>(0.75,0.75,0.75)</iconColor>
+        <exclusionTags>
+            <li>Skin</li>
+            <li>SkinColorOverride</li>
+            <li>Fur</li>
+            <li>BeardStyle</li>
+            <li>Bodies</li>
+            <li>Body</li>
+        </exclusionTags>
+        <hairTagFilter>
+            <whitelist>false</whitelist>
+            <tags>
+                <li>Shaved</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <skinIsHairColor>false</skinIsHairColor>
+        <tattoosVisible>true</tattoosVisible>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <customLeatherThingDef>OCARINA_Leather_Slugcat</customLeatherThingDef>
+                <defsTreatedAsHumanLeather>
+                    <li>OCARINA_Leather_Slugcat</li>
+                </defsTreatedAsHumanLeather>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SurvivorGeneBase">
+        <defName>OCARINA_VoiceSurvivor</defName>
+        <label>slugcat voice</label>
+        <description>Carriers have a pitched meow like a slugcat.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorSlugcatVoice</iconPath>
+        <displayOrderInCategory>125</displayOrderInCategory>
+        <soundCall>OCARINA_Pawn_SlugcatSurvivor_Call</soundCall>
+        <soundDeath>OCARINA_Pawn_SlugcatSurvivor_Death</soundDeath>
+        <soundWounded>OCARINA_Pawn_SlugcatSurvivor_Wounded</soundWounded>
+        <exclusionTags>
+            <li>Voice</li>
+        </exclusionTags>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>pussy</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>meow</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>cat</symbol>
+                </li>
+                <li>
+                    <symbol>slug</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SurvivorGeneBase">
+        <defName>OCARINA_Tail_Survivor</defName>
+        <label>slugcat tail</label>
+        <description>Carriers of this gene grow a fatty, thick tail which partially protects them from cold temperatures and reduces metabolism from the fat storage.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorTailIcon</iconPath>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <displayOrderInCategory>1000</displayOrderInCategory>
+        <statOffsets>
+            <ComfyTemperatureMin>-3</ComfyTemperatureMin>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <renderNodeProperties>
+            <li>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <texPath>Things/Pawn/Humanlike/BodyAttachments/SlugcatTail/SurvivorTail</texPath>
+                <colorType>Skin</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-2</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(0.25, 0.03, -0.45)</offset>
+                        <layer>90</layer>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.2, 0, -0.25)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.5, 0, -0.35)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.5, 0, -0.40)</offset>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <exclusionTags>
+            <li>Tail</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SurvivorGeneBase">
+        <defName>OCARINA_SurvivorPaws</defName>
+        <label>slugcat paws</label>
+        <description>Soft and fatty paws. Whilst they still have five fingers, the overall efficiency of the hands have been reduced.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorSlugcatPaws</iconPath>
+        <displayOrderInCategory>320</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Manipulation</capacity>
+                <postFactor>0.9</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>Hands</li>
+        </exclusionTags>
+    </GeneDef>
+
+</Defs>

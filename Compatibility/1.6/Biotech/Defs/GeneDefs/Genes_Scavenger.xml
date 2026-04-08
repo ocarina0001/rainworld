@@ -37,6 +37,7 @@
         <iconColor>(0.75, 0.75, 0.75)</iconColor>
         <randomChosen>true</randomChosen>
         <selectionWeight>1</selectionWeight>
+        <displayCategory>OCARINA_MiscellaneousScavenger</displayCategory>
     </GeneDef>
 
     <GeneDef Name="OCARINA_ScavengerHeadboneBase" ParentName="OCARINA_GeneBase" Abstract="True">
@@ -61,7 +62,7 @@
         <defName>OCARINA_ScavengerGene</defName>
         <label>scavenger form</label>
         <description>Carriers of this gene take grow prickly fur all over their body. This sequence is particularly muddy, holding all possible head types, fur colors, and eye colors for the carrier, the dominant of each being chosen randomly at birth. Matching horns and eyes however, have been isolated as their own unique genes.</description>
-        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <iconPath>UI/Icons/Genes/ScavengerGeneIcon</iconPath>
         <forcedHeadTypes>
             <li>OCARINA_Scavenger_Snouted_Male</li>
             <li>OCARINA_Scavenger_Snouted_Female</li>

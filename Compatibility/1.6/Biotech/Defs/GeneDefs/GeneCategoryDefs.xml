@@ -7,5 +7,10 @@
         <displayPriorityInXenotype>270.01</displayPriorityInXenotype>
     </GeneCategoryDef>
 
+    <GeneCategoryDef>
+        <defName>OCARINA_MiscellaneousSlugcat</defName>
+        <label>miscellaneous - slugcat</label>
+        <displayPriorityInXenotype>270.02</displayPriorityInXenotype>
+    </GeneCategoryDef>
 
 </Defs>

@@ -10,34 +10,34 @@
 
     <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
         <defName>OCARINA_Scavenger_Snouted_Male</defName>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Snouted_Male</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger/Scavenger_Snouted_Male</graphicPath>
         <gender>Male</gender>
     </HeadTypeDef>
     <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
         <defName>OCARINA_Scavenger_Snouted_Female</defName>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Snouted_Male</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger/Scavenger_Snouted_Male</graphicPath>
         <gender>Female</gender>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
         <defName>OCARINA_Scavenger_Ante_Male</defName>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Ante_Male</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger/Scavenger_Ante_Male</graphicPath>
         <gender>Male</gender>
     </HeadTypeDef>
     <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
         <defName>OCARINA_Scavenger_Ante_Female</defName>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Ante_Male</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger/Scavenger_Ante_Male</graphicPath>
         <gender>Female</gender>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
         <defName>OCARINA_Scavenger_Dreamer_Male</defName>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Dreamer_Male</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger/Scavenger_Dreamer_Male</graphicPath>
         <gender>Male</gender>
     </HeadTypeDef>
     <HeadTypeDef ParentName="OCARINA_ScavengerHeadBase">
         <defName>OCARINA_Scavenger_Dreamer_Female</defName>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger_Dreamer_Male</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Scavenger/Scavenger_Dreamer_Male</graphicPath>
         <gender>Female</gender>
     </HeadTypeDef>
 

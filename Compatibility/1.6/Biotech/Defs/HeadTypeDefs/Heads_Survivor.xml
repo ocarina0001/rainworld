@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <HeadTypeDef Name="OCARINA_SurvivorHeadBase" Abstract="True">
+        <randomChosen>false</randomChosen>
+        <requiredGenes>
+            <li>OCARINA_SurvivorGene</li>
+        </requiredGenes>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="OCARINA_SurvivorHeadBase">
+        <defName>OCARINA_Survivor_Male</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Survivor/Survivor_Male</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="OCARINA_SurvivorHeadBase">
+        <defName>OCARINA_Survivor_Female</defName>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Survivor/Survivor_Female</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
+
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <FurDef>
+        <defName>OCARINA_ScavengerFur</defName>
+        <noGraphic>true</noGraphic>
+        <bodyTypeGraphicPaths>
+            <Male>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Male</Male>
+            <Female>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Female</Female>
+            <Hulk>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Hulk</Hulk>
+            <Fat>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Fat</Fat>
+            <Thin>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Thin</Thin>
+            <Child>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Child</Child>
+            <Baby>Things/Pawn/Humanlike/Bodies/Scavenger/Scavenger_Child</Baby>
+        </bodyTypeGraphicPaths>
+    </FurDef>
+
+    <FurDef>
+        <defName>OCARINA_SurvivorFur</defName>
+        <noGraphic>true</noGraphic>
+        <bodyTypeGraphicPaths>
+            <Male>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Male</Male>
+            <Female>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Female</Female>
+            <Hulk>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Hulk</Hulk>
+            <Fat>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Fat</Fat>
+            <Thin>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Thin</Thin>
+            <Child>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Child</Child>
+            <Baby>Things/Pawn/Humanlike/Bodies/Survivor/Survivor_Child</Baby>
+        </bodyTypeGraphicPaths>
+    </FurDef>
+
+</Defs>

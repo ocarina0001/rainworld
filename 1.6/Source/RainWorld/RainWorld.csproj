@@ -74,6 +74,7 @@
     <Compile Include="Patch_Pawn_MeleeVerbs_TryMeleeAttack.cs" />
     <Compile Include="PawnFlyerWorker_StraightLine.cs" />
     <Compile Include="PawnRenderNode_Eyes.cs" />
+    <Compile Include="PawnRenderNode_FurUseSkinColor.cs" />
     <Compile Include="PawnRenderNode_Hair.cs" />
     <Compile Include="PawnRenderNode_LanternMouse.cs" />
     <Compile Include="CompGraphicOverlay.cs" />

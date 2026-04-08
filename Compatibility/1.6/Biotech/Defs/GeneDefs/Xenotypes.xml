@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <XenotypeDef Name="OCARINA_ScavengerXenotypeBase" Abstract="True">
+    <XenotypeDef Name="OCARINA_XenotypeBase" Abstract="True">
         <displayPriority>999</displayPriority>
         <inheritable>true</inheritable>
     </XenotypeDef>
 
-    <XenotypeDef ParentName="OCARINA_ScavengerXenotypeBase">
+    <XenotypeDef ParentName="OCARINA_XenotypeBase">
         <defName>OCARINA_Scavenger</defName>
         <label>scavenger</label>
         <description>Scavengers are tribal creatures that are typically seen in groups. They are social creatures that use gestures and body language to communicate with one another.</description>
-        <descriptionShort>Scavengers are tribal creatures that are typically seen in groups. They are social creatures that use gestures and body language to communicate with one another.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/OCARINA_ScavengerIcon</iconPath>
         <inheritable>true</inheritable>
         <genes>
@@ -48,6 +47,31 @@
             <li>AptitudePoor_Cooking</li>
             <li>AptitudePoor_Intellectual</li>
             <li>Learning_Slow</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="OCARINA_XenotypeBase">
+        <defName>OCARINA_SurvivorXenotype</defName>
+        <label>survivor</label>
+        <description>Survivors are based upon rainforest-dwelling creatures known as Slugcats, known for their impressive adaptation in relentless environments. Quick and agile, Survivors were created to effectively seed colonies for population, doing all of the early labor required for specialists to come in and do their work.</description>
+        <descriptionShort>Survivors are based upon rainforest-dwelling creatures known as Slugcats, known for their impressive adaptation in relentless environments.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/SurvivorXenotypeIcon</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>OCARINA_SurvivorGene</li>
+            <li>OCARINA_Tail_Survivor</li>
+            <li>OCARINA_SurvivorPaws</li>
+            <li>OCARINA_VoiceSurvivor</li>
+            <li>MoveSpeed_Quick</li>
+            <li>Beauty_Pretty</li>
+            <li>Libido_High</li>
+            <li>Fertile</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>Sleepy</li>
+            <li>Immunity_Strong</li>
+            <li>Instability_Mild</li>
+            <li>AptitudePoor_Artistic</li>
+            <li>StrongStomach</li>
         </genes>
     </XenotypeDef>
 
