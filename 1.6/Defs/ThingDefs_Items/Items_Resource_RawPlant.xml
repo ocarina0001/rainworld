@@ -10,9 +10,9 @@
             <texPath>Things/Item/Resource/PlantFoodRaw/BlueFruit/BlueFruit</texPath>
         </graphicData>
         <statBases>
-            <MarketValue>2.4</MarketValue>
-            <Mass>0.060</Mass>
-            <Nutrition>0.15</Nutrition>
+            <MarketValue>1.8</MarketValue>
+            <Mass>0.08</Mass>
+            <Nutrition>0.1</Nutrition>
         </statBases>
         <comps>
             <li Class="CompProperties_Rottable">
@@ -54,6 +54,32 @@
     </ThingDef>
 
     <ThingDef ParentName="PlantFoodRawBase">
+        <defName>OCARINA_RawCherrybomb</defName>
+        <label>cherrybombs</label>
+        <description>Cherrybombs. Nice to eat, even when raw.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/Cherrybomb/Cherrybomb</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.4</MarketValue>
+            <Mass>0.12</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>8</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought />
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantFoodRawBase">
         <defName>OCARINA_RawSeedCob</defName>
         <label>cob seeds</label>
         <description>Raw cob seeds.</description>
@@ -76,5 +102,30 @@
             </li>
         </comps>
     </ThingDef>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>OCARINA_RawBatnipLeaves</defName>
+        <label>batnip leaves</label>
+        <description>Raw batnip leaves.</description>
+        <soundInteract>Grain_Drop</soundInteract>
+        <soundDrop>Grain_Drop</soundDrop>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/Batnip/Batnip</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.4</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>20</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
 
 </Defs>

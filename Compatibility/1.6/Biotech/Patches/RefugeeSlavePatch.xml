@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[@Name="SpaceRefugeeBase" or @Name="SlaveBase"]/xenotypeSet/xenotypeChances</xpath>
+                <value>
+                    <OCARINA_Scavenger>0.005</OCARINA_Scavenger>
+                    <OCARINA_SurvivorXenotype>0.005</OCARINA_SurvivorXenotype>
+                    <OCARINA_MonkXenotype>0.005</OCARINA_MonkXenotype>
+                    <OCARINA_HunterXenotype>0.005</OCARINA_HunterXenotype>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

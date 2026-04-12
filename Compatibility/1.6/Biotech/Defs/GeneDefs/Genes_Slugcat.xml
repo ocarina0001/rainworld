@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <GeneDef Name="OCARINA_SlugcatGeneBase" Abstract="True">
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <canGenerateInGeneSet>true</canGenerateInGeneSet>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SlugcatGeneBase">
+        <defName>OCARINA_SurvivorGene</defName>
+        <label>slugcat form</label>
+        <description>Carriers of this gene take on the form similar to a slugcat.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorGeneIcon</iconPath>
+        <forcedHeadTypes>
+            <li>OCARINA_Survivor_Male</li>
+            <li>OCARINA_Survivor_Female</li>
+        </forcedHeadTypes>
+        <fur>OCARINA_SurvivorFur</fur>
+        <!-- <skinColorOverride>(240,240,240)</skinColorOverride> -->
+        <randomBrightnessFactor>0.20</randomBrightnessFactor>
+        <renderNodeProperties>
+            <li>
+                <debugLabel>Fur</debugLabel>
+                <nodeClass>RainWorld.PawnRenderNode_FurUseSkinColor</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+                <baseLayer>5</baseLayer>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <colorType>Skin</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
+        <exclusionTags>
+            <li>Skin</li>
+            <li>Fur</li>
+            <li>BeardStyle</li>
+            <li>Bodies</li>
+            <li>Body</li>
+        </exclusionTags>
+        <hairTagFilter>
+            <whitelist>false</whitelist>
+            <tags>
+                <li>Shaved</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <skinIsHairColor>false</skinIsHairColor>
+        <tattoosVisible>true</tattoosVisible>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <customLeatherThingDef>OCARINA_Leather_Slugcat</customLeatherThingDef>
+                <defsTreatedAsHumanLeather>
+                    <li>OCARINA_Leather_Slugcat</li>
+                </defsTreatedAsHumanLeather>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SlugcatGeneBase">
+        <defName>OCARINA_VoiceSlugcat</defName>
+        <label>slugcat voice</label>
+        <description>Carriers have a pitched meow like a slugcat.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorSlugcatVoice</iconPath>
+        <displayOrderInCategory>125</displayOrderInCategory>
+        <soundCall>OCARINA_Pawn_SlugcatSurvivor_Call</soundCall>
+        <soundDeath>OCARINA_Pawn_SlugcatSurvivor_Death</soundDeath>
+        <soundWounded>OCARINA_Pawn_SlugcatSurvivor_Wounded</soundWounded>
+        <exclusionTags>
+            <li>Voice</li>
+        </exclusionTags>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>pussy</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>meow</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>cat</symbol>
+                </li>
+                <li>
+                    <symbol>slug</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SlugcatGeneBase">
+        <defName>OCARINA_Tail_Slugcat</defName>
+        <label>slugcat tail</label>
+        <description>Carriers of this gene grow a fatty, thick tail which partially protects them from cold temperatures and reduces metabolism from the fat storage.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorTailIcon</iconPath>
+        <displayOrderInCategory>1000</displayOrderInCategory>
+        <statOffsets>
+            <ComfyTemperatureMin>-3</ComfyTemperatureMin>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <renderNodeProperties>
+            <li>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <texPath>Things/Pawn/Humanlike/BodyAttachments/SlugcatTail/SurvivorTail</texPath>
+                <colorType>Skin</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-2</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(0.25, 0.03, -0.45)</offset>
+                        <layer>90</layer>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.2, 0, -0.25)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.5, 0, -0.35)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.5, 0, -0.40)</offset>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <exclusionTags>
+            <li>Tail</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="OCARINA_SlugcatGeneBase">
+        <defName>OCARINA_SlugcatPaws</defName>
+        <label>slugcat paws</label>
+        <description>Soft and fatty paws. Whilst they still have five fingers, the overall efficiency of the hands have been reduced.</description>
+        <iconPath>UI/Icons/Genes/Slugcat/SurvivorSlugcatPaws</iconPath>
+        <displayOrderInCategory>320</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Manipulation</capacity>
+                <postFactor>0.9</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>Hands</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_MintGreen</defName>
+        <label>mint green skin</label>
+        <labelShortAdj>mint</labelShortAdj>
+        <description>Carriers of this produce a mint green pigment in their skin.</description>
+        <skinColorOverride>(238, 255, 239)</skinColorOverride>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>green</symbol>
+                </li>
+                <li>
+                    <symbol>mint</symbol>
+                </li>
+                <li>
+                    <symbol>minty</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_Honeydew</defName>
+        <label>honeydew skin</label>
+        <labelShortAdj>honeydew</labelShortAdj>
+        <description>Carriers of this produce a pale green honeydew-like pigment in their skin.</description>
+        <skinColorOverride>(238, 255, 239)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>green</symbol>
+                </li>
+                <li>
+                    <symbol>minty</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_TitanWhite</defName>
+        <label>titan white skin</label>
+        <labelShortAdj>white</labelShortAdj>
+        <description>Carriers of this produce a very pale whiteish-blue pigment in their skin.</description>
+        <skinColorOverride>(235, 237, 255)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>white</symbol>
+                </li>
+                <li>
+                    <symbol>whiteish</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_SoftPeach</defName>
+        <label>soft peach skin</label>
+        <labelShortAdj>peach</labelShortAdj>
+        <description>Carriers of this produce a pale peach-like pigment in their skin.</description>
+        <skinColorOverride>(255, 235, 235)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>peach</symbol>
+                </li>
+                <li>
+                    <symbol>pale</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_HunterRed</defName>
+        <label>hunter red skin</label>
+        <labelShortAdj>red</labelShortAdj>
+        <description>Carriers of this produce a red pigment in their skin.</description>
+        <skinColorOverride>(255, 115, 115)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>red</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_HunterDeepRed</defName>
+        <label>hunter deep red skin</label>
+        <labelShortAdj>red</labelShortAdj>
+        <description>Carriers of this produce a deep red pigment in their skin.</description>
+        <skinColorOverride>(186, 56, 48)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>red</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_HunterPinkish</defName>
+        <label>hunter pink skin</label>
+        <labelShortAdj>red</labelShortAdj>
+        <description>Carriers of this produce a pinkish pigment in their skin.</description>
+        <skinColorOverride>(204, 85, 116)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>red</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_MonkYellow</defName>
+        <label>monk yellow skin</label>
+        <labelShortAdj>yellow</labelShortAdj>
+        <description>Carriers of this produce a yellow pigment in their skin.</description>
+        <skinColorOverride>(255, 255, 115)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>yellow</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_MonkDarkYellow</defName>
+        <label>monk dark yellow skin</label>
+        <labelShortAdj>yellow</labelShortAdj>
+        <description>Carriers of this produce a yellow pigment in their skin.</description>
+        <skinColorOverride>(241, 154, 19)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>yellow</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>OCARINA_Skin_MonkPaleYellow</defName>
+        <label>monk pale yellow skin</label>
+        <labelShortAdj>yellow</labelShortAdj>
+        <description>Carriers of this produce a yellow pigment in their skin.</description>
+        <skinColorOverride>(244, 225, 164)</skinColorOverride>
+        <displayCategory>OCARINA_MiscellaneousSlugcat</displayCategory>
+        <displayOrderInCategory>95</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>yellow</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+</Defs>

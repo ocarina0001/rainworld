@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+    <!-- these are mostly for debugging purposes cuz they will never explicitly appear in game otherwise-->
+
     <PawnKindDef ParentName="SpaceRefugeeBase">
         <defName>OCARINA_ScavengerSpaceRefugee</defName>
         <label>space refugee</label>
         <apparelMoney>0~1000</apparelMoney>
-        <initialWillRange>1~3</initialWillRange>
-        <initialResistanceRange>12~19</initialResistanceRange>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>0~8</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
                 <OCARINA_Scavenger>999</OCARINA_Scavenger>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SpaceRefugeeBase">
+        <defName>OCARINA_SurvivorSpaceRefugee</defName>
+        <label>space refugee</label>
+        <apparelMoney>0~1000</apparelMoney>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>0~8</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <OCARINA_SurvivorXenotype>999</OCARINA_SurvivorXenotype>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SpaceRefugeeBase">
+        <defName>OCARINA_MonkSpaceRefugee</defName>
+        <label>space refugee</label>
+        <apparelMoney>0~1000</apparelMoney>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>0~8</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <OCARINA_MonkXenotype>999</OCARINA_MonkXenotype>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SpaceRefugeeBase">
+        <defName>OCARINA_HunterSpaceRefugee</defName>
+        <label>space refugee</label>
+        <apparelMoney>0~1000</apparelMoney>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>0~8</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <OCARINA_HunterXenotype>999</OCARINA_HunterXenotype>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>

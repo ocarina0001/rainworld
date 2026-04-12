@@ -53,15 +53,15 @@
     <XenotypeDef ParentName="OCARINA_XenotypeBase">
         <defName>OCARINA_SurvivorXenotype</defName>
         <label>survivor</label>
-        <description>Survivors are based upon rainforest-dwelling creatures known as Slugcats, known for their impressive adaptation in relentless environments. Quick and agile, Survivors were created to effectively seed colonies for population, doing all of the early labor required for specialists to come in and do their work.</description>
-        <descriptionShort>Survivors are based upon rainforest-dwelling creatures known as Slugcats, known for their impressive adaptation in relentless environments.</descriptionShort>
+        <description>Survivors are based upon creatures known as slugcats, known for their impressive adaptation in relentless environments. Quick and agile, Survivors were created to effectively seed colonies for future population, doing all of the early labor required for specialists to come in and do their work.</description>
+        <descriptionShort>Quick and agile, Survivors were created to effectively seed colonies for future populations.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/SurvivorXenotypeIcon</iconPath>
         <inheritable>true</inheritable>
         <genes>
             <li>OCARINA_SurvivorGene</li>
-            <li>OCARINA_Tail_Survivor</li>
-            <li>OCARINA_SurvivorPaws</li>
-            <li>OCARINA_VoiceSurvivor</li>
+            <li>OCARINA_Tail_Slugcat</li>
+            <li>OCARINA_SlugcatPaws</li>
+            <li>OCARINA_VoiceSlugcat</li>
             <li>MoveSpeed_Quick</li>
             <li>Beauty_Pretty</li>
             <li>Libido_High</li>
@@ -72,6 +72,70 @@
             <li>Instability_Mild</li>
             <li>AptitudePoor_Artistic</li>
             <li>StrongStomach</li>
+            <li>Skin_SheerWhite</li>
+            <li>OCARINA_Skin_Honeydew</li>
+            <li>OCARINA_Skin_TitanWhite</li>
+            <li>OCARINA_Skin_SoftPeach</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="OCARINA_XenotypeBase">
+        <defName>OCARINA_MonkXenotype</defName>
+        <label>monk</label>
+        <description>Monks are based upon creatures known as slugcats, known for their impressive adaptation in relentless environments. Monks were created to seed distant colonies alongside Survivors, aiding colonies in social and political affairs and generally being the most reliable amongst the slugcat xenotypes.</description>
+        <descriptionShort>Monks were created to seed distant colonies alongside Survivors, aiding colonies in social and political affairs.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/MonkXenotypeIcon</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>OCARINA_SurvivorGene</li>
+            <li>OCARINA_Tail_Slugcat</li>
+            <li>OCARINA_SlugcatPaws</li>
+            <li>OCARINA_VoiceSlugcat</li>
+            <li>MoveSpeed_Quick</li>
+            <li>Beauty_Pretty</li>
+            <li>Libido_High</li>
+            <li>Fertile</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>Sleepy</li>
+            <li>Immunity_Strong</li>
+            <li>Instability_Mild</li>
+            <li>StrongStomach</li>
+            <li>Aggression_DeadCalm</li>
+            <li>Delicate</li>
+            <li>KindInstinct</li>
+            <li>MeleeDamage_Weak</li>
+            <li>OCARINA_Skin_MonkYellow</li>
+            <li>OCARINA_Skin_MonkDarkYellow</li>
+            <li>OCARINA_Skin_MonkPaleYellow</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="OCARINA_XenotypeBase">
+        <defName>OCARINA_HunterXenotype</defName>
+        <label>hunter</label>
+        <description>Hunters are based upon creatures known as slugcats, known for their impressive adaptation in relentless environments. Strong and quick, Hunters were created to accompany Survivors as guards, to protect the colonization efforts.</description>
+        <descriptionShort>Strong and quick, Hunters were created to accompany Survivors as guards, to protect the colonization efforts.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/HunterXenotypeIcon</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>OCARINA_SurvivorGene</li>
+            <li>OCARINA_Tail_Slugcat</li>
+            <li>OCARINA_SlugcatPaws</li>
+            <li>OCARINA_VoiceSlugcat</li>
+            <li>MoveSpeed_Quick</li>
+            <li>Beauty_Pretty</li>
+            <li>Libido_High</li>
+            <li>Fertile</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>Sleepy</li>
+            <li>Immunity_Strong</li>
+            <li>Instability_Major</li>
+            <li>AptitudePoor_Artistic</li>
+            <li>StrongStomach</li>
+            <li>MeleeDamage_Strong</li>
+            <li>OCARINA_Skin_HunterRed</li>
+            <li>OCARINA_Skin_HunterDeepRed</li>
+            <li>OCARINA_Skin_HunterPinkish</li>
         </genes>
     </XenotypeDef>
 

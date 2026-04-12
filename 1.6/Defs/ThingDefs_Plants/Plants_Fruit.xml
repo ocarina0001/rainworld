@@ -18,11 +18,11 @@
         <pathCost>14</pathCost>
         <ingestible />
         <plant>
-            <growDays>6</growDays>
+            <growDays>8</growDays>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
             <maxMeshCount>4</maxMeshCount>
-            <dieIfLeafless>true</dieIfLeafless>
+            <dieIfLeafless>false</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>OCARINA_RawBlueFruit</harvestedThingDef>
             <harvestYield>4</harvestYield>
@@ -30,7 +30,6 @@
             <cavePlant>true</cavePlant>
             <sowTags>
                 <li>Ground</li>
-                <li>Hydroponic</li>
             </sowTags>
             <topWindExposure>0.1</topWindExposure>
             <immatureGraphicPath>Things/Plant/BlueFruit</immatureGraphicPath>
@@ -48,7 +47,7 @@
         <defName>OCARINA_Plant_BubbleFruit</defName>
         <label>bubble fruit plant</label>
         <thingClass>RainWorld.Plant_WaterAffiliation</thingClass>
-        <description>Bubble Fruit are small fruits with a blue center surrounded by a dark outer shell, usually found growing out of the ground around bodies of water. Being near water is the key to cultivating these fruits, halving their normal growing time. Rainfall will in turn half that growing time, optimally bringing down it's growth time from 15 days to 7 days if near water to just 3 days while it's raining.</description>
+        <description>Bubble fruit are small fruits with a blue center surrounded by a dark outer shell, usually found growing out of the ground around bodies of water. Being near water is the key to cultivating these fruits, halving their normal growing time. Rainfall will in turn half that growing time, optimally bringing down it's growth time from 15 days to 7 days if near water to just 3 days while it's raining.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
             <Nutrition>0.2</Nutrition>
@@ -78,6 +77,59 @@
             <purpose>Food</purpose>
             <humanFoodPlant>true</humanFoodPlant>
         </plant>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_Cherrybomb</defName>
+        <label>cherrybomb plant</label>
+        <description>The cherrybomb plant is one that could best be described as "angry". It's fragile, difficult, and explosive. Despite this, the cherrybombs themselves contain a flavor profile that is deeply unique to the fruit and can only be described as similar to the smell of faint sulfur, but it's also most definitely not that.</description>
+        <statBases>
+            <MaxHitPoints>12</MaxHitPoints>
+            <Nutrition>0.25</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/Cherrybomb</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>18</pathCost>
+        <tickerType>Normal</tickerType>
+        <ingestible />
+        <plant>
+            <growDays>12.9</growDays>
+            <maxMeshCount>2</maxMeshCount>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_RawCherrybomb</harvestedThingDef>
+            <harvestYield>8</harvestYield>
+            <sowMinSkill>14</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <immatureGraphicPath>Things/Plant/Cherrybomb</immatureGraphicPath>
+            <visualSizeRange>0.9~1.1</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+            <fertilityMin>1.0</fertilityMin>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+        </plant>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.1</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <damageAmountBase>1</damageAmountBase>
+                <startWickOnDamageTaken>
+                    <li>Flame</li>
+                    <li>Bomb</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.666</startWickHitPointsPercent>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>30~160</wickTicks>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

@@ -4,7 +4,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/BiomeDef[defName="TemperateSwamp" or defName="TropicalSwamp" or defName="TropicalRainforest"]/wildPlants</xpath>
         <value>
-            <OCARINA_Plant_BatflyGrass>0.001</OCARINA_Plant_BatflyGrass>
+            <OCARINA_Plant_BatflyGrass>0.0005</OCARINA_Plant_BatflyGrass>
         </value>
     </Operation>
 

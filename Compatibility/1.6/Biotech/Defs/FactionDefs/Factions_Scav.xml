@@ -22,6 +22,9 @@
         <xenotypeSet>
             <xenotypeChances>
                 <OCARINA_Scavenger MayRequire="Ludeon.RimWorld.Biotech">999</OCARINA_Scavenger>
+                <OCARINA_SurvivorXenotype MayRequire="Ludeon.RimWorld.Biotech">0.1</OCARINA_SurvivorXenotype>
+                <OCARINA_MonkXenotype MayRequire="Ludeon.RimWorld.Biotech">0.1</OCARINA_MonkXenotype>
+                <OCARINA_HunterXenotype MayRequire="Ludeon.RimWorld.Biotech">0.1</OCARINA_HunterXenotype>
             </xenotypeChances>
         </xenotypeSet>
         <caravanTraderKinds>
@@ -45,6 +48,9 @@
         <xenotypeSet>
             <xenotypeChances>
                 <OCARINA_Scavenger MayRequire="Ludeon.RimWorld.Biotech">999</OCARINA_Scavenger>
+                <OCARINA_SurvivorXenotype MayRequire="Ludeon.RimWorld.Biotech">0.1</OCARINA_SurvivorXenotype>
+                <OCARINA_MonkXenotype MayRequire="Ludeon.RimWorld.Biotech">0.1</OCARINA_MonkXenotype>
+                <OCARINA_HunterXenotype MayRequire="Ludeon.RimWorld.Biotech">0.1</OCARINA_HunterXenotype>
             </xenotypeChances>
         </xenotypeSet>
         <caravanTraderKinds>
