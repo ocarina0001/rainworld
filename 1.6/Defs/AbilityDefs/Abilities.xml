@@ -9,6 +9,8 @@
         <cooldownTicksRange>2500</cooldownTicksRange>
         <hostile>false</hostile>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <verbProperties>
             <verbClass>RainWorld.Verb_CastAbilityExplosiveJump</verbClass>
             <label>jump</label>
@@ -45,6 +47,8 @@
         <hostile>true</hostile>
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <targetRequired>false</targetRequired>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <statBases>
             <Ability_EffectRadius>14.9</Ability_EffectRadius>
         </statBases>
@@ -113,6 +117,8 @@
         <cooldownTicksRange>60000</cooldownTicksRange>
         <hostile>false</hostile>
         <targetRequired>false</targetRequired>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <verbProperties>
             <verbClass>RainWorld.Verb_CastAbilityExplosiveCraft</verbClass>
             <violent>false</violent>
@@ -144,6 +150,8 @@
         <cooldownTicksRange>300000</cooldownTicksRange>
         <hostile>false</hostile>
         <targetRequired>false</targetRequired>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <verbProperties>
             <verbClass>RainWorld.Verb_CastAbilityRainSummon</verbClass>
             <violent>false</violent>
@@ -170,6 +178,8 @@
         <cooldownTicksRange>300</cooldownTicksRange>
         <hostile>false</hostile>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <verbProperties>
             <verbClass>RainWorld.Verb_CastAbilityRivuletSlide</verbClass>
             <label>slide</label>

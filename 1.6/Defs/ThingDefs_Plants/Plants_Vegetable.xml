@@ -4,7 +4,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>OCARINA_Plant_SeedCob</defName>
         <label>popcorn plant</label>
-        <description>The Popcorn Plant, otherwise referred to as the Seed Cob, is a plant-like organism reminiscent of a stalk of corn that consists of a tall, red corn-like ear attached to a black stem. These tall stalks of corn are very difficult to crack open, increasing the amount of manpower needed to harvest these stalks.</description>
+        <description>The popcorn plant, otherwise referred to as the seed cob, is a plant-like organism reminiscent of a stalk of corn that consists of a tall, red corn-like ear attached to a black stem. These tall stalks of corn are very difficult to crack open, increasing the amount of manpower needed to harvest these stalks.</description>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <Nutrition>0.4</Nutrition>
@@ -34,6 +34,43 @@
             <wildOrder>2</wildOrder>
             <purpose>Food</purpose>
             <humanFoodPlant>true</humanFoodPlant>
+        </plant>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>OCARINA_Plant_Batnip</defName>
+        <label>batnip plant</label>
+        <description>The batnip plant is a reddish-orange fern-like plant that attracts batflies... or, it used to. The modern batnip plant has been geneticially modified to be much larger and more useful for humans to grow in harsher environments. The modifications also overall improved the plant's edibility and removed the gene that attracts batflies, replacing it with a partial gene from the smokeleaf plant. That addition allows for batleaf leaves to be smoked, if one so chooses.</description>
+        <statBases>
+            <MaxHitPoints>30</MaxHitPoints>
+            <Nutrition>0.175</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/Batnip</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <immatureGraphicPath>Things/Plant/Batnip</immatureGraphicPath>
+            <dieIfLeafless>false</dieIfLeafless>
+            <maxMeshCount>2</maxMeshCount>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>OCARINA_RawBatnipLeaves</harvestedThingDef>
+            <harvestYield>9</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>5</growDays>
+            <visualSizeRange>0.7~1.1</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+            <fertilityMin>0</fertilityMin>
+            <fertilitySensitivity>0.05</fertilitySensitivity>
         </plant>
     </ThingDef>
 

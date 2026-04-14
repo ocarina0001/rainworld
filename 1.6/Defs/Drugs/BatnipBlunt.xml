@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>OCARINA_BatnipBlunt</defName>
+        <label>batnip blunt</label>
+        <description>Batnip leaves rolled and crushed into a blunt. Batnip historically has only been seen to work symbiotically with batflies, but the leaves of the batnip plant do have a small, pleasant sensation when smoked, in the same vein mint does. Batnip isn't addictive.</description>
+        <possessionCount>5</possessionCount>
+        <descriptionHyperlinks>
+            <HediffDef>OCARINA_BatnipHigh</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/BatnipBlunt</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>8</MarketValue>
+            <Mass>0.05</Mass>
+            <DeteriorationRate>6</DeteriorationRate>
+            <Flammability>1.3</Flammability>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <foodType>Plant, Processed</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.40</joy>
+            <baseIngestTicks>780</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Social</drugCategory>
+            <ingestSound>Ingest_Smoke</ingestSound>
+            <ingestEffect>Smoke_Joint</ingestEffect>
+            <ingestEffectEat>EatVegetarian</ingestEffectEat>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.27,0,0.08)</offset>
+                    <behind>true</behind>
+                </northDefault>
+                <east>
+                    <offset>(0.45,0,0.08)</offset>
+                </east>
+                <south>
+                    <offset>(0.27,0,0.08)</offset>
+                </south>
+                <west>
+                    <offset>(-0.50,0,0.08)</offset>
+                    <flip>true</flip>
+                </west>
+            </ingestHoldOffsetStanding>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Smoke {0}</ingestCommandString>
+            <ingestReportString>Smoking {0}.</ingestReportString>
+            <ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>OCARINA_BatnipHigh</hediffDef>
+                    <severity>0.5</severity>
+                    <toleranceChemical>OCARINA_Batnip</toleranceChemical>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+            <workSkill>Cooking</workSkill>
+            <displayPriority>1400</displayPriority>
+        </recipeMaker>
+        <costList>
+            <OCARINA_RawBatnipLeaves>4</OCARINA_RawBatnipLeaves>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>OCARINA_Batnip</chemical>
+                <addictiveness>0.00</addictiveness>
+                <listOrder>20</listOrder>
+            </li>
+        </comps>
+        <allowedArchonexusCount>50</allowedArchonexusCount>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>OCARINA_BatnipHigh</defName>
+        <label>high on batnip</label>
+        <labelNoun>a batnip high</labelNoun>
+        <description>Batnip's active chemical in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.03</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.03</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.03</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>OCARINA_BatnipHigh</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>OCARINA_BatnipHigh</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>high on batnip</label>
+                <description>What a nice feeling...</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <HediffDef ParentName="DrugToleranceBase">
+        <defName>OCARINA_BatnipTolerance</defName>
+        <label>batnip tolerance</label>
+        <description>A built-up tolerance to batnip. The more severe this tolerance is, the more batnip it takes to get the same effect.</description>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.005</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <ChemicalDef>
+        <defName>OCARINA_Batnip</defName>
+        <label>Batnip</label>
+        <toleranceHediff>OCARINA_BatnipTolerance</toleranceHediff>
+        <generateAddictionGenes>false</generateAddictionGenes>
+        <canBeAddicted>false</canBeAddicted>
+    </ChemicalDef>
+
+</Defs>

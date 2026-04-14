@@ -13,8 +13,8 @@
 
 13.0 - 4/XX/XXXX
 - Added batflies and batfly hives
-/ Added batnip plant
-/ Added batnip blunt
+- Added batnip plant
+- Added batnip blunt
 - Added cherrybomb plant
 / Added cherrybomb pouch
 / Added new way to craft grenades
@@ -35,6 +35,7 @@
 - Changed popcorn plant's sow work from 10 to 50
 - Changed popcorn plant's harvest yield from 26 to 27
 - Changed popcorn plant's grow days from 10 to 12
+- Changed some slugcat abilities to be visible while undrafted
 - Removed long legs event temporarily (I eventually intend to revisit it and rot generally in a future update)
 - Fixed blue fruit growing without ceilings
 
