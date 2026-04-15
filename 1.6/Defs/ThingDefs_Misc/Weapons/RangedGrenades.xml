@@ -16,7 +16,7 @@
         <statBases>
             <Mass>0.08</Mass>
             <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
-            <WorkToMake>12000</WorkToMake>
+            <WorkToMake>5000</WorkToMake>
             <MaxHitPoints>10</MaxHitPoints>
         </statBases>
         <weaponTags>
@@ -26,8 +26,8 @@
             <li>Grenades</li>
         </thingCategories>
         <costList>
-            <OCARINA_Pearls>5</OCARINA_Pearls>
-            <Steel>10</Steel>
+            <OCARINA_Pearls>1</OCARINA_Pearls>
+            <OCARINA_RawCherrybomb>16</OCARINA_RawCherrybomb>
         </costList>
         <stackLimit>30</stackLimit>
         <smeltable>true</smeltable>
@@ -68,7 +68,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <explosionRadius>1.99</explosionRadius>
+            <explosionRadius>2.49</explosionRadius>
             <damageDef>Bomb</damageDef>
             <explosionDelay>5</explosionDelay>
             <damageAmountBase>80</damageAmountBase>
@@ -83,16 +83,17 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <explosionRadius>0.9</explosionRadius>
+            <explosionRadius>1.99</explosionRadius>
             <damageDef>Bomb</damageDef>
             <explosionDelay>1</explosionDelay>
             <damageAmountBase>1</damageAmountBase>
-            <stoppingPower>2</stoppingPower>
+            <stoppingPower>3</stoppingPower>
             <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>10</speed>
             <extraDamages>
                 <li>
                     <def>Stun</def>
-                    <amount>10</amount>
+                    <amount>50</amount>
                 </li>
             </extraDamages>
         </projectile>

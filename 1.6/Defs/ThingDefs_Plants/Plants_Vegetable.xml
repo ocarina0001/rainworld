@@ -55,7 +55,7 @@
         <plant>
             <immatureGraphicPath>Things/Plant/Batnip</immatureGraphicPath>
             <dieIfLeafless>false</dieIfLeafless>
-            <maxMeshCount>2</maxMeshCount>
+            <maxMeshCount>4</maxMeshCount>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>OCARINA_RawBatnipLeaves</harvestedThingDef>
             <harvestYield>9</harvestYield>

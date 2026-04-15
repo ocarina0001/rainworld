@@ -97,7 +97,6 @@
         <ingestible />
         <plant>
             <growDays>12.9</growDays>
-            <maxMeshCount>2</maxMeshCount>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>OCARINA_RawCherrybomb</harvestedThingDef>
