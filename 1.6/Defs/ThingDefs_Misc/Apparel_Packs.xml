@@ -48,10 +48,12 @@
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
-            <skillRequirements>
-                <Crafting>3</Crafting>
-            </skillRequirements>
         </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
         <costList>
             <OCARINA_Weapon_ScavengerGrenade>1</OCARINA_Weapon_ScavengerGrenade>
         </costList>
@@ -145,6 +147,156 @@
                 <!-- <li>GrenadeDestructiveBelt</li> -->
                 <li>OCARINA_ScavengerGrenadeBelt</li>
                 <li>OCARINA_Scavenger</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>OCARINA_Apparel_CherrybombPouch</defName>
+        <label>cherrybomb pouch</label>
+        <description>Pouch full of cherrybombs. Cherrybombs, when impacting a surface, tend to cause a small explosion. Usually not enough to do anything meaningful, but enough to shock whoever's effected.</description>
+        <techLevel>Industrial</techLevel>
+        <comps>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>75</maxCharges>
+                <ammoDef>OCARINA_RawCherrybomb</ammoDef>
+                <ammoCountToRefill>1</ammoCountToRefill>
+                <baseReloadTicks>120</baseReloadTicks>
+                <soundReload>Standard_Reload</soundReload>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>cherrybomb</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+        </comps>
+        <verbs>
+            <li>
+                <label>throw cherrybomb</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <onlyManualCast>True</onlyManualCast>
+                <range>15.9</range>
+                <forcedMissRadius>0.3</forcedMissRadius>
+                <warmupTime>0.3</warmupTime>
+                <noiseRadius>2</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>OCARINA_Proj_Cherrybomb</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <useIngredientsForColor>false</useIngredientsForColor>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <costList>
+            <OCARINA_RawCherrybomb>1</OCARINA_RawCherrybomb>
+        </costList>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/CherrybombPouch</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <WorkToMake>450</WorkToMake>
+            <Mass>2.5</Mass>
+            <Flammability>0.4</Flammability>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <generateAllowChance>0.05</generateAllowChance>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CherrybombPouch/CherrybombPouch</wornGraphicPath>
+            <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <offset>(-0.30,-0.25)</offset>
+                    <hulk>
+                        <offset>(-0.0,-0.15)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.0,-0.0)</offset>
+                    </fat>
+                    <thin>
+                        <offset>(0.10,-0.0)</offset>
+                    </thin>
+                </north>
+                <south>
+                    <offset>(0.25,-0.20)</offset>
+                    <hulk>
+                        <offset>(-0.0,-0.10)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.0,-0.0)</offset>
+                    </fat>
+                    <thin>
+                        <offset>(-0.10,-0.0)</offset>
+                    </thin>
+                </south>
+                <east>
+                    <offset>(-0.15,-0.25)</offset>
+                    <hulk>
+                        <offset>(-0.0,-0.15)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.10,-0.10)</offset>
+                    </fat>
+                </east>
+                <west>
+                    <offset>(0.15,-0.25)</offset>
+                    <hulk>
+                        <offset>(-0.0,-0.15)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.0,-0.10)</offset>
+                    </fat>
+                </west>
+                <male>
+                    <scale>(0.75,0.75)</scale>
+                </male>
+                <female>
+                    <scale>(0.75,0.75)</scale>
+                </female>
+                <thin>
+                    <scale>(0.7,0.7)</scale>
+                </thin>
+                <hulk>
+                    <scale>(0.9,0.9)</scale>
+                </hulk>
+                <fat>
+                    <scale>(0.9,0.9)</scale>
+                </fat>
+            </wornGraphicData>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <!-- <li>GrenadeDestructiveBelt</li> -->
+                <li>OCARINA_ScavengerGrenadeBelt</li>
+                <!-- <li>OCARINA_Scavenger</li> -->
             </tags>
         </apparel>
     </ThingDef>

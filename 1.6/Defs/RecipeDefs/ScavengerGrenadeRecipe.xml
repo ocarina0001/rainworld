@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>OCARINA_Make_ScavengerGrenade</defName>
+        <label>make scavenger grenade</label>
+        <description>Make a scavenger grenade, a useful impact-style grenade crafted from pearls and cherrybombs.</description>
+        <jobString>Making scavenger grenades.</jobString>
+        <workAmount>1500</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>OCARINA_Pearls</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>OCARINA_RawCherrybomb</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>OCARINA_Pearls</li>
+                <li>OCARINA_RawCherrybomb</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <OCARINA_Weapon_ScavengerGrenade>4</OCARINA_Weapon_ScavengerGrenade>
+        </products>
+    </RecipeDef>
+
+</Defs>

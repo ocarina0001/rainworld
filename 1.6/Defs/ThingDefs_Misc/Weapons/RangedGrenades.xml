@@ -75,4 +75,27 @@
         </projectile>
     </ThingDef>
 
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>OCARINA_Proj_Cherrybomb</defName>
+        <label>cherrybomb</label>
+        <graphicData>
+            <texPath>Things/Projectile/Cherrybomb</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>0.9</explosionRadius>
+            <damageDef>Bomb</damageDef>
+            <explosionDelay>1</explosionDelay>
+            <damageAmountBase>1</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <extraDamages>
+                <li>
+                    <def>Stun</def>
+                    <amount>10</amount>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+
 </Defs>
