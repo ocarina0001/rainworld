@@ -76,6 +76,7 @@
             <li>OCARINA_Skin_Honeydew</li>
             <li>OCARINA_Skin_TitanWhite</li>
             <li>OCARINA_Skin_SoftPeach</li>
+            <li>Hair_BaldOnly</li>
         </genes>
     </XenotypeDef>
 
@@ -107,6 +108,7 @@
             <li>OCARINA_Skin_MonkYellow</li>
             <li>OCARINA_Skin_MonkDarkYellow</li>
             <li>OCARINA_Skin_MonkPaleYellow</li>
+            <li>Hair_BaldOnly</li>
         </genes>
     </XenotypeDef>
 
@@ -136,6 +138,7 @@
             <li>OCARINA_Skin_HunterRed</li>
             <li>OCARINA_Skin_HunterDeepRed</li>
             <li>OCARINA_Skin_HunterPinkish</li>
+            <li>Hair_BaldOnly</li>
         </genes>
     </XenotypeDef>
 
