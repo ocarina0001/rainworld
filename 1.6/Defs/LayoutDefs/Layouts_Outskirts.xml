@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- it's the scarlands stuff but like x5 -->
+
+    <StructureLayoutDef>
+        <defName>OCARINA_OutskirtRuins</defName>
+        <workerClass>LayoutWorker_AncientRuins</workerClass>
+        <shouldDamage>true</shouldDamage>
+        <canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+        <roomDefs>
+            <AncientRuinsEmpty>25</AncientRuinsEmpty>
+            <AncientRuinsRubble>15</AncientRuinsRubble>
+            <AncientRuinsIndustrialStorage>10</AncientRuinsIndustrialStorage>
+            <AncientRuinsStorage>10</AncientRuinsStorage>
+            <AncientRuinsBarracks>5</AncientRuinsBarracks>
+            <AncientRuinsKitchen>5</AncientRuinsKitchen>
+            <AncientRuinsOperatingRoom>5</AncientRuinsOperatingRoom>
+            <AncientRuinsDiningHall>5</AncientRuinsDiningHall>
+            <!-- <AncientRuinsReactorToxicWaterRoom>2</AncientRuinsReactorToxicWaterRoom> -->
+            <AncientRuinsShelfRoom>5</AncientRuinsShelfRoom>
+            <AncientSleepingArea>5</AncientSleepingArea>
+            <AncientRuinsCryptosleepCasketNoThreat>0.1</AncientRuinsCryptosleepCasketNoThreat>
+            <AncientOrbitalUplink>0.1</AncientOrbitalUplink>
+            <AncientRuinsChemfuelWorkshop>5</AncientRuinsChemfuelWorkshop>
+            <AncientRuinsSecureRoom>5</AncientRuinsSecureRoom>
+            <AncientRuinsShelfRoomWithLoot>0.1</AncientRuinsShelfRoomWithLoot>
+            <AncientRuinsMechsWithLoot>0.01</AncientRuinsMechsWithLoot>
+            <!-- <AncientRuinsInsectHive>0.1</AncientRuinsInsectHive> -->
+            <AncientRuinsCryptosleepCasket>0.1</AncientRuinsCryptosleepCasket>
+        </roomDefs>
+        <junkScaterrers>
+            <RubblePile>
+                <groupsPerHundredCells>1~3</groupsPerHundredCells>
+                <itemsPerGroup>2~4</itemsPerGroup>
+                <groupDistRange>3~5</groupDistRange>
+            </RubblePile>
+            <Filth_RubbleRock>
+                <groupsPerHundredCells>1~3</groupsPerHundredCells>
+                <itemsPerGroup>3~8</itemsPerGroup>
+                <groupDistRange>3~5</groupDistRange>
+            </Filth_RubbleRock>
+        </junkScaterrers>
+    </StructureLayoutDef>
+
+</Defs>

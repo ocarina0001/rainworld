@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <GenStepDef>
+        <defName>OCARINA_OutskirtRuins</defName>
+        <order>740</order>
+        <genStep Class="GenStep_AncientRuins">
+            <layoutDef>OCARINA_OutskirtRuins</layoutDef>
+        </genStep>
+    </GenStepDef>
+
+</Defs>

@@ -4,22 +4,21 @@
     <BiomeDef>
         <defName>OCARINA_Outskirts</defName>
         <label>outskirts</label>
-        <description>Ruins of an ancient city which was destroyed by weapons of mass destruction. Often found just nearby scarlands, the outskirts are a more habitable space, yet still with destroyed buildings and associated threats.</description>
+        <description>High density cities and concrete architecture, left abandoned for likely many reasons. Distant rain-producing megastructures effect these regions, causing rainy weather to be much more common.</description>
         <workerClass>RainWorld.BiomeWorker_Outskirts</workerClass>
         <animalDensity>1.0</animalDensity>
         <plantDensity>0.6</plantDensity>
-        <settlementSelectionWeight>0.6</settlementSelectionWeight>
+        <settlementSelectionWeight>0.2</settlementSelectionWeight>
         <movementDifficulty>1</movementDifficulty>
         <lakeBeachTerrain>Gravel</lakeBeachTerrain>
         <mudTerrain>MarshyTerrain</mudTerrain>
         <riverbankTerrain>MarshyTerrain</riverbankTerrain>
         <riverbankSizeRange>6~8</riverbankSizeRange>
         <texture>World/Biomes/Scarlands</texture>
-        <forageability>0.35</forageability>
+        <forageability>0.15</forageability>
         <foragedFood>OCARINA_Plant_SeedCob</foragedFood>
         <wildPlantRegrowDays>20</wildPlantRegrowDays>
         <diseaseMtbDays>50</diseaseMtbDays>
-        <pollutionOffset>0.05</pollutionOffset>
         <maxFishPopulation>120</maxFishPopulation>
         <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
             <freshwater_Common>
@@ -115,23 +114,22 @@
                     <li>
                         <terrain>Mud</terrain>
                         <min>0.90</min>
-                        <max>0.93</max>
+                        <max>0.96</max>
                     </li>
                     <li>
                         <terrain>WaterShallow</terrain>
-                        <min>0.93</min>
+                        <min>0.96</min>
                         <max>999</max>
                     </li>
                 </thresholds>
             </li>
         </terrainPatchMakers>
         <baseWeatherCommonalities>
-            <Clear>12</Clear>
-            <Fog>1</Fog>
-            <Rain>4</Rain>
-            <DryThunderstorm>1</DryThunderstorm>
-            <RainyThunderstorm>1</RainyThunderstorm>
-            <FoggyRain>4</FoggyRain>
+            <Clear>4</Clear>
+            <Fog>2</Fog>
+            <Rain>8</Rain>
+            <RainyThunderstorm>4</RainyThunderstorm>
+            <FoggyRain>6</FoggyRain>
             <SnowGentle>2</SnowGentle>
             <SnowHard>2</SnowHard>
             <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
@@ -164,6 +162,8 @@
             <OCARINA_SlugcatSurvivor>0.05</OCARINA_SlugcatSurvivor>
             <OCARINA_SlugcatMonk>0.05</OCARINA_SlugcatMonk>
             <OCARINA_SlugcatHunter>0.01</OCARINA_SlugcatHunter>
+            <OCARINA_SlugcatRivulet>0.005</OCARINA_SlugcatRivulet>
+            <OCARINA_SlugcatArtificer>0.0005</OCARINA_SlugcatArtificer>
         </wildAnimals>
         <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
             <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
@@ -177,6 +177,8 @@
             <OCARINA_RedLizard>0.3</OCARINA_RedLizard>
             <OCARINA_PinkLizard>0.25</OCARINA_PinkLizard>
             <OCARINA_SlugcatHunter>0.1</OCARINA_SlugcatHunter>
+            <OCARINA_SlugcatRivulet>0.005</OCARINA_SlugcatRivulet>
+            <OCARINA_SlugcatArtificer>0.0005</OCARINA_SlugcatArtificer>
         </pollutionWildAnimals>
         <allowedPackAnimals>
             <li>Muffalo</li>
@@ -187,11 +189,15 @@
             <li>OCARINA_SlugcatHunter</li>
             <li>OCARINA_SlugcatMonk</li>
             <li>OCARINA_SlugcatSurvivor</li>
+            <li>OCARINA_SlugcatRivulet</li>
+            <li>OCARINA_SlugcatArtificer</li>
         </allowedPackAnimals>
         <extraGenSteps>
-            <li>AncientRuins_Scarlands</li>
-            <li>ScarlandsJunkClusters</li>
-            <li>ScarlandsJunkPrefabs</li>
+            <!-- <li>AncientRuins_Scarlands</li>
+            <li>AncientRuins_Special</li> -->
+            <!-- <li>ScarlandsJunkClusters</li>
+            <li>ScarlandsJunkPrefabs</li> -->
+            <li>OCARINA_OutskirtRuins</li>
         </extraGenSteps>
     </BiomeDef>
 
