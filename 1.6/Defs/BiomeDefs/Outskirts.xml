@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BiomeDef>
+        <defName>OCARINA_Outskirts</defName>
+        <label>outskirts</label>
+        <description>Ruins of an ancient city which was destroyed by weapons of mass destruction. Often found just nearby scarlands, the outskirts are a more habitable space, yet still with destroyed buildings and associated threats.</description>
+        <workerClass>RainWorld.BiomeWorker_Outskirts</workerClass>
+        <animalDensity>1.0</animalDensity>
+        <plantDensity>0.6</plantDensity>
+        <settlementSelectionWeight>0.6</settlementSelectionWeight>
+        <movementDifficulty>1</movementDifficulty>
+        <lakeBeachTerrain>Gravel</lakeBeachTerrain>
+        <mudTerrain>MarshyTerrain</mudTerrain>
+        <riverbankTerrain>MarshyTerrain</riverbankTerrain>
+        <riverbankSizeRange>6~8</riverbankSizeRange>
+        <texture>World/Biomes/Scarlands</texture>
+        <forageability>0.35</forageability>
+        <foragedFood>OCARINA_Plant_SeedCob</foragedFood>
+        <wildPlantRegrowDays>20</wildPlantRegrowDays>
+        <diseaseMtbDays>50</diseaseMtbDays>
+        <pollutionOffset>0.05</pollutionOffset>
+        <maxFishPopulation>120</maxFishPopulation>
+        <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+            <freshwater_Common>
+                <Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+                <Fish_Bass MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bass>
+            </freshwater_Common>
+            <freshwater_Uncommon>
+                <Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish>
+            </freshwater_Uncommon>
+            <saltwater_Common>
+                <Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+                <Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+            </saltwater_Common>
+            <saltwater_Uncommon>
+                <Fish_Marlin MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Marlin>
+                <Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder>
+            </saltwater_Uncommon>
+            <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Temperate</rareCatchesSetMaker>
+        </fishTypes>
+        <soundsAmbient>
+            <li>Ambient_NightInsects_Standard</li>
+        </soundsAmbient>
+        <diseases>
+            <li>
+                <diseaseInc>Disease_Flu</diseaseInc>
+                <commonality>100</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_Plague</diseaseInc>
+                <commonality>100</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_Malaria</diseaseInc>
+                <commonality>100</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_GutWorms</diseaseInc>
+                <commonality>50</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+                <commonality>30</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+                <commonality>30</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_MuscleParasites</diseaseInc>
+                <commonality>50</commonality>
+            </li>
+
+            <li>
+                <diseaseInc>Disease_AnimalFlu</diseaseInc>
+                <commonality>100</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_AnimalPlague</diseaseInc>
+                <commonality>100</commonality>
+            </li>
+            <li>
+                <diseaseInc>Disease_OrganDecay</diseaseInc>
+                <commonality>10</commonality>
+            </li>
+        </diseases>
+        <terrainsByFertility>
+            <li>
+                <terrain>AncientMegastructure</terrain>
+                <min>-999</min>
+                <max>0.75</max>
+            </li>
+            <li>
+                <terrain>Soil</terrain>
+                <min>0.75</min>
+                <max>0.95</max>
+            </li>
+            <li>
+                <terrain>SoilRich</terrain>
+                <min>0.95</min>
+                <max>999</max>
+            </li>
+        </terrainsByFertility>
+        <terrainPatchMakers>
+            <li>
+                <perlinFrequency>0.015</perlinFrequency>
+                <isPond>true</isPond>
+                <thresholds>
+                    <li>
+                        <terrain>SoilRich</terrain>
+                        <min>0.80</min>
+                        <max>0.90</max>
+                    </li>
+                    <li>
+                        <terrain>Mud</terrain>
+                        <min>0.90</min>
+                        <max>0.93</max>
+                    </li>
+                    <li>
+                        <terrain>WaterShallow</terrain>
+                        <min>0.93</min>
+                        <max>999</max>
+                    </li>
+                </thresholds>
+            </li>
+        </terrainPatchMakers>
+        <baseWeatherCommonalities>
+            <Clear>12</Clear>
+            <Fog>1</Fog>
+            <Rain>4</Rain>
+            <DryThunderstorm>1</DryThunderstorm>
+            <RainyThunderstorm>1</RainyThunderstorm>
+            <FoggyRain>4</FoggyRain>
+            <SnowGentle>2</SnowGentle>
+            <SnowHard>2</SnowHard>
+            <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+            <ToxRain>1</ToxRain>
+            <Overcast>6</Overcast>
+        </baseWeatherCommonalities>
+        <wildPlants>
+            <Plant_YellowGrass>2.0</Plant_YellowGrass>
+            <Plant_Thornvine>8.0</Plant_Thornvine>
+            <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+            <Plant_Brambles_Leafless>1.0</Plant_Brambles_Leafless>
+            <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+            <Plant_Dandelion>0.5</Plant_Dandelion>
+            <Plant_Bush_Leafless>0.6</Plant_Bush_Leafless>
+            <Plant_TreeSnagroot>0.4</Plant_TreeSnagroot>
+            <Plant_Berry_Leafless>0.02</Plant_Berry_Leafless>
+            <Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
+            <OCARINA_Plant_SeedCob>0.1</OCARINA_Plant_SeedCob>
+            <OCARINA_Plant_BubbleFruit>0.05</OCARINA_Plant_BubbleFruit>
+        </wildPlants>
+        <wildAnimals>
+            <Rat>0.8</Rat>
+            <Raccoon>0.5</Raccoon>
+            <Boomalope>0.4</Boomalope>
+            <Boomrat>0.2</Boomrat>
+            <Crow>0.35</Crow>
+            <OCARINA_GreenLizard>0.4</OCARINA_GreenLizard>
+            <OCARINA_RedLizard>0.1</OCARINA_RedLizard>
+            <OCARINA_PinkLizard>0.15</OCARINA_PinkLizard>
+            <OCARINA_SlugcatSurvivor>0.05</OCARINA_SlugcatSurvivor>
+            <OCARINA_SlugcatMonk>0.05</OCARINA_SlugcatMonk>
+            <OCARINA_SlugcatHunter>0.01</OCARINA_SlugcatHunter>
+        </wildAnimals>
+        <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+            <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+            <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+            <Rat>1</Rat>
+            <Raccoon>0.5</Raccoon>
+            <Boomrat>0.4</Boomrat>
+            <Boomalope>0.1</Boomalope>
+            <Warg>0.05</Warg>
+            <OCARINA_GreenLizard>0.6</OCARINA_GreenLizard>
+            <OCARINA_RedLizard>0.3</OCARINA_RedLizard>
+            <OCARINA_PinkLizard>0.25</OCARINA_PinkLizard>
+            <OCARINA_SlugcatHunter>0.1</OCARINA_SlugcatHunter>
+        </pollutionWildAnimals>
+        <allowedPackAnimals>
+            <li>Muffalo</li>
+            <li>Alpaca</li>
+            <li>OCARINA_GreenLizard</li>
+            <li>OCARINA_RedLizard</li>
+            <li>OCARINA_PinkLizard</li>
+            <li>OCARINA_SlugcatHunter</li>
+            <li>OCARINA_SlugcatMonk</li>
+            <li>OCARINA_SlugcatSurvivor</li>
+        </allowedPackAnimals>
+        <extraGenSteps>
+            <li>AncientRuins_Scarlands</li>
+            <li>ScarlandsJunkClusters</li>
+            <li>ScarlandsJunkPrefabs</li>
+        </extraGenSteps>
+    </BiomeDef>
+
+</Defs>
