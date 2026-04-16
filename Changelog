@@ -2,15 +2,19 @@
 - Added iterator xenotype, iterator faction and can biomes/structures (Biotech only)
 - Added overseers
 - Added neuron flies
-- Added spears (multi-use) & explosive spears (single-use)
 - Added blue lizards
 - Added RJW and RNW support
 - Added scavenger backstories
 - Added iterator backstories
-- Added immature and leafless graphics for all existing plants 
 - Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
-- Added outskirts biome
+
+15.0 - ?/??/????
+- Added immature and leafless graphics for all existing plants 
 - Added slugcat apparel support
+
+14.0 - 4/??/????
+- Added outskirts biome
+- Added spears (multi-use) & explosive spears (single-use)
 
 13.0 - 4/15/2026
 - Added batflies and batfly hives
