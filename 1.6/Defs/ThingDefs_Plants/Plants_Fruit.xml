@@ -37,9 +37,8 @@
             <wildOrder>2</wildOrder>
             <purpose>Food</purpose>
             <humanFoodPlant>true</humanFoodPlant>
-            <fertilityMin>0</fertilityMin>
+            <fertilityMin>0.1</fertilityMin>
             <fertilitySensitivity>0</fertilitySensitivity>
-            <completelyIgnoreFertility>true</completelyIgnoreFertility>
         </plant>
     </ThingDef>
 
