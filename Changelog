@@ -16,6 +16,9 @@
 - Added outskirts biome
 - Added spears (multi-use) & explosive spears (single-use)
 
+13.1 - 4/16/2026
+- Changed blue fruit's minimum fertility from 0 to 0.1, fixing an issue that caused blue fruit to grow in abudnance in caves
+
 13.0 - 4/15/2026
 - Added batflies and batfly hives
 - Added batnip plant
