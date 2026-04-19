@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <LayoutRoomDef>
+        <defName>OCARINA_EmptyRoomOutskirts</defName>
+        <spawnJunk>false</spawnJunk>
+    </LayoutRoomDef>
+
+</Defs>

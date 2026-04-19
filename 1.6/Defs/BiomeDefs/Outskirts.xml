@@ -13,8 +13,8 @@
         <lakeBeachTerrain>Gravel</lakeBeachTerrain>
         <mudTerrain>MarshyTerrain</mudTerrain>
         <riverbankTerrain>MarshyTerrain</riverbankTerrain>
-        <riverbankSizeRange>6~8</riverbankSizeRange>
-        <texture>World/Biomes/Scarlands</texture>
+        <riverbankSizeRange>1~4</riverbankSizeRange>
+        <texture>World/Biomes/Outskirts</texture>
         <forageability>0.15</forageability>
         <foragedFood>OCARINA_Plant_SeedCob</foragedFood>
         <wildPlantRegrowDays>20</wildPlantRegrowDays>
