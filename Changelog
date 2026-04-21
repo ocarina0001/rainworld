@@ -13,8 +13,9 @@
 - Added slugcat apparel support
 
 14.0 - 4/??/????
-- Added outskirts biome
-- Added spears (multi-use) & explosive spears (single-use)
+/ Added outskirts biome
+/ Added spears (multi-use) & explosive spears (single-use)
+/ Added proper texture for batfly skeletons
 
 13.1 - 4/16/2026
 - Changed blue fruit's minimum fertility from 0 to 0.1, fixing an issue that caused blue fruit to grow in abudnance in caves

@@ -68,6 +68,7 @@
     <Compile Include="JobDriver_AnimalWeaponEquip.cs" />
     <Compile Include="JobDriver_AnimalWeaponShoot.cs" />
     <Compile Include="JobDriver_Maul.cs" />
+    <Compile Include="LayoutWorker_OutskirtRuins.cs" />
     <Compile Include="Patch_AnimalWeaponGizmos.cs" />
     <Compile Include="Patch_DrawWeapon.cs" />
     <Compile Include="Patch_ButcherProducts.cs" />
