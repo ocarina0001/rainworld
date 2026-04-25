@@ -17,5 +17,6 @@
         <!-- <li IfModActive="rim.job.world">Compatibility/1.6/RJW</li> -->
         <!-- <li IfModActive="shauaputa.rimnudeworld">Compatibility/1.6/RNW</li> -->
         <li IfModActive="ludeon.rimworld.biotech">Compatibility/1.6/Biotech</li>
+        <li IfModActive="ludeon.rimworld.odyssey">Compatibility/1.6/Odyssey</li>
     </v1.6>
 </loadFolders>
