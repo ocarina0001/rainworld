@@ -129,6 +129,7 @@
                 <TropicalSwamp>0.20</TropicalSwamp>
                 <TropicalRainforest>0.30</TropicalRainforest>
             </wildBiomes>
+            <specialTrainables />
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>
@@ -346,6 +347,7 @@
                 <TropicalSwamp>0.18</TropicalSwamp>
                 <TropicalRainforest>0.28</TropicalRainforest>
             </wildBiomes>
+            <specialTrainables />
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>
@@ -523,6 +525,7 @@
                 <TropicalSwamp>0.15</TropicalSwamp>
                 <TropicalRainforest>0.25</TropicalRainforest>
             </wildBiomes>
+            <specialTrainables />
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>
@@ -701,10 +704,10 @@
                 <TropicalRainforest>0.04</TropicalRainforest>
             </wildBiomes>
             <specialTrainables>
-                <li>OCARINA_ArtificerExplosiveJump</li>
-                <li>OCARINA_ArtificerConcussionBlast</li>
-                <li>OCARINA_ArtificerMaul</li>
-                <li>OCARINA_ArtificerExplosiveCraft</li>
+                <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerExplosiveJump</li>
+                <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerConcussionBlast</li>
+                <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerMaul</li>
+                <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerExplosiveCraft</li>
             </specialTrainables>
         </race>
         <tradeTags>
@@ -731,10 +734,10 @@
         <combatPower>80</combatPower>
         <ecoSystemWeight>1.7</ecoSystemWeight>
         <abilities>
-            <li>OCARINA_ArtificerExplosiveJump</li>
-            <li>OCARINA_ArtificerConcussionBlast</li>
-            <li>OCARINA_ArtificerMaul</li>
-            <li>OCARINA_ArtificerExplosiveCraft</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerExplosiveJump</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerConcussionBlast</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerMaul</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_ArtificerExplosiveCraft</li>
         </abilities>
         <alternateGraphicChance>0.5</alternateGraphicChance>
         <alternateGraphics>
@@ -899,8 +902,8 @@
                 <TropicalRainforest>0.10</TropicalRainforest>
             </wildBiomes>
             <specialTrainables>
-                <li>OCARINA_RivuletRainSummon</li>
-                <li>OCARINA_RivuletSlide</li>
+                <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_RivuletRainSummon</li>
+                <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_RivuletSlide</li>
             </specialTrainables>
             <hediffGiverSets>
                 <li>OCARINA_RivuletHediffGiver</li>
@@ -924,8 +927,8 @@
         <combatPower>40</combatPower>
         <ecoSystemWeight>0.4</ecoSystemWeight>
         <abilities>
-            <li>OCARINA_RivuletRainSummon</li>
-            <li>OCARINA_RivuletSlide</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_RivuletRainSummon</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">OCARINA_RivuletSlide</li>
         </abilities>
         <alternateGraphicChance>0.5</alternateGraphicChance>
         <alternateGraphics>
