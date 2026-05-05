@@ -1,11 +1,11 @@
 ??.?? - ??/??/????
 - Added iterator xenotype, iterator faction and can biomes/structures (Biotech only)
-- Added overseers
+- Added iterator backstories
 - Added neuron flies
-- Added blue lizards
+- Added overseers
 - Added RJW and RNW support
 - Added scavenger backstories
-- Added iterator backstories
+- Added white lizards
 - Scavengers get a mood penalty for tamed artificers, and may try to kill wild or tamed artificers
 
 15.0 - ?/??/????
@@ -16,6 +16,8 @@
 / Added outskirts biome
 / Added spears (multi-use) & explosive spears (single-use)
 / Added proper texture for batfly skeletons
+/ Added blue lizards
+/ Overhaul existing lizards
 
 13.2 - 4/25/2026
 - Changed Artificer's and Rivulet's abilities to require Odyssey, as not doing so would make those trainables show up on every single tamed animal (thank you halicade!)

@@ -16,6 +16,8 @@ namespace RainWorld
 		private static bool Prefix(bool __result, Thing target, Pawn ___pawn, bool surpriseAttack = false)
 		{
 			CompEquipWeapon aMW_Comp_EquipMeleeWeapon = ___pawn.TryGetComp<CompEquipWeapon>();
+			if (___pawn.CurJobDef == VariousDefOf.OCARINA_ArtificerMaul)
+				return true;
 			if (aMW_Comp_EquipMeleeWeapon != null && aMW_Comp_EquipMeleeWeapon.cachedWeapon != null && !aMW_Comp_EquipMeleeWeapon.meleeSet.NullOrEmpty())
 			{
 				if (___pawn.stances.FullBodyBusy)
