@@ -32,7 +32,7 @@
             <li Class="RainWorld.CompProperties_AbilityExplosiveJump">
                 <radiusPerDistance>0.2</radiusPerDistance>
             </li>
-            <li Class="CompProperties_AbilityRequiresTrainable">
+            <li MayRequire="ludeon.rimworld.odyssey" Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_ArtificerExplosiveJump</trainableDef>
             </li>
         </comps>
@@ -71,7 +71,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="CompProperties_AbilityRequiresTrainable">
+            <li MayRequire="ludeon.rimworld.odyssey" Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_ArtificerConcussionBlast</trainableDef>
             </li>
         </comps>
@@ -82,7 +82,7 @@
         <label>maul</label>
         <description>The artificer unleashes a flurry of 3-12 melee attacks on a single target. Each strike always hits. If the target moves out of the maul range after the maul has started, the maul will be cancelled early.</description>
         <iconPath>UI/Abilities/ArtificerMaul</iconPath>
-        <!-- <cooldownTicksRange>2500</cooldownTicksRange> for some reason with my shitty job code it needs to be hardcoded -->
+        <cooldownTicksRange>2500</cooldownTicksRange>
         <hostile>true</hostile>
         <targetRequired>true</targetRequired>
         <stunTargetWhileCasting>false</stunTargetWhileCasting>
@@ -103,7 +103,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="CompProperties_AbilityRequiresTrainable">
+            <li MayRequire="ludeon.rimworld.odyssey" Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_ArtificerMaul</trainableDef>
             </li>
         </comps>
@@ -136,7 +136,7 @@
                     <li>OCARINA_Weapon_ScavengerGrenade</li>
                 </spawnableItems>
             </li>
-            <li Class="CompProperties_AbilityRequiresTrainable">
+            <li MayRequire="ludeon.rimworld.odyssey" Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_ArtificerExplosiveCraft</trainableDef>
             </li>
         </comps>
@@ -164,7 +164,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="CompProperties_AbilityRequiresTrainable">
+            <li MayRequire="ludeon.rimworld.odyssey" Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_RivuletRainSummon</trainableDef>
             </li>
         </comps>
@@ -198,7 +198,7 @@
         </verbProperties>
         <jobDef>CastJump</jobDef>
         <comps>
-            <li Class="CompProperties_AbilityRequiresTrainable">
+            <li MayRequire="ludeon.rimworld.odyssey" Class="CompProperties_AbilityRequiresTrainable">
                 <trainableDef>OCARINA_RivuletSlide</trainableDef>
             </li>
         </comps>
