@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiomeWorker_Outskirts.cs" />
     <Compile Include="CompEquipWeapon.cs" />
     <Compile Include="CompUseEffect_GainResearchPoints.cs" />
     <Compile Include="DefModExtension_ColorsList.cs" />

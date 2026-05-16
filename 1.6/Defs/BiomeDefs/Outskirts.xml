@@ -5,28 +5,28 @@
         <defName>OCARINA_Outskirts</defName>
         <label>outskirts</label>
         <description>todo</description>
-        <workerClass>BiomeWorker_Scarlands</workerClass>
+        <workerClass>RainWorld.BiomeWorker_Outskirts</workerClass>
         <animalDensity>1.0</animalDensity>
         <plantDensity>0.7</plantDensity>
         <settlementSelectionWeight>0.5</settlementSelectionWeight>
         <movementDifficulty>1</movementDifficulty>
-        <lakeBeachTerrain>Gravel</lakeBeachTerrain>
-        <mudTerrain>MarshyTerrain</mudTerrain>
-        <riverbankTerrain>MarshyTerrain</riverbankTerrain>
+        <lakeBeachTerrain>OCARINA_OutskirtsPoorSoil</lakeBeachTerrain>
+        <mudTerrain>OCARINA_OutskirtsPoorSoil</mudTerrain>
+        <riverbankTerrain>OCARINA_OutskirtsSoil</riverbankTerrain>
         <riverbankSizeRange>6~8</riverbankSizeRange>
-        <texture>World/Biomes/Scarlands</texture>
+        <texture>World/Biomes/Outskirts</texture>
         <forageability>0.25</forageability>
         <foragedFood>RawBerries</foragedFood>
         <wildPlantRegrowDays>20</wildPlantRegrowDays>
         <diseaseMtbDays>100</diseaseMtbDays>
         <!-- <pollutionOffset>0.05</pollutionOffset> -->
         <maxFishPopulation>0</maxFishPopulation>
-        <waterShallowTerrain>ToxicWaterShallow</waterShallowTerrain>
-        <waterDeepTerrain>ToxicWaterDeep</waterDeepTerrain>
-        <oceanShallowTerrain>ToxicWaterOceanShallow</oceanShallowTerrain>
-        <oceanDeepTerrain>ToxicWaterOceanDeep</oceanDeepTerrain>
-        <waterMovingShallowTerrain>ToxicWaterMovingShallow</waterMovingShallowTerrain>
-        <waterMovingChestDeepTerrain>ToxicWaterMovingChestDeep</waterMovingChestDeepTerrain>
+        <waterShallowTerrain>OCARINA_OutskirtsWaterShallow</waterShallowTerrain>
+        <waterDeepTerrain>OCARINA_OutskirtsWaterDeep</waterDeepTerrain>
+        <oceanShallowTerrain>OCARINA_OutskirtsWaterOceanShallow</oceanShallowTerrain>
+        <oceanDeepTerrain>OCARINA_OutskirtsWaterOceanDeep</oceanDeepTerrain>
+        <waterMovingShallowTerrain>OCARINA_OutskirtsWaterMovingShallow</waterMovingShallowTerrain>
+        <waterMovingChestDeepTerrain>OCARINA_OutskirtsWaterMovingChestDeep</waterMovingChestDeepTerrain>
         <soundsAmbient>
             <li>Ambient_NightInsects_Standard</li>
         </soundsAmbient>
@@ -75,13 +75,18 @@
         </diseases>
         <terrainsByFertility>
             <li>
-                <terrain>AncientMegastructure</terrain>
+                <terrain>OCARINA_OutskirtsPoorSoil</terrain>
                 <min>-999</min>
-                <max>0.7</max>
+                <max>0.5</max>
             </li>
             <li>
-                <terrain>Soil</terrain>
-                <min>0.7</min>
+                <terrain>OCARINA_OutskirtsSoil</terrain>
+                <min>0.5</min>
+                <max>0.8</max>
+            </li>
+            <li>
+                <terrain>OCARINA_OutskirtsRichSoil</terrain>
+                <min>0.8</min>
                 <max>999</max>
             </li>
         </terrainsByFertility>
@@ -91,12 +96,17 @@
                 <isPond>true</isPond>
                 <thresholds>
                     <li>
-                        <terrain>ToxicWaterShallow</terrain>
+                        <terrain>OCARINA_OutskirtsRichSoil</terrain>
+                        <min>0.8</min>
+                        <max>0.93</max>
+                    </li>
+                    <li>
+                        <terrain>OCARINA_OutskirtsWaterShallow</terrain>
                         <min>0.93</min>
                         <max>1.06</max>
                     </li>
                     <li>
-                        <terrain>ToxicWaterDeep</terrain>
+                        <terrain>OCARINA_OutskirtsWaterDeep</terrain>
                         <min>1.06</min>
                         <max>999</max>
                     </li>
@@ -113,35 +123,44 @@
             <SnowGentle>4</SnowGentle>
             <SnowHard>4</SnowHard>
             <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
-            <ToxRain>2</ToxRain>
-            <Overcast>6</Overcast>
+            <ToxRain MayRequire="Ludeon.RimWorld.Odyssey">2</ToxRain>
+            <Overcast MayRequire="Ludeon.RimWorld.Odyssey">6</Overcast>
         </baseWeatherCommonalities>
         <wildPlants>
-            <Plant_Grass>0.02</Plant_Grass>
+            <Plant_Grass>0.0002</Plant_Grass>
+            <OCARINA_Plant_BatflyGrass>0.00000001</OCARINA_Plant_BatflyGrass>
         </wildPlants>
         <wildAnimals>
             <Rat>1.00</Rat>
             <Raccoon>0.5</Raccoon>
-            <Boomrat>0.4</Boomrat>
-            <Crow>0.5</Crow>
+            <Boomrat>0.2</Boomrat>
+            <Crow>0.4</Crow>
+            <OCARINA_GreenLizard>1.00</OCARINA_GreenLizard>
+            <OCARINA_RedLizard>0.2</OCARINA_RedLizard>
+            <OCARINA_PinkLizard>0.55</OCARINA_PinkLizard>
+            <OCARINA_SlugcatSurvivor>1.00</OCARINA_SlugcatSurvivor>
+            <OCARINA_SlugcatMonk>0.8</OCARINA_SlugcatMonk>
+            <OCARINA_SlugcatHunter>0.1</OCARINA_SlugcatHunter>
+            <OCARINA_SlugcatArtificer>0.002</OCARINA_SlugcatArtificer>
+            <OCARINA_SlugcatRivulet>0.04</OCARINA_SlugcatRivulet>
         </wildAnimals>
         <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
             <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
             <Rat>1</Rat>
             <Raccoon>0.5</Raccoon>
-            <Boomrat>0.4</Boomrat>
+            <Boomrat>0.2</Boomrat>
         </pollutionWildAnimals>
         <allowedPackAnimals>
             <li>Muffalo</li>
             <li>Alpaca</li>
+            <li>OCARINA_RedLizard</li>
+            <li>OCARINA_PinkLizard</li>
+            <li>OCARINA_GreenLizard</li>
         </allowedPackAnimals>
         <extraGenSteps>
-            <li>AncientRuins_Scarlands</li>
-            <li>CratersLarge</li>
-            <li>CratersMedium</li>
-            <li>CratersSmall</li>
-            <li>ScarlandsJunkClusters</li>
-            <li>ScarlandsJunkPrefabs</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">AncientRuins_Scarlands</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">ScarlandsJunkClusters</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">ScarlandsJunkPrefabs</li>
         </extraGenSteps>
     </BiomeDef>
 

@@ -124,4 +124,84 @@
         </tags>
     </TerrainDef>
 
+    <TerrainDef ParentName="WaterShallowBase">
+        <defName>OCARINA_OutskirtsWaterShallow</defName>
+        <label>shallow water</label>
+        <pollutionCloudColor>(80, 87, 85, 0.66)</pollutionCloudColor>
+        <texturePath>Terrain/Surfaces/OutskirtsWaterShallowRamp</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/OutskirtsWaterShallowRampPolluted</pollutedTexturePath>
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>394</renderPrecedence>
+        <driesTo>OCARINA_OutskirtsPoorSoil</driesTo>
+    </TerrainDef>
+    <TerrainDef ParentName="WaterDeepBase">
+        <defName>OCARINA_OutskirtsWaterDeep</defName>
+        <label>deep water</label>
+        <texturePath>Terrain/Surfaces/OutskirtsWaterDeepRamp</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/OutskirtsWaterDeepRampPolluted</pollutedTexturePath>
+        <renderPrecedence>395</renderPrecedence>
+    </TerrainDef>
+    <TerrainDef ParentName="WaterChestDeepBase">
+        <defName>OCARINA_OutskirtsWaterMovingChestDeep</defName>
+        <label>chest-deep moving water</label>
+        <renderPrecedence>399</renderPrecedence>
+        <texturePath>Terrain/Surfaces/OutskirtsWaterChestDeepRamp</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/OutskirtsWaterChestDeepRampPolluted</pollutedTexturePath>
+        <affordances>
+            <li>MovingFluid</li>
+        </affordances>
+        <tags>
+            <li>River</li>
+        </tags>
+        <waterDepthShaderParameters>
+            <_UseWaterOffset>1</_UseWaterOffset>
+        </waterDepthShaderParameters>
+    </TerrainDef>
+    <TerrainDef ParentName="WaterShallowBase">
+        <defName>OCARINA_OutskirtsWaterMovingShallow</defName>
+        <label>shallow moving water</label>
+        <texturePath>Terrain/Surfaces/OutskirtsWaterShallowRamp</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/OutskirtsWaterShallowRampPolluted</pollutedTexturePath>
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>398</renderPrecedence>
+        <driesTo>OCARINA_OutskirtsPoorSoil</driesTo>
+        <affordances>
+            <li>MovingFluid</li>
+        </affordances>
+        <tags>
+            <li>River</li>
+            <li>WaterFreshShallow</li>
+            <li>WaterFreshShallowMoving</li>
+        </tags>
+        <waterDepthShaderParameters>
+            <_UseWaterOffset>1</_UseWaterOffset>
+        </waterDepthShaderParameters>
+    </TerrainDef>
+    <TerrainDef ParentName="WaterShallowBase">
+        <defName>OCARINA_OutskirtsWaterOceanShallow</defName>
+        <label>shallow ocean water</label>
+        <texturePath>Terrain/Surfaces/OutskirtsWaterShallowRamp</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/OutskirtsWaterShallowRampPolluted</pollutedTexturePath>
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>396</renderPrecedence>
+        <driesTo>OCARINA_OutskirtsPoorSoil</driesTo>
+        <canFreeze>false</canFreeze>
+        <waterBodyType>Saltwater</waterBodyType>
+        <tags>
+            <li>Ocean</li>
+        </tags>
+    </TerrainDef>
+    <TerrainDef ParentName="WaterDeepBase">
+        <defName>OCARINA_OutskirtsWaterOceanDeep</defName>
+        <label>deep ocean water</label>
+        <texturePath>Terrain/Surfaces/OutskirtsWaterDeepRamp</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/OutskirtsWaterDeepRampPolluted</pollutedTexturePath>
+        <renderPrecedence>397</renderPrecedence>
+        <waterBodyType>Saltwater</waterBodyType>
+        <gravshipReplacementTerrain>WaterOceanShallow</gravshipReplacementTerrain>
+        <tags>
+            <li>Ocean</li>
+        </tags>
+    </TerrainDef>
+
 </Defs>
