@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ocarina-rainworld-main\\1.6\\source\\rainworld\\plant_ceiling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|solutionrelative:plant_ceiling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ocarina-rainworld-main\\1.6\\source\\rainworld\\plant_wateraffiliation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|solutionrelative:plant_wateraffiliation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ocarina-rainworld-main\\1.6\\source\\rainworld\\plant_batfly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|solutionrelative:plant_batfly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ocarina-rainworld-main\\1.6\\source\\rainworld\\pawnrendernode_furuseskincolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|solutionrelative:pawnrendernode_furuseskincolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\pawnrendernode_eyes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE6ABC1-AF75-4D26-8254-D09BA28EF897}|RainWorld.csproj|solutionrelative:pawnrendernode_eyes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Plant_WaterAffiliation.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\Plant_WaterAffiliation.cs",
+              "RelativeDocumentMoniker": "Plant_WaterAffiliation.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\Plant_WaterAffiliation.cs",
+              "RelativeToolTip": "Plant_WaterAffiliation.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:58:05.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Plant_Ceiling.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\Plant_Ceiling.cs",
+              "RelativeDocumentMoniker": "Plant_Ceiling.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\Plant_Ceiling.cs",
+              "RelativeToolTip": "Plant_Ceiling.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:57:54.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Plant_Batfly.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\Plant_Batfly.cs",
+              "RelativeDocumentMoniker": "Plant_Batfly.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\Plant_Batfly.cs",
+              "RelativeToolTip": "Plant_Batfly.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:57:54.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PawnRenderNode_FurUseSkinColor.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\PawnRenderNode_FurUseSkinColor.cs",
+              "RelativeDocumentMoniker": "PawnRenderNode_FurUseSkinColor.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\PawnRenderNode_FurUseSkinColor.cs",
+              "RelativeToolTip": "PawnRenderNode_FurUseSkinColor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T21:03:50.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PawnRenderNode_Eyes.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\PawnRenderNode_Eyes.cs",
+              "RelativeDocumentMoniker": "PawnRenderNode_Eyes.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ocarina-rainworld-main\\1.6\\Source\\RainWorld\\PawnRenderNode_Eyes.cs",
+              "RelativeToolTip": "PawnRenderNode_Eyes.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T21:03:40.953Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

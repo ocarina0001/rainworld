@@ -39,8 +39,8 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>5</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
             </li>
             <li>
@@ -48,7 +48,7 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>5</power>
+                <power>6</power>
                 <cooldownTime>1.5</cooldownTime>
                 <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
             </li>
@@ -56,8 +56,8 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>6</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>7</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.7</chanceFactor>
             </li>
@@ -66,8 +66,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>3</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>4</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.2</chanceFactor>
@@ -76,7 +76,7 @@
         <race>
             <body>QuadrupedAnimalWithPawsAndTail</body>
             <baseBodySize>0.5</baseBodySize>
-            <baseHealthScale>0.5</baseHealthScale>
+            <baseHealthScale>0.55</baseHealthScale>
             <baseHungerRate>0.14</baseHungerRate>
             <maxPreyBodySize>0.30</maxPreyBodySize>
             <packAnimal>true</packAnimal>
@@ -256,8 +256,8 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>3.75</power>
-                <cooldownTime>2</cooldownTime>
+                <power>4.75</power>
+                <cooldownTime>1.75</cooldownTime>
                 <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
             </li>
             <li>
@@ -265,16 +265,16 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>3.75</power>
-                <cooldownTime>2</cooldownTime>
+                <power>4.75</power>
+                <cooldownTime>1.75</cooldownTime>
                 <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
             </li>
             <li>
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>4.5</power>
-                <cooldownTime>2</cooldownTime>
+                <power>5.5</power>
+                <cooldownTime>1.75</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.7</chanceFactor>
             </li>
@@ -283,8 +283,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>2.25</power>
-                <cooldownTime>2</cooldownTime>
+                <power>3.25</power>
+                <cooldownTime>1.75</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.2</chanceFactor>
@@ -293,7 +293,7 @@
         <race>
             <body>QuadrupedAnimalWithPawsAndTail</body>
             <baseBodySize>0.47</baseBodySize>
-            <baseHealthScale>0.47</baseHealthScale>
+            <baseHealthScale>0.52</baseHealthScale>
             <baseHungerRate>0.10</baseHungerRate>
             <maxPreyBodySize>0.30</maxPreyBodySize>
             <packAnimal>true</packAnimal>
@@ -435,7 +435,7 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>6.25</power>
+                <power>7.25</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
             </li>
@@ -444,7 +444,7 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>6.25</power>
+                <power>7.25</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
             </li>
@@ -452,7 +452,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>7.5</power>
+                <power>8.5</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.7</chanceFactor>
@@ -462,7 +462,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>3.75</power>
+                <power>4.75</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -613,7 +613,7 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>6.25</power>
+                <power>7.25</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
             </li>
@@ -622,7 +622,7 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>6.25</power>
+                <power>7.25</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
             </li>
@@ -630,7 +630,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>7.5</power>
+                <power>8.5</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.7</chanceFactor>
@@ -640,7 +640,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>3.75</power>
+                <power>4.75</power>
                 <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -811,8 +811,8 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>5</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
             </li>
             <li>
@@ -820,16 +820,16 @@
                 <capacities>
                     <li>Scratch</li>
                 </capacities>
-                <power>5</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
             </li>
             <li>
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>6</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>7</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.7</chanceFactor>
             </li>
@@ -838,8 +838,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>3</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>4</power>
+                <cooldownTime>1.25</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.2</chanceFactor>

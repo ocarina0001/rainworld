@@ -12,12 +12,15 @@
 - Added immature and leafless graphics for all existing plants 
 - Added slugcat apparel support
 
-14.0 - 4/??/????
+14.0 - ?/??/????
 / Added outskirts biome
 / Added spears (multi-use) & explosive spears (single-use)
 / Added proper texture for batfly skeletons
 / Added blue lizards
-/ Overhaul existing lizards
+/ Overhaul existing lizard
+- Increased all slugcats' damages by a flat +1
+- Increased all slugcats' base health values by +0.05
+- Decreased all slugcats' (except artificer and hunter) cooldowns by -0.25
 
 13.3 - 5/5/2026
 - Fixed Artificer's maul ability never going off cooldown
