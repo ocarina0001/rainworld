@@ -144,7 +144,7 @@
                 <label>slugpup</label>
                 <labelPlural>slugpups</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/SlugcatSurvivor</texPath>
                     <drawSize>0.5</drawSize>
                     <color>(255,255,255)</color>
                 </bodyGraphicData>
@@ -157,7 +157,7 @@
                 <label>slugpup</label>
                 <labelPlural>slugpups</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/SlugcatSurvivor</texPath>
                     <drawSize>0.75</drawSize>
                     <color>(255,255,255)</color>
                 </bodyGraphicData>
@@ -169,7 +169,7 @@
             <li>
                 <labelPlural>slugcats</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatSurvivor/SlugcatSurvivor</texPath>
                     <drawSize>1</drawSize>
                     <color>(255,255,255)</color>
                 </bodyGraphicData>
@@ -309,7 +309,7 @@
                 <label>slugpup</label>
                 <labelPlural>slugpups</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/SlugcatMonk</texPath>
                     <drawSize>0.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
@@ -321,7 +321,7 @@
                 <label>slugpup</label>
                 <labelPlural>slugpups</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/SlugcatMonk</texPath>
                     <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
@@ -332,7 +332,7 @@
             <li>
                 <labelPlural>slugcats</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatMonk/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatMonk/SlugcatMonk</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
@@ -486,7 +486,7 @@
                 <label>slugpup</label>
                 <labelPlural>slugpups</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/SlugcatHunter</texPath>
                     <drawSize>0.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
@@ -498,7 +498,7 @@
                 <label>slugpup</label>
                 <labelPlural>slugpups</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/SlugcatHunter</texPath>
                     <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
@@ -509,7 +509,7 @@
             <li>
                 <labelPlural>slugcats</labelPlural>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/SlugcatHunter/Slugcat</texPath>
+                    <texPath>Things/Pawn/Animal/SlugcatHunter/SlugcatHunter</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>

@@ -19,6 +19,10 @@
 / Added blue lizards
 / Overhaul existing lizards
 
+13.4 - 8/29/2026
+- Fixed an issue in 1.5 amd 1.4 where slugcats had missing textures
+- Ported slugcat skeleton textures to 1.4 (just cuz I was there)
+
 13.3 - 5/5/2026
 - Fixed Artificer's maul ability never going off cooldown
 
